@@ -1,2 +1,2 @@
-# website
+# Website
 Repo for the Website
