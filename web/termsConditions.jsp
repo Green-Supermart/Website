@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : 17 Nov 2023, 17:58:28
+    Document   : termsConditions
+    Created on : 30 Nov 2023, 23:01:19
     Author     : Sandun
 --%>
 
@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         
-        <title>GREEN Supermart | Your Everyday Supermart</title>
+        <title>Terms & Conditions - GREEN Supermart</title>
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
@@ -37,7 +37,7 @@
         <!-- PAGE-CONTENT START ======================================================-->
         <div class="containerBlock flex">
             <div class="container">
-                Home Content Goes Here!
+                Terms & Conditions Content Goes Here!
             </div>
         </div>
         <!--======================================================== PAGE-CONTENT END -->
