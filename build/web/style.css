@@ -380,6 +380,7 @@ header h1{
 
 .sectionHeading{
     color: #1DA31A;
+    text-align: center;
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 20px;
@@ -399,4 +400,46 @@ section ul li::before{
     content: "-";
     color: #1DA31A;
     padding-right: 10px;
+}
+
+.helpCardsContainer{
+    gap: 30px;
+}
+
+.helpLink{
+    width: 100%;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    color: #242424;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 15px transparent);
+    transition: 0.3s;
+}
+.helpLink:hover{
+    filter: drop-shadow(0 0 15px #0001);
+    transition: 0.3s;
+}
+
+.linkContent{
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+.linkText{
+    gap: 5px;
+}
+.linkContent h1{
+    color: #1DA31A;
+    font-size: 16px;
+    font-weight: 400;
+}
+.linkContent h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+.linkContent i{
+    color: #1DA31A;
+    font-size: 24px;
 }
