@@ -372,3 +372,31 @@ header h1{
     cursor: pointer;
     transition: 0.3s
 }
+
+
+.container section{
+    margin-bottom: 20px;
+}
+
+.sectionHeading{
+    color: #1DA31A;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.container section p{
+    margin-bottom: 20px;
+}
+
+section ul{
+    margin-bottom: 20px;
+}
+section ul li{
+    list-style: none;
+}
+section ul li::before{
+    content: "-";
+    color: #1DA31A;
+    padding-right: 10px;
+}

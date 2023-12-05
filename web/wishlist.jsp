@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         
-        <title>Wishlist - GREEN Supermart</title>
+        <title>Wishlist | GREEN Supermart</title>
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
