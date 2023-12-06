@@ -190,6 +190,22 @@ nav{
     transition: 0.3s;
 }
 
+
+.moreDealsLink{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.moreDealsLink a{
+    color: #242424;
+}
+.moreDealsLink i{
+    color: #1DA31A;
+}
+
 footer{
     height: 300px;
     color: #242424;
@@ -374,13 +390,60 @@ header h1{
 }
 
 
+.catCard{
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    color: #242424;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 15px transparent);
+    transition: 0.3s;
+}
+.catCard:hover{
+    background: #1DA31A;
+    color: #FFFFFF;
+    filter: drop-shadow(0 0 15px #0001);
+    transition: 0.3s;
+}
+
+.catCardImg{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.catCardImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.catContent{
+    padding: 22px 22px;
+    align-items: center;
+    justify-content: space-between;
+}
+.catCard:hover i{
+    color: #ECECEC;
+    transition: 0.3s;
+}
+.catContent i{
+    color: #1DA31A;
+    transition: 0.3s;
+}
+
+.catContent h1{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
 .container section{
     margin-bottom: 20px;
 }
 
 .sectionHeading{
     color: #1DA31A;
-    text-align: center;
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 20px;
