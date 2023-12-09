@@ -110,7 +110,7 @@
                 <section class="flex flexCol">
                     <h1 class="sectionHeading">Contact Us</h1>
                     
-                    <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:greensupermart@gmail.com" style="color: #1DA31A;">greensupermart@gmail.com</a></p>
+                    <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:greensupermartlk@gmail.com" style="color: #1DA31A;">greensupermartlk@gmail.com</a></p>
                 </section>
                 
             </div>

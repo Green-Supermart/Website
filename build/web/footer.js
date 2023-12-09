@@ -19,7 +19,7 @@ function footerHTML() {
     
     html += '<div>';
     html += '<i class="fa-solid fa-envelope"></i> ';
-    html += '<a href="mailto:greensupermart@gmail.com">greensupermart@gmail.com</a>';
+    html += '<a href="mailto:greensupermartlk@gmail.com">greensupermartlk@gmail.com</a>';
     html += '</div>';
     
     html += '</div>';
