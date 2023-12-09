@@ -41,9 +41,7 @@
                 <div class="container404 flex flexCol">
                     <h1>Page Not Found</h1>
                     <p>Try searching or go to the homepage</p>
-                    <div class="icon404">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                    </div>
+                    <div class="icon404" id="icon404"></div>
                     <a href="/Website">
                         Home <i class="fa-solid fa-square-arrow-up-right"></i>
                     </a>
