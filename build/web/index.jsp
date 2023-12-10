@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         
-        <title>GREEN Supermart | Your Everyday Supermart</title>
+        <title>Your Everyday Supermart | GREEN Supermart</title>
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
@@ -37,7 +37,197 @@
         <!-- PAGE-CONTENT START ======================================================-->
         <div class="containerBlock flex">
             <div class="container">
-                Home Content Goes Here!
+                
+                <section class="flex" style="height: 600px; background: #FFFFFF; margin-bottom: 60px; justify-content: center;
+  align-items: center;">
+                    Slideshow
+                </section>
+                
+                
+                <section>
+                    <h1 class="sectionHeading" style="text-align: center; margin-bottom: 40px; font-size: 26px;">Top Deals</h1>
+                    
+                    <div class="cardsContainer flex flexRow">
+                        <div class="productCard flex flexCol">
+                            <div class="productImg flex">
+                                <div class="productIcons flex flexRow">
+                                    <span class="discIndicator">
+                                        -20%
+                                    </span>
+                                    <span class="wishlistIndicator">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </div>
+                                <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                            </div>
+                            <div class="productContent flex flexCol">
+                                <h1>
+                                    <a href="">
+                                        Product Title
+                                    </a>
+                                </h1>
+                                <span class="productPrice flex flexRow">
+                                    <h2 class="price">Rs. 152.00</h2>
+                                    <h2 class="discPrice">Rs. 190.00</h2>
+                                </span>
+                                <button class="addToCartBtn flex flexRow">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="productCard flex flexCol">
+                            <div class="productImg flex">
+                                <div class="productIcons flex flexRow">
+                                    <span class="discIndicator">
+                                        -20%
+                                    </span>
+                                    <span class="wishlistIndicator">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+                                <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                            </div>
+                            <div class="productContent flex flexCol">
+                                <h1>
+                                    <a href="">
+                                        Product Title
+                                    </a>
+                                </h1>
+                                <span class="productPrice flex flexRow">
+                                    <h2 class="price">Rs. 152.00</h2>
+                                    <h2 class="discPrice">Rs. 190.00</h2>
+                                </span>
+                                <button class="addToCartBtn flex flexRow">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="productCard flex flexCol">
+                            <div class="productImg flex">
+                                <div class="productIcons flex flexRow">
+                                    <span class="discIndicator">
+                                        -20%
+                                    </span>
+                                    <span class="wishlistIndicator">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+                                <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                            </div>
+                            <div class="productContent flex flexCol">
+                                <h1>
+                                    <a href="">
+                                        Product Title
+                                    </a>
+                                </h1>
+                                <span class="productPrice flex flexRow">
+                                    <h2 class="price">Rs. 152.00</h2>
+                                    <h2 class="discPrice">Rs. 190.00</h2>
+                                </span>
+                                <button class="addToCartBtn flex flexRow">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="productCard flex flexCol">
+                            <div class="productImg flex">
+                                <div class="productIcons flex flexRow">
+                                    <span class="discIndicator">
+                                        -20%
+                                    </span>
+                                    <span class="wishlistIndicator">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                </div>
+                                <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                            </div>
+                            <div class="productContent flex flexCol">
+                                <h1>
+                                    <a href="">
+                                        Product Title
+                                    </a>
+                                </h1>
+                                <span class="productPrice flex flexRow">
+                                    <h2 class="price">Rs. 152.00</h2>
+                                    <h2 class="discPrice">Rs. 190.00</h2>
+                                </span>
+                                <button class="addToCartBtn flex flexRow">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <span class="moreDealsLink flex flexRow">
+                        <a href="deals.jsp">View More Deals</a>
+                        <i class="fa-solid fa-square-arrow-up-right"></i>
+                    </span>
+                    
+                </section>
+                
+                
+                
+                <section style="margin-top: 60px;">
+                    <h1 class="sectionHeading" style="text-align: center; margin-bottom: 40px; font-size: 26px;">Top Categories</h1>
+                    
+                    <div class="cardsContainer flex flexRow">
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="">
+                            <div class="catCard flex flexCol">
+                                <div class="catCardImg flex">
+                                    <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                                </div>
+                                <div class="catContent flex flexRow">
+                                    <h1>Category Title</h1>
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="">
+                            <div class="catCard flex flexCol">
+                                <div class="catCardImg flex">
+                                    <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                                </div>
+                                <div class="catContent flex flexRow">
+                                    <h1>Category Title</h1>
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="">
+                            <div class="catCard flex flexCol">
+                                <div class="catCardImg flex">
+                                    <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                                </div>
+                                <div class="catContent flex flexRow">
+                                    <h1>Category Title</h1>
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="">
+                            <div class="catCard flex flexCol">
+                                <div class="catCardImg flex">
+                                    <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                                </div>
+                                <div class="catContent flex flexRow">
+                                    <h1>Category Title</h1>
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                
             </div>
         </div>
         <!--======================================================== PAGE-CONTENT END -->

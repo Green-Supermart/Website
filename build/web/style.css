@@ -190,6 +190,22 @@ nav{
     transition: 0.3s;
 }
 
+
+.moreDealsLink{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.moreDealsLink a{
+    color: #242424;
+}
+.moreDealsLink i{
+    color: #1DA31A;
+}
+
 footer{
     height: 300px;
     color: #242424;
@@ -371,4 +387,262 @@ header h1{
     background: #ECECEC;
     cursor: pointer;
     transition: 0.3s
+}
+
+
+.catCard{
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    color: #242424;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 15px transparent);
+    transition: 0.3s;
+}
+.catCard:hover{
+    background: #1DA31A;
+    color: #FFFFFF;
+    filter: drop-shadow(0 0 15px #0001);
+    transition: 0.3s;
+}
+
+.catCardImg{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.catCardImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.catContent{
+    padding: 22px 22px;
+    align-items: center;
+    justify-content: space-between;
+}
+.catCard:hover i{
+    color: #ECECEC;
+    transition: 0.3s;
+}
+.catContent i{
+    color: #1DA31A;
+    transition: 0.3s;
+}
+
+.catContent h1{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.container section{
+    margin-bottom: 20px;
+}
+
+.sectionHeading{
+    color: #1DA31A;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.container section p{
+    margin-bottom: 20px;
+}
+
+section ul{
+    margin-bottom: 20px;
+}
+section ul li{
+    list-style: none;
+}
+section ul li::before{
+    content: "-";
+    color: #1DA31A;
+    padding-right: 10px;
+}
+
+.helpCardsContainer{
+    gap: 30px;
+}
+
+.helpLink{
+    width: 100%;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    color: #242424;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 15px transparent);
+    transition: 0.3s;
+}
+.helpLink:hover{
+    filter: drop-shadow(0 0 15px #0001);
+    transition: 0.3s;
+}
+
+.linkContent{
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+.linkText{
+    gap: 5px;
+}
+.linkContent h1{
+    color: #1DA31A;
+    font-size: 16px;
+    font-weight: 400;
+}
+.linkContent h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+.linkContent i{
+    color: #1DA31A;
+    font-size: 24px;
+}
+
+.container404{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px 0;
+}
+
+.container404 h1{
+    color: #1DA31A;
+    font-weight: 400;
+}
+
+.container404 p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.container404 .icon404{
+    color: #1DA31A;
+    font-size: 120px;
+    margin: 20px 0;
+}
+
+.container404 a{
+    color: #ECECEC;
+    background: #1DA31A;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.container404 a:hover{
+    background: #168C13;
+    transition: 0.3s;
+}
+
+
+.loginRegisterForm{
+    width: 30%;
+    height: auto;
+    color: #242424;
+    background: #FFFFFF;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.formContainer{
+    width: 80%;
+    height: auto;
+    padding: 40px 0;
+    align-items: center;
+    gap: 20px;
+}
+
+.formLogo{
+    height: 50px;
+    width: auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.formLogo img{
+    height: 100%;
+    width: auto;
+}
+
+.loginRegisterForm input{
+    width: calc(100% - 32px);
+    padding: 8px 16px;
+    background: #ECECEC;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s;
+}
+.loginRegisterForm input:focus{
+    border: 2px solid #1DA31A;
+    transition: 0.2s;
+}
+
+.loginRegisterForm a{
+    color: #1DA31A;
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.loginRegisterForm button{
+    color: #ECECEC;
+    background: #1DA31A;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.loginRegisterForm button:hover{
+    background: #168C13;
+    transition: 0.3s;
+}
+
+.loginRegisterForm .formRedirector{
+    font-size: 12px;
+    width: max-content;
+    margin-top: 20px;
+}
+.loginRegisterForm .formRedirector a{
+    margin-bottom: 0;
+}
+
+.loginRegisterForm .termsCheckbox{
+    width: 100%;
+    font-size: 12px;
+    align-items: start;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.loginRegisterForm .termsCheckbox input{
+    height: 15px;
+    width: max-content;
+    accent-color: #1DA31A;
+}
+
+.loginRegisterForm .stateMessage{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.loginRegisterForm .stateMessage i{
+    color: #1DA31A;
+}
+
+.loginRegisterForm p{
+    width: 100%;
 }
