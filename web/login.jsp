@@ -28,26 +28,31 @@
     
     <body>
         
-        <div class="containerBlock flex">
+        <div class="containerBlock flex" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
             
-            <form action="" method="">
+            <form id="loginForm" class="loginRegisterForm flex" action="" method="">
                 
-                <div class="formLogo">
-                    <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
+                <div class="formContainer flex flexCol">
+                    
+                    <div class="formLogo" onclick="window.location.href='/Website'">
+                        <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
+                    </div>
+                    
+                    <input type="email" placeholder="Email Address">
+                    
+                    <input type="password" placeholder="Password">
+                    
+                    <a href="login/forgotPassword.jsp">Forgot Password?</a>
+                    
+                    <button type="submit">Login</button>
+                    
+                    <span class="formRedirector">
+                        New User?
+                        <a href="register.jsp">Register</a>
+                    </span>
+                    
                 </div>
                 
-                <input type="email" placeholder="Email Address">
-                
-                <input type="password" placeholder="Password">
-                
-                <a href="login/forgotPassword.jsp">Forgot Password?</a>
-                
-                <input type="submit" value="Login">
-                
-                <span>
-                    New User?
-                    <a href="register.jsp">Register</a>
-                </span>
             </form>
             
         </div>

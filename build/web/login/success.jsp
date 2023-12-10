@@ -28,22 +28,24 @@
     
     <body>
         
-        <div class="containerBlock flex">
+        <div class="containerBlock flex" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
             
-            <form action="" method="">
+            <form id="resetSuccessForm" class="loginRegisterForm flex" action="" method="">
                 
-                <div class="formLogo">
-                    <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
+                <div class="formContainer flex flexCol">
+                    
+                    <div class="formLogo" onclick="window.location.href='/Website'">
+                        <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
+                    </div>
+                    
+                    <p class="stateMessage">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Password Updated Successfully
+                    </p>
+                    
+                    <button type="button" onclick="window.location.href='/Website'">Start Shopping</button>
+                    
                 </div>
-                
-                <p>
-                    <i class="fa-solid fa-circle-check"></i>
-                    Password Updated
-                </p>
-                
-                <button>
-                    <a href="../login.jsp">Login Now</a>
-                </button>
                 
             </form>
             

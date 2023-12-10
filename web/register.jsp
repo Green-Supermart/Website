@@ -28,31 +28,38 @@
     
     <body>
         
-        <div class="containerBlock flex">
+        <div class="containerBlock flex" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
             
-            <form action="" method="">
+            <form id="registerForm" class="loginRegisterForm flex" action="" method="">
                 
-                <div class="formLogo">
-                    <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
+                <div class="formContainer flex flexCol">
+                    
+                    <div class="formLogo" onclick="window.location.href='/Website'">
+                        <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
+                    </div>
+                    
+                    <input type="email" placeholder="Email Address" required>
+                    
+                    <input type="password" placeholder="Password" required>
+                    
+                    <input type="password" placeholder="Confirm Password" required>
+                    
+                    <span class="termsCheckbox flex flexRow">
+                        <input type="checkbox" required>
+                        <span>
+                            I agree to the <a href="termsConditions.jsp">Terms & Conditions</a>
+                        </span>
+                    </span>
+                    
+                    <button type="submit">Register</button>
+                    
+                    <span class="formRedirector">
+                        Existing User?
+                        <a href="login.jsp">Login</a>
+                    </span>
+                    
                 </div>
                 
-                <input type="email" placeholder="Email Address" required>
-                
-                <input type="password" placeholder="Password" required>
-                
-                <input type="password" placeholder="Confirm Password" required>
-                
-                <span>
-                    <input type="checkbox" required>
-                    I agree to the <a href="termsConditions.jsp">Terms & Conditions</a>
-                </span>
-                
-                <input type="submit" value="Register">
-                
-                <span>
-                    Existing User?
-                    <a href="login.jsp">Login</a>
-                </span>
             </form>
             
         </div>

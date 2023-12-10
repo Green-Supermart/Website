@@ -544,3 +544,105 @@ section ul li::before{
     background: #168C13;
     transition: 0.3s;
 }
+
+
+.loginRegisterForm{
+    width: 30%;
+    height: auto;
+    color: #242424;
+    background: #FFFFFF;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.formContainer{
+    width: 80%;
+    height: auto;
+    padding: 40px 0;
+    align-items: center;
+    gap: 20px;
+}
+
+.formLogo{
+    height: 50px;
+    width: auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.formLogo img{
+    height: 100%;
+    width: auto;
+}
+
+.loginRegisterForm input{
+    width: calc(100% - 32px);
+    padding: 8px 16px;
+    background: #ECECEC;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s;
+}
+.loginRegisterForm input:focus{
+    border: 2px solid #1DA31A;
+    transition: 0.2s;
+}
+
+.loginRegisterForm a{
+    color: #1DA31A;
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.loginRegisterForm button{
+    color: #ECECEC;
+    background: #1DA31A;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.loginRegisterForm button:hover{
+    background: #168C13;
+    transition: 0.3s;
+}
+
+.loginRegisterForm .formRedirector{
+    font-size: 12px;
+    width: max-content;
+    margin-top: 20px;
+}
+.loginRegisterForm .formRedirector a{
+    margin-bottom: 0;
+}
+
+.loginRegisterForm .termsCheckbox{
+    width: 100%;
+    font-size: 12px;
+    align-items: start;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.loginRegisterForm .termsCheckbox input{
+    height: 15px;
+    width: max-content;
+    accent-color: #1DA31A;
+}
+
+.loginRegisterForm .stateMessage{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.loginRegisterForm .stateMessage i{
+    color: #1DA31A;
+}
+
+.loginRegisterForm p{
+    width: 100%;
+}
