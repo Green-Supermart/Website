@@ -646,3 +646,12 @@ section ul li::before{
 .loginRegisterForm p{
     width: 100%;
 }
+.cardorder {
+  width: 300px;
+  height: 1080px;
+  margin: 0px 0px; /* Adjust the margin as needed */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
