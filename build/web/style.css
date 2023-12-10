@@ -507,44 +507,6 @@ section ul li::before{
     font-size: 24px;
 }
 
-.container404{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 50px 0;
-}
-
-.container404 h1{
-    color: #1DA31A;
-    font-weight: 400;
-}
-
-.container404 p{
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.container404 .icon404{
-    color: #1DA31A;
-    font-size: 120px;
-    margin: 20px 0;
-}
-
-.container404 a{
-    color: #ECECEC;
-    background: #1DA31A;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 7px 14px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-.container404 a:hover{
-    background: #168C13;
-    transition: 0.3s;
-}
-
 
 .loginRegisterForm{
     width: 30%;

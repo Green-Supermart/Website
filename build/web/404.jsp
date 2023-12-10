@@ -10,7 +10,285 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+            
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Prompt', sans-serif;
+                scrollbar-width: thin;
+            }
+            
+            /* SCROLLBAR PROPERTIES START ========================================= */
+            *::-webkit-scrollbar {
+                width: 8px;
+                height: 8px;
+            }
+            *::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            *::-webkit-scrollbar-thumb {
+                background-color: #ababab;
+            }
+            *::-webkit-scrollbar-thumb:hover {
+                background-color: #8f8f8f;
+            }
+            *::-webkit-scrollbar-thumb:active {
+                background-color: #7a7a7a;
+            }
+            /* =========================================== SCROLLBAR PROPERTIES END */
+            
+            html{
+                color: #242424;
+                background: #ECECEC;
+                scroll-behavior: smooth;
+            }
+            
+            .flex{
+                display: flex;
+            }
+            .flexRow{
+                flex-direction: row;
+            }
+            .flexCol{
+                flex-direction: column;
+            }
+            
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                text-decoration-color: #1DA31A;
+            }
+            
+            .externLinks i{
+                color: #1DA31A;
+            }
+            
+            nav{
+                height: 70px;
+                width: 100%;
+                background: #FFFFFF;
+                box-shadow: 0 0 30px #80808061;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+            }
+            .navContainer{
+                height: 55%;
+                width: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .navLogo{
+                height: 80%;
+            }
+            .navLogo img{
+                height: 100%;
+            }
+            
+            .catDropdown{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                cursor: pointer;
+            }
+            
+            .searchBox{
+                height: 100%;
+                display: flex;
+                border-radius: 15px;
+            }
+            
+            .searchBox .searchField{
+                height: 100%;
+                width: 500px;
+                color: #808080;
+                background: #ECECEC;
+                padding: 0 15px 0 15px;
+                outline: none;
+                border: none;
+                border-radius: 10px 0 0 10px;
+            }
+            
+            .searchBox .searchBtn{
+                height: 100%;
+                color: #808080;
+                background: #ECECEC;
+                padding: 0 15px 0 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 0 10px 10px 0;
+            }
+            
+            .actionIcons{
+                height: 100%;
+                gap: 60px;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .actionIcons i{
+                font-size: 22px;
+                color: #1DA31A;
+                cursor: pointer;
+            }
+            
+            .userPic{
+                height: 90%;
+            }
+            
+            .userPic img{
+                height: 100%;
+            }
+            
+            .containerBlock{
+                width: 100%;
+                height: auto;
+                color: #242424;
+                background: #ECECEC;
+                justify-content: center;
+            }
+            .container{
+                width: 90%;
+                height: 100%;
+                padding: 50px 0;
+            }
+            
+            #toTopBtn{
+                display: none;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 5;
+                font-size: 20px;
+                width: 45px;
+                height: 45px;
+                border-radius: 10px;
+                padding: 0;
+                cursor: pointer;
+            }
+            
+            .greenBtn{
+                color: #ECECEC;
+                background: #1DA31A;
+                border: 2px solid #1DA31A;
+                transition: 0.3s;
+            }
+            .greenBtn:hover{
+                background: #168C13;
+                transition: 0.3s;
+            }
+            
+            footer{
+                height: 300px;
+                color: #242424;
+                background: #D9D9D9;
+                font-weight: 300;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .footerContainer{
+                width: 90%;
+                height: auto;
+                justify-content: space-between;
+            }
+            
+            footer a{
+                font-weight: 300;
+            }
+            
+            footer h1{
+                color: #1DA31A;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            
+            .footerImgSection{
+                gap: 25px;
+            }
+            .footerImg{
+                height: 40px;
+                width: fit-content;
+            }
+            .footerImg img{
+                height: 100%;
+                width: auto;
+                object-fit: cover;
+            }
+            
+            .footerImgSection i{
+                color: #1DA31A;
+            }
+            .footerImgSection a{
+                color: #333333;
+            }
+            
+            .footerContent{
+                width: 40%;
+                justify-content: space-evenly;
+            }
+            .footerLinks{
+                gap: 8px;
+            }
+            .footerLinks a{
+                width: fit-content;
+                color: #242424;
+            }
+            
+            .container404{
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin: 50px 0;
+            }
+            
+            .container404 h1{
+                color: #1DA31A;
+                font-weight: 400;
+            }
+            
+            .container404 p{
+                font-size: 20px;
+                font-weight: 300;
+            }
+            
+            .container404 .icon404{
+                color: #1DA31A;
+                font-size: 120px;
+                margin: 20px 0;
+            }
+            
+            .container404 a{
+                color: #ECECEC;
+                background: #1DA31A;
+                font-size: 14px;
+                text-decoration: none;
+                padding: 7px 14px;
+                border-radius: 5px;
+                transition: 0.3s;
+            }
+            .container404 a:hover{
+                background: #168C13;
+                transition: 0.3s;
+            }
+        </style>
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,15 +300,48 @@
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
-        
-        <script src="script.js" defer></script>
     </head>
     
     <body>
         
         <!-- NAVBAR START ============================================================-->
         <nav id="navbar"></nav>
-        <script src="navbar.js"></script>
+        <script>
+            function navbarHTML() {
+                var html = '<div class="navContainer">';
+                html += '<a class="navLogo" href="/Website">';
+                html += '<img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png" alt="Logo">';
+                html += '</a>';
+                
+                html += '<div class="catDropdown">';
+                html += 'All Categories';
+                html += '<i class="fa-solid fa-angle-down"></i>';
+                html += '</div>';
+                
+                html += '<form class="searchBox">';
+                html += '<input type="search" class="searchField" placeholder="Search">';
+                html += '<button type="submit" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>';
+                html += '</form>';
+                
+                html += '<div class="actionIcons flex flexRow">';
+                html += '<a href="wishlist.jsp">';
+                html += '<i class="fa-solid fa-heart"></i>';
+                html += '</a>';
+                html += '<div>';
+                html += '<i class="fa-solid fa-cart-shopping"></i>';
+                html += '</div>';
+                html += '</div>';
+                
+                html += '<div class="userPic">';
+                html += '<img src="https://i.postimg.cc/FzDgHnTB/userPic.png">';
+                html += '</div>';
+                html += '</div>';
+                return html;
+            }
+            
+            var container = document.getElementById('navbar');
+            container.innerHTML = navbarHTML();
+        </script>
         <!--============================================================== NAVBAR END -->
         
         
@@ -53,8 +364,56 @@
         
         
         <!-- FOOTER START ============================================================-->
-        <footer class="flex" id="footer"></footer>
-        <script src="footer.js"></script>
+        <footer class="flex" id="footer">
+            
+            <div class="footerContainer flex flexRow">
+                <div class="footerImgSection flex flexCol">
+                    
+                    <div class="footerImg">
+                        <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png" alt="Logo">
+                    </div>
+                    
+                    <div class="flex flexCol">
+                        Copyright © GREEN Supermarket Services<br>
+                        All Rights Reserved
+                    </div>
+                    
+                    <div>
+                        <i class="fa-solid fa-envelope"></i> 
+                        <a href="mailto:greensupermartlk@gmail.com">greensupermartlk@gmail.com</a>
+                    </div>
+                    
+                </div>
+                
+                <div class="footerContent flex flexRow">
+                    
+                    <div class="footerLinks flex flexCol">
+                        <h1>Support</h1>
+                        <a href="helpCenter.jsp">Help Center</a>
+                        <a href="returnPolicy.jsp">Return Policy</a>
+                    </div>
+                    
+                    <div class="footerLinks flex flexCol">
+                        <h1>Legal</h1>
+                        <a href="privacyPolicy.jsp">Privacy Policy</a>
+                        <a href="termsConditions.jsp">Terms & Conditions</a>
+                    </div>
+                    
+                    <div class="footerLinks flex flexCol">
+                        <h1>Socials</h1>
+                        <span class="externLinks">
+                            <a href="https://github.com/Green-Supermart/Website" target="_blank">GitHub</a> <i class="fa-solid fa-square-arrow-up-right"></i>
+                        </span>
+                        <span class="externLinks">
+                            <a href="https://www.instagram.com" target="_blank">Instagram</a> <i class="fa-solid fa-square-arrow-up-right"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </footer>
         <!--============================================================== FOOTER END -->
         
         
@@ -63,6 +422,71 @@
             <i class="fa-solid fa-chevron-up"></i>
         </button>
 	<!--======================================================= SCROLL-TO-TOP END -->
+        
+        
+        <script>
+            // TO TOP BUTTON START ============================================================================= //
+            const scrollToTopBtn = document.getElementById("toTopBtn");
+            window.onscroll = function () {
+                scrollFunction();
+            };
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollToTopBtn.style.display = "flex";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            }
+            
+            scrollToTopBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            });
+            // =============================================================================== TO TOP BUTTON END //
+            
+            
+            // RANDOM 404 ERROR ICON START ===================================================================== //
+            const icons = [
+                '<i class="fa-solid fa-magnifying-glass"></i>',
+                '<i class="fa-solid fa-person-digging"></i>',
+                '<i class="fa-solid fa-bomb"></i>',
+                '<i class="fa-solid fa-truck-fast"></i>',
+                '<i class="fa-solid fa-ghost"></i>',
+                '<i class="fa-solid fa-mug-hot"></i>',
+                '<i class="fa-solid fa-lemon"></i>',
+                '<i class="fa-solid fa-paper-plane"></i>',
+                '<i class="fa-solid fa-wifi"></i>',
+                '<i class="fa-solid fa-snowflake"></i>',
+                '<i class="fa-solid fa-shop"></i>',
+                '<i class="fa-solid fa-bag-shopping"></i>',
+                '<i class="fa-solid fa-building"></i>',
+                '<i class="fa-solid fa-tags"></i>',
+                '<i class="fa-solid fa-rocket"></i>',
+                '<i class="fa-solid fa-moon"></i>',
+                '<i class="fa-solid fa-leaf"></i>',
+                '<i class="fa-solid fa-ship"></i>',
+                '<i class="fa-solid fa-soap"></i>',
+                '<i class="fa-solid fa-coins"></i>',
+                '<i class="fa-solid fa-receipt"></i>',
+                '<i class="fa-solid fa-tv"></i>',
+                '<i class="fa-solid fa-pizza-slice"></i>',
+                '<i class="fa-solid fa-hippo"></i>'
+            ];
+            const icon404 = document.getElementById('icon404');
+            
+            function updateIcon() {
+                // Choose a random message
+                const randomIcon = icons[Math.floor(Math.random() * icons.length)];
+                
+                // Update the innerHTML with the random message
+                icon404.innerHTML = randomIcon;
+            }
+            
+            // Add event listeners for page load and refresh
+            window.addEventListener('load', updateIcon);
+            // ======================================================================= RANDOM 404 ERROR ICON END //
+        </script>
         
     </body>
 </html>
