@@ -23,3 +23,19 @@ scrollToTopBtn.addEventListener("click", function () {
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 // =============================================================================== TO TOP BUTTON END //
+// TO SingleProductPage START ============================================================================= //
+// =============================================================================== TO SingleProductPage END //
+// Remove Items From Cart
+//=================================================================================orders//
+$('a.remove').click(function(){
+  event.preventDefault();
+  $( this ).parent().parent().parent().hide( 400 );
+ 
+})
+
+// Just for testing, show all items
+  $('a.btn.continue').click(function(){
+    $('li.items').show(400);
+  })
+
+  //oreder===============================================================================//
