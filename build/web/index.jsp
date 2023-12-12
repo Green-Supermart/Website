@@ -178,49 +178,49 @@
                     <h1 class="sectionHeading" style="text-align: center; margin-bottom: 40px; font-size: 26px;">Top Categories</h1>
                     
                     <div class="cardsContainer flex flexRow">
-                        <a style="height: auto; width: 20%; text-decoration: none;" href="">
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="categories/beverages.jsp">
                             <div class="catCard flex flexCol">
                                 <div class="catCardImg flex">
-                                    <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                                    <img src="https://i.postimg.cc/fbcBzhc4/beverages.png">
                                 </div>
                                 <div class="catContent flex flexRow">
-                                    <h1>Category Title</h1>
+                                    <h1>Beverages</h1>
                                     <i class="fa-solid fa-square-arrow-up-right"></i>
                                 </div>
                             </div>
                         </a>
                         
-                        <a style="height: auto; width: 20%; text-decoration: none;" href="">
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="categories/snacks.jsp">
                             <div class="catCard flex flexCol">
                                 <div class="catCardImg flex">
-                                    <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                                    <img src="https://i.postimg.cc/Z53LHhD9/snacks.png">
                                 </div>
                                 <div class="catContent flex flexRow">
-                                    <h1>Category Title</h1>
+                                    <h1>Snacks</h1>
                                     <i class="fa-solid fa-square-arrow-up-right"></i>
                                 </div>
                             </div>
                         </a>
                         
-                        <a style="height: auto; width: 20%; text-decoration: none;" href="">
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="categories/fruits.jsp">
                             <div class="catCard flex flexCol">
                                 <div class="catCardImg flex">
-                                    <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                                    <img src="https://i.postimg.cc/k47wDhs2/fruits.png">
                                 </div>
                                 <div class="catContent flex flexRow">
-                                    <h1>Category Title</h1>
+                                    <h1>Fruits</h1>
                                     <i class="fa-solid fa-square-arrow-up-right"></i>
                                 </div>
                             </div>
                         </a>
                         
-                        <a style="height: auto; width: 20%; text-decoration: none;" href="">
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="categories/medicine.jsp">
                             <div class="catCard flex flexCol">
                                 <div class="catCardImg flex">
-                                    <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                                    <img src="https://i.postimg.cc/8PxHLCwQ/medicine.png">
                                 </div>
                                 <div class="catContent flex flexRow">
-                                    <h1>Category Title</h1>
+                                    <h1>Medicine</h1>
                                     <i class="fa-solid fa-square-arrow-up-right"></i>
                                 </div>
                             </div>
