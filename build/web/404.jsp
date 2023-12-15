@@ -319,15 +319,15 @@
                 html += '</div>';
                 
                 html += '<form class="searchBox">';
-                html += '<input type="search" class="searchField" placeholder="Search">';
+                html += '<input type="search" class="searchField" placeholder="Search" title="Search" required>';
                 html += '<button type="submit" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>';
                 html += '</form>';
                 
                 html += '<div class="actionIcons flex flexRow">';
-                html += '<a href="wishlist.jsp">';
+                html += '<a href="wishlist.jsp" title="Wishlist">';
                 html += '<i class="fa-solid fa-heart"></i>';
                 html += '</a>';
-                html += '<div>';
+                html += '<div title="Cart">';
                 html += '<i class="fa-solid fa-cart-shopping"></i>';
                 html += '</div>';
                 html += '</div>';

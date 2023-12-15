@@ -83,6 +83,9 @@ h1, h2, h3, h4, h5, h6{
     justify-content: start;
     align-items: center;
 }
+.navLogo:hover{
+    cursor: pointer;
+}
 .navLogo img{
     width: 60%;
     height: auto;
@@ -232,7 +235,7 @@ nav{
     width: 100%;
     color: #242424;
     background: #ECECEC;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .dashboardContainer{
     height: auto;

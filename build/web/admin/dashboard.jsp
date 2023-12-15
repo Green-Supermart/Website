@@ -33,7 +33,7 @@
             <div class="navigation flex flexCol">
                 
                 <div class="navContainer flex flexCol">
-                    <div class="navLogo flex">
+                    <div class="navLogo flex" onclick="window.location.href='dashboard.jsp'">
                         <img src="https://i.postimg.cc/TwdpWvhk/admin-Logo.png">
                     </div>
                     

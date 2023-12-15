@@ -21,10 +21,10 @@ function navbarHTML() {
     html += '</form>';
     
     html += '<div class="actionIcons flex flexRow">';
-    html += '<a href="wishlist.jsp">';
+    html += '<a href="wishlist.jsp" title="Wishlist">';
     html += '<i class="fa-solid fa-heart"></i>';
     html += '</a>';
-    html += '<div>';
+    html += '<div title="Cart">';
     html += '<i class="fa-solid fa-cart-shopping"></i>';
     html += '</div>';
     html += '</div>';
