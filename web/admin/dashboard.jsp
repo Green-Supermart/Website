@@ -81,7 +81,7 @@
                         </form>
                         
                         <div class="topBarIcons flex flexRow">
-                            <div class="notiIcon flex">
+                            <div class="notiIcon flex" title="Notifications">
                                 <i class="fa-solid fa-bell"></i>
                             </div>
                             
@@ -102,7 +102,7 @@
                             <div class="pageTopicContainer flex flexRow">
                                 <h1>Dashboard</h1>
                                 
-                                <span class="reloadIcon flex" onclick="window.location.reload();">
+                                <span class="reloadIcon flex" onclick="window.location.reload();" title="Refresh">
                                     <i class="fa-solid fa-arrows-rotate"></i>
                                 </span>
                             </div>
