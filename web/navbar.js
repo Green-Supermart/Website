@@ -16,7 +16,7 @@ function navbarHTML() {
     html += '</div>';
     
     html += '<form class="searchBox">';
-    html += '<input type="search" class="searchField" placeholder="Search">';
+    html += '<input type="search" class="searchField" placeholder="Search" title="Search" required>';
     html += '<button type="submit" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>';
     html += '</form>';
     
