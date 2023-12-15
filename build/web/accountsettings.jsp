@@ -39,7 +39,9 @@
         <!--============================================================== HEADER END -->
          
         
-        
+        <div class="propiccard">
+            
+        </div>
         
           <div class="containerBlock flex">
             <div class="container">
