@@ -38,9 +38,9 @@
                         <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
                     </div>
                     
-                    <input type="email" placeholder="Email Address">
+                    <input type="email" placeholder="Email Address" title="Email Address" required>
                     
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" title="Password" required>
                     
                     <a href="login/forgotPassword.jsp">Forgot Password?</a>
                     

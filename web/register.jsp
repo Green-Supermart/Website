@@ -38,11 +38,11 @@
                         <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
                     </div>
                     
-                    <input type="email" placeholder="Email Address" required>
+                    <input type="email" placeholder="Email Address" title="Email Address" required>
                     
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Password" title="Password" required>
                     
-                    <input type="password" placeholder="Confirm Password" required>
+                    <input type="password" placeholder="Confirm Password" title="Confirm Password" required>
                     
                     <span class="termsCheckbox flex flexRow">
                         <input type="checkbox" required>

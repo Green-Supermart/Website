@@ -18,20 +18,20 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
 /* SCROLLBAR PROPERTIES START ========================================= */
 *::-webkit-scrollbar {
-	width: 8px;
-	height: 8px;
+    width: 8px;
+    height: 8px;
 }
 *::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: #ababab;
+    background-color: #ababab;
 }
 *::-webkit-scrollbar-thumb:hover {
-	background-color: #8f8f8f;
+    background-color: #8f8f8f;
 }
 *::-webkit-scrollbar-thumb:active {
-	background-color: #7a7a7a;
+    background-color: #7a7a7a;
 }
 /* =========================================== SCROLLBAR PROPERTIES END */
 

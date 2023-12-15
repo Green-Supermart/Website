@@ -40,7 +40,7 @@
                     
                     <p>Enter your email address to reset password:</p>
                     
-                    <input type="email" placeholder="Email Address" required>
+                    <input type="email" placeholder="Email Address" title="Email Address" required>
                     
                     <button type="submit">Confirm</button>
                     

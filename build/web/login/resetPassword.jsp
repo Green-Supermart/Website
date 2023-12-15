@@ -40,9 +40,9 @@
                     
                     <p>Enter your new password:</p>
                     
-                    <input type="password" placeholder="New Password" required>
+                    <input type="password" placeholder="New Password" title="New Password" required>
                     
-                    <input type="password" placeholder="Confirm Password" required>
+                    <input type="password" placeholder="Confirm Password" title="Confirm Password" required>
                     
                     <button type="submit">Confirm</button>
                     

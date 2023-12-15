@@ -10,14 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-        <link rel="stylesheet" href="admin/admin.css">
+        <link rel="stylesheet" href="admin/form.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         
-        <title>Login - Admin | GREEN Supermart</title>
+        <title>Admin | GREEN Supermart</title>
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
@@ -28,9 +28,29 @@
     
     <body>
         
-        <h1>Hello World!</h1>
-        
-        <a href="admin/dashboard.jsp">Dashboard</a>
+        <div class="containerBlock flex" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
+            
+            <form id="loginForm" class="loginForm flex" action="" method="">
+                
+                <div class="formContainer flex flexCol">
+                    
+                    <div class="formLogo" onclick="window.location.href='admin.jsp'">
+                        <img src="https://i.postimg.cc/xCD2hzVy/admin-Logo2.png">
+                    </div>
+                    
+                    <input type="email" placeholder="Email Address" title="Email Address" required>
+                    
+                    <input type="password" placeholder="Password" title="Password" required>
+                    
+                    <a href="admin/forgotPassword.jsp">Forgot Password?</a>
+                    
+                    <button type="submit">Login</button>
+                    
+                </div>
+                
+            </form>
+            
+        </div>
         
     </body>
 </html>
