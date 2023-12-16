@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="slider.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,12 +23,14 @@
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
         <link rel="preload" href="style.css" as="style" type="text/css">
+        <link rel="preload" href="slider.css" as="style" type="text/css">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
         <link rel="preload" href="https://i.postimg.cc/MKJm2kGp/favicon.png" as="image" type="image/png">
         <link rel="preload" href="https://i.postimg.cc/G9nCKgLp/green-Logo.png" as="image" type="image/png">
         <link rel="preload" href="https://i.postimg.cc/brf9L1tT/placeholder.png" as="image" type="image/png">
         
         <script src="script.js" defer></script>
+        <script src="slider.js" defer></script>
     </head>
     
     <body>
@@ -42,9 +45,22 @@
         <div class="containerBlock flex">
             <div class="container">
                 
-                <section class="flex" style="height: 600px; background: #FFFFFF; margin-bottom: 60px; justify-content: center;
-  align-items: center;">
-                    Slideshow
+                <section class="homeSlider flex flexRow" style="height: 75vh; width: 100%; align-items: center; margin-bottom: 60px;">
+                    
+                    <div class="prevSlide flex" id="prevSlide">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    
+                    <a class="currentSlideLink" id="currentSlideLink" href="">
+                        <div class="currentSlide" id="currentSlide">
+                            <img id="currentSlideImg" src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                        </div>
+                    </a>
+                    
+                    <div class="nextSlide flex" id="nextSlide">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    
                 </section>
                 
                 
