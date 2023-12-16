@@ -4,6 +4,7 @@
  */
 
 
+const homeSlider = document.getElementById("homeSlider");
 const prevSlide = document.getElementById("prevSlide");
 const currentSlide = document.getElementById("currentSlide");
 const currentSlideImg = document.getElementById("currentSlideImg");
@@ -112,22 +113,3 @@ const clearAutoSlide = () => {
 
 prevSlide.addEventListener("click", clearAutoSlide);
 nextSlide.addEventListener("click", clearAutoSlide);
-
-
-// change slides with keyboard arrow keys
-document.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowLeft") {
-        currentSlideIndex--;
-        if (currentSlideIndex < 0) {
-            currentSlideIndex = slides.length - 1;
-        }
-        showSlide(currentSlideIndex);
-    } else if (e.key === "ArrowRight") {
-        currentSlideIndex++;
-        if (currentSlideIndex > slides.length - 1) {
-            currentSlideIndex = 0;
-        }
-        showSlide(currentSlideIndex);
-    }
-    clearAutoSlide();
-});
