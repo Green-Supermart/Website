@@ -222,10 +222,17 @@ nav{
     width: 35px;
     object-fit: cover;
     cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+}
+.proPic:hover{
+    opacity: 0.6;
+    transition: 0.3s;
 }
 .proPic img{
     height: 100%;
     width: 100%;
+    border-radius: 5px;
 }
 
 
@@ -282,6 +289,13 @@ nav{
     padding: 15px 20px;
     height: 100%;
 }
+.pageTopicContainer .navigator{
+    color: #1DA31A;
+    height: 100%;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
 .reloadIcon{
     width: 30px;
     height: 30px;
@@ -294,6 +308,21 @@ nav{
     transition: 0.3s;
 }
 .reloadIcon:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.addIcon{
+    width: 30px;
+    height: 30px;
+    background: #1DA31A;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.addIcon:hover{
     opacity: 0.8;
     transition: 0.3s;
 }

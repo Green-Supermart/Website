@@ -147,10 +147,17 @@
             
             .userPic{
                 height: 90%;
+                cursor: pointer;
+                opacity: 1;
+                transition: 0.3s;
             }
-            
+            .userPic:hover{
+                opacity: 0.6;
+                transition: 0.3s;
+            }
             .userPic img{
                 height: 100%;
+                border-radius: 5px;
             }
             
             .containerBlock{
@@ -300,6 +307,8 @@
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
+        <link rel="preload" href="https://i.postimg.cc/MKJm2kGp/favicon.png" as="image" type="image/png">
+        <link rel="preload" href="https://i.postimg.cc/G9nCKgLp/green-Logo.png" as="image" type="image/png">
     </head>
     
     <body>
@@ -333,7 +342,7 @@
                 html += '</div>';
                 
                 html += '<div class="userPic">';
-                html += '<img src="https://i.postimg.cc/FzDgHnTB/userPic.png">';
+                html += '<img src="https://i.postimg.cc/rF84Pdw2/default-Avatar.png">';
                 html += '</div>';
                 html += '</div>';
                 return html;
@@ -373,10 +382,7 @@
                         <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png" alt="Logo">
                     </div>
                     
-                    <div class="flex flexCol">
-                        Copyright © GREEN Supermarket Services<br>
-                        All Rights Reserved
-                    </div>
+                    <div class="flex flexCol" id="copyright"></div>
                     
                     <div>
                         <i class="fa-solid fa-envelope"></i> 
@@ -486,6 +492,12 @@
             // Add event listeners for page load and refresh
             window.addEventListener('load', updateIcon);
             // ======================================================================= RANDOM 404 ERROR ICON END //
+            
+            
+            // COPYRIGHT START ================================================================================= //
+            const copyright = document.getElementById("copyright");
+            copyright.innerHTML = 'Copyright © ' + new Date().getFullYear() + ' GREEN Supermart Services<br>All Rights Reserved';
+            // =================================================================================== COPYRIGHT END //
         </script>
         
     </body>

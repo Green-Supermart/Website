@@ -21,7 +21,10 @@
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
+        <link rel="preload" href="admin.css" as="style" type="text/css">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
+        <link rel="preload" href="https://i.postimg.cc/MKJm2kGp/favicon.png" as="image" type="image/png">
+        <link rel="preload" href="https://i.postimg.cc/TwdpWvhk/admin-Logo.png" as="image" type="image/png">
         
         <script src="admin.js" defer></script>
     </head>
@@ -45,21 +48,28 @@
                             Dashboard
                         </span>
                         
-                        <span class="navLink flex flexRow">
+                        <span class="navLink flex flexRow" onclick="window.location.href='categories.jsp'">
+                            <span class="navLinkIcon flex">
+                                <i class="fa-solid fa-list"></i>
+                            </span>
+                            Categories
+                        </span>
+                        
+                        <span class="navLink flex flexRow" onclick="window.location.href='products.jsp'">
                             <span class="navLinkIcon flex">
                                 <i class="fa-solid fa-box"></i>
                             </span>
                             Products
                         </span>
                         
-                        <span class="navLink flex flexRow">
+                        <span class="navLink flex flexRow" onclick="window.location.href='orders.jsp'">
                             <span class="navLinkIcon flex">
                                 <i class="fa-solid fa-truck-fast"></i>
                             </span>
                             Orders
                         </span>
                         
-                        <span class="navLink flex flexRow">
+                        <span class="navLink flex flexRow" onclick="window.location.href='transactions.jsp'">
                             <span class="navLinkIcon flex">
                                 <i class="fa-solid fa-dollar-sign"></i>
                             </span>
@@ -71,28 +81,11 @@
             </div>
             
             <div class="dashboard">
-                <div class="topBar flex">
-                    
-                    <div class="topBarContainer flex flexRow">
-                        
-                        <form class="searchBox">
-                            <input type="search" class="searchField" placeholder="Search" title="Search" required>
-                            <button type="submit" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                        
-                        <div class="topBarIcons flex flexRow">
-                            <div class="notiIcon flex" title="Notifications">
-                                <i class="fa-solid fa-bell"></i>
-                            </div>
-                            
-                            <div class="proPic">
-                                <img src="https://i.postimg.cc/FzDgHnTB/userPic.png">
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
+                
+                <!-- TOPBAR START ============================================================-->
+                <div class="topBar flex" id="topBar"></div>
+                <script src="topBar.js"></script>
+                <!--============================================================== TOPBAR END -->
                 
                 <div class="dashboardContent flex">
                     

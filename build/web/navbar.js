@@ -21,7 +21,7 @@ function navbarHTML() {
     html += '</form>';
     
     html += '<div class="actionIcons flex flexRow">';
-    html += '<a href="wishlist.jsp" title="Wishlist">';
+    html += '<a href="../wishlist.jsp" title="Wishlist">';
     html += '<i class="fa-solid fa-heart"></i>';
     html += '</a>';
     html += '<div title="Cart">';
@@ -30,7 +30,7 @@ function navbarHTML() {
     html += '</div>';
     
     html += '<div class="userPic">';
-    html += '<img src="https://i.postimg.cc/FzDgHnTB/userPic.png">';
+    html += '<img src="https://i.postimg.cc/rF84Pdw2/default-Avatar.png">';
     html += '</div>';
     html += '</div>';
     return html;
