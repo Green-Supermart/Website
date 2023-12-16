@@ -34,43 +34,24 @@
         
         
         <!-- PAGE-CONTENT START ======================================================-->
-       
-<main>
-  <div class="container">
-    <div class="grid second-nav">
-      <div class="column-xs-12">
-        <nav>
-          <ol class="breadcrumb-list">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Soaps</a>
-            <li class="breadcrumb-item active">Pears Baby Soap Venivel & Turmeric</li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-    <div class="grid product">
-      <div class="column-xs-12 column-md-7">
-        <div class="product-gallery">
-          <div class="product-image">
-            <img class="active" src="https://s3-alpha-sig.figma.com/img/9fa7/4913/9fbfd7724337d1f1a7c8251124c9cffe?Expires=1703462400&Signature=G6BLXX4o~FRRtEXafUkspWycfuxr-TK9zNfWUjJ2sdaErcicaqhPlvBbeg9bpCOWX8qm0COOgBfIK2EYlCsj-6H5iEWGGlTYeZGc78jx5eBWL4Z~5qcpaT6VziQL0KjgUHMNa1Y6~CUoYN~obJz1XNT82Bdatn8utbzZqWvz0JFdc6Ve-ee1pyv77aYo1~mo~bpiLLEzrKKbdl69S0OAiSmMi2o3wdDWv3E8P0mCip1zvSOVm9cHN47M5JxiSK3lIm6h2vRcfEnSNLakr7baJd97ZXpdQonAXhL42uguzBZlU8nkDd0SGryeyn13QDqwhUz~U9IiT10WRDhF5wqLnw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
-          </div>
-          <ul class="image-list">
-            <li class="image-item"><img src="https://s3-alpha-sig.figma.com/img/9fa7/4913/9fbfd7724337d1f1a7c8251124c9cffe?Expires=1703462400&Signature=G6BLXX4o~FRRtEXafUkspWycfuxr-TK9zNfWUjJ2sdaErcicaqhPlvBbeg9bpCOWX8qm0COOgBfIK2EYlCsj-6H5iEWGGlTYeZGc78jx5eBWL4Z~5qcpaT6VziQL0KjgUHMNa1Y6~CUoYN~obJz1XNT82Bdatn8utbzZqWvz0JFdc6Ve-ee1pyv77aYo1~mo~bpiLLEzrKKbdl69S0OAiSmMi2o3wdDWv3E8P0mCip1zvSOVm9cHN47M5JxiSK3lIm6h2vRcfEnSNLakr7baJd97ZXpdQonAXhL42uguzBZlU8nkDd0SGryeyn13QDqwhUz~U9IiT10WRDhF5wqLnw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"></li>
-            <li class="image-item"><img src="https://i.ebayimg.com/images/g/XQAAAOSw-spi7zlq/s-l140.jpg"></li>
-            <li class="image-item"><img src="https://i.ebayimg.com/images/g/JAMAAOSw2-li7zj2/s-l140.jpg"></li>
-          </ul>
-        </div>
-      </div>
-      <div class="column-xs-12 column-md-5">
-        <h1>Pears Baby Soap Venivel & Turmeric</h1>
-        <p>By Pears</p>
-        <h2>Rs. 152.00</h2>
         
-        <button class="add-to-cart">Add To Cart</button>
-      </div>
-    </div>
-  </div>
-</main>
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="https://s3-alpha-sig.figma.com/img/9fa7/4913/9fbfd7724337d1f1a7c8251124c9cffe?Expires=1703462400&Signature=G6BLXX4o~FRRtEXafUkspWycfuxr-TK9zNfWUjJ2sdaErcicaqhPlvBbeg9bpCOWX8qm0COOgBfIK2EYlCsj-6H5iEWGGlTYeZGc78jx5eBWL4Z~5qcpaT6VziQL0KjgUHMNa1Y6~CUoYN~obJz1XNT82Bdatn8utbzZqWvz0JFdc6Ve-ee1pyv77aYo1~mo~bpiLLEzrKKbdl69S0OAiSmMi2o3wdDWv3E8P0mCip1zvSOVm9cHN47M5JxiSK3lIm6h2vRcfEnSNLakr7baJd97ZXpdQonAXhL42uguzBZlU8nkDd0SGryeyn13QDqwhUz~U9IiT10WRDhF5wqLnw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" width="100%" id="MainImg" alt="">
+            </div>
+            
+            
+            <div class="single-pro-details">
+                <h5>Home>Soaps>Pears Baby Soap Venivel & Turmeric</h5>
+                    <h4>Pears Baby Soap Venivel & Turmeric</h4>
+                    <h3>By Pears</h3>
+                    <div class="p-list">
+                    <h2>Rs. 152.00  Rs :  <del> 190  </del>
+                    </div>
+                    <h3>Quantity</h3><input type="number" value="1">
+                    <button class="btn-2">Add To Cart</button>
+            </div>
+        </section>
         <!--======================================================== PAGE-CONTENT END -->
         
         

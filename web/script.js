@@ -24,18 +24,197 @@ scrollToTopBtn.addEventListener("click", function () {
 });
 // =============================================================================== TO TOP BUTTON END //
 // TO SingleProductPage START ============================================================================= //
+
+;(function($){
+	$.fn.picZoomer = function(options){
+		var opts = $.extend({}, $.fn.picZoomer.defaults, options), 
+			$this = this,
+			$picBD = $('<div class="picZoomer-pic-wp"></div>').css({'width':opts.picWidth+'px', 'height':opts.picHeight+'px'}).appendTo($this),
+			$pic = $this.children('img').addClass('picZoomer-pic').appendTo($picBD),
+			$cursor = $('<div class="picZoomer-cursor"><i class="f-is picZoomCursor-ico"></i></div>').appendTo($picBD),
+			cursorSizeHalf = {w:$cursor.width()/2 ,h:$cursor.height()/2},
+			$zoomWP = $('<div class="picZoomer-zoom-wp"><img src="" alt="" class="picZoomer-zoom-pic"></div>').appendTo($this),
+			$zoomPic = $zoomWP.find('.picZoomer-zoom-pic'),
+			picBDOffset = {x:$picBD.offset().left,y:$picBD.offset().top};
+
+		
+		opts.zoomWidth = opts.zoomWidth||opts.picWidth;
+		opts.zoomHeight = opts.zoomHeight||opts.picHeight;
+		var zoomWPSizeHalf = {w:opts.zoomWidth/2 ,h:opts.zoomHeight/2};
+
+		
+		$zoomWP.css({'width':opts.zoomWidth+'px', 'height':opts.zoomHeight+'px'});
+		$zoomWP.css(opts.zoomerPosition || {top: 0, left: opts.picWidth+30+'px'});
+		
+		$zoomPic.css({'width':opts.picWidth*opts.scale+'px', 'height':opts.picHeight*opts.scale+'px'});
+
+		
+		$picBD.on('mouseenter',function(event){
+			$cursor.show();
+			$zoomWP.show();
+			$zoomPic.attr('src',$pic.attr('src'))
+		}).on('mouseleave',function(event){
+			$cursor.hide();
+			$zoomWP.hide();
+		}).on('mousemove', function(event){
+			var x = event.pageX-picBDOffset.x,
+				y = event.pageY-picBDOffset.y;
+
+			$cursor.css({'left':x-cursorSizeHalf.w+'px', 'top':y-cursorSizeHalf.h+'px'});
+			$zoomPic.css({'left':-(x*opts.scale-zoomWPSizeHalf.w)+'px', 'top':-(y*opts.scale-zoomWPSizeHalf.h)+'px'});
+
+		});
+		return $this;
+
+	};
+	$.fn.picZoomer.defaults = {
+        picHeight: 460,
+		scale: 2.5,
+		zoomerPosition: {top: '0', left: '380px'},
+
+		zoomWidth: 400,
+		zoomHeight: 460
+	};
+})(jQuery); 
+
+
+
+$(document).ready(function () {
+     $('.picZoomer').picZoomer();
+    $('.piclist li').on('click', function (event) {
+        var $pic = $(this).find('img');
+        $('.picZoomer-pic').attr('src', $pic.attr('src'));
+    });
+   
+  var owl = $('#recent_post');
+              owl.owlCarousel({
+                margin:20,
+                dots:false,
+                nav: true,
+                navText: [
+                  "<i class='fa fa-chevron-left'></i>",
+                  "<i class='fa fa-chevron-right'></i>"
+                ],
+                autoplay: true,
+                autoplayHoverPause: true,
+                responsive: {
+                  0: {
+                    items: 2
+                  },
+                  600: {
+                    items:3
+                  },
+                  1000: {
+                    items:5
+                  },
+                  1200: {
+                    items:4
+                  }
+                }
+  });    
+  
+        $('.decrease_').click(function () {
+            decreaseValue(this);
+        });
+        $('.increase_').click(function () {
+            increaseValue(this);
+        });
+        function increaseValue(_this) {
+            var value = parseInt($(_this).siblings('input#number').val(), 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            $(_this).siblings('input#number').val(value);
+        }
+
+        function decreaseValue(_this) {
+            var value = parseInt($(_this).siblings('input#number').val(), 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            $(_this).siblings('input#number').val(value);
+        }
+    });
+
 // =============================================================================== TO SingleProductPage END //
 // Remove Items From Cart
 //=================================================================================orders//
-$('a.remove').click(function(){
+('a.remove').click(function(){
   event.preventDefault();
-  $( this ).parent().parent().parent().hide( 400 );
+  ( this ).parent().parent().parent().hide( 400 );
  
-})
+});
 
 // Just for testing, show all items
   $('a.btn.continue').click(function(){
     $('li.items').show(400);
-  })
+  });
 
   //oreder===============================================================================//
+//Transactions===============================================================================//
+const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
+
+allSideMenu.forEach(item=> {
+	const li = item.parentElement;
+
+	item.addEventListener('click', function () {
+		allSideMenu.forEach(i=> {
+			i.parentElement.classList.remove('active');
+		})
+		li.classList.add('active');
+	})
+});
+
+
+
+
+// TOGGLE SIDEBAR
+const menuBar = document.querySelector('#content nav .bx.bx-menu');
+const sidebar = document.getElementById('sidebar');
+
+menuBar.addEventListener('click', function () {
+	sidebar.classList.toggle('hide');
+})
+
+
+
+
+
+
+
+const searchButton = document.querySelector('#content nav form .form-input button');
+const searchButtonIcon = document.querySelector('#content nav form .form-input button .bx');
+const searchForm = document.querySelector('#content nav form');
+
+searchButton.addEventListener('click', function (e) {
+	if(window.innerWidth < 576) {
+		e.preventDefault();
+		searchForm.classList.toggle('show');
+		if(searchForm.classList.contains('show')) {
+			searchButtonIcon.classList.replace('bx-search', 'bx-x');
+		} else {
+			searchButtonIcon.classList.replace('bx-x', 'bx-search');
+		}
+	}
+})
+
+
+
+
+
+if(window.innerWidth < 768) {
+	sidebar.classList.add('hide');
+} else if(window.innerWidth > 576) {
+	searchButtonIcon.classList.replace('bx-x', 'bx-search');
+	searchForm.classList.remove('show');
+}
+
+
+window.addEventListener('resize', function () {
+	if(this.innerWidth > 576) {
+		searchButtonIcon.classList.replace('bx-x', 'bx-search');
+		searchForm.classList.remove('show');
+	}
+})
+
+//===============================================================================Transactions//
+

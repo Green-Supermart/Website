@@ -32,133 +32,51 @@
         <nav id="navbar"></nav>
         <script src="navbar.js"></script>
         <!--============================================================== NAVBAR END -->
-        
-        
-        <!-- HEADER START ============================================================-->
+          <!-- HEADER START ============================================================-->
         <header class="flex">
             <h1>Orders</h1>
         </header>
         <!--============================================================== HEADER END -->
         <!-- PAGE-CONTENT START ======================================================-->
-        
-        <div class="containerBlock flex">
-            <div class="container">
-                
-                <div class="helpCardsContainer flex flexCol">
-                    <div class="wrap cf">
-  <div class="cart">
-<!--    <ul class="tableHead">
-      <li class="prodHeader">Product</li>
-      <li>Quantity</li>
-      <li>Total</li>
-       <li>Remove</li>
-    </ul>-->
-    <ul class="cartWrap">
-      <li class="items odd">
-        
-    <div class="infoWrap"> 
-        <div class="cartSection">
-        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-          <p class="itemNumber">001</p>
-          <h3>Item Name 1</h3>
-        
-           <p> <input type="text"  class="qty" placeholder="3"/>* Ru.0.00</p>
-        
-          <p class="stockStatus"> In Stock</p>
-        </div>  
-    
-        
-        <div class="prodTotal cartSection">
-          <p>Ru.0.00</p>
-        </div>
-              <div class="cartSection removeWrap">
-           <a href="#" class="remove">x</a>
-        </div>
-      </div>
-      </li>
-      <li class="items even">
-        
-       <div class="infoWrap"> 
-        <div class="cartSection">
-         
-        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-          <p class="itemNumber">002</p>
-          <h3>Item Name 1</h3>
-        
-           <p> <input type="text"  class="qty" placeholder="3"/>* Ru.0.00</p>
-        
-          <p class="stockStatus"> In Stock</p>
-        </div>  
-    
-        
-        <div class="prodTotal cartSection">
-          <p>Ru.0.00</p>
-        </div>
-              <div class="cartSection removeWrap">
-           <a href="#" class="remove">x</a>
-        </div>
-      </div>
-      </li>
-      
-            <li class="items odd">
-             <div class="infoWrap"> 
-        <div class="cartSection">
-            
-        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-          <p class="itemNumber">003</p>
-          <h3>Item Name 1</h3>
-        
-           <p> <input type="text"  class="qty" placeholder="3"/>* Ru.0.00</p>
-        
-          <p class="stockStatus out"> Out of Stock</p>
-        </div>  
-    
-        
-        <div class="prodTotal cartSection">
-         <p>Ru.0.00</p>
-        </div>
-                    <div class="cartSection removeWrap">
-           <a href="#" class="remove">x</a>
-        </div>
-              </div>
-      </li>
-      <li class="items even">
-       <div class="infoWrap"> 
-        <div class="cartSection info">
-             
-        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-          <p class="itemNumber">004</p>
-          <h3>Item Name 1</h3>
-        
-          <p> <input type="text"  class="qty" placeholder="3"/>* Ru.0.00</p>
-        
-          <p class="stockStatus"> In Stock</p>
-          
-        </div>  
-    
-        
-        <div class="prodTotal cartSection">
-          <p>Ru.0.00</p>
-        </div>
-    
-            <div class="cartSection removeWrap">
-           <a href="#" class="remove">x</a>
-        </div>
-         </div>
-      </li>
-      
-      
-      <!--<li class="items even">Item 2</li>-->
- 
-    </ul>
+        <div class="list">
+  <div class="heading">
+    <h6>November 09, 2023</h6><br>
+    <h4>Order No: 12345711</h4>
+    <i class="fas fa-ellipsis-h"></i>
   </div>
-  <div class="subtotal cf">
-    <ul>
-            <li class="totalRow final"><span class="label">Total</span><span class="value">* Ru.0.00</span></li>
-      <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
-    </ul>
+
+  <div class="items">
+    <div class="item">
+      <img src="https://s3-alpha-sig.figma.com/img/0ac3/4edf/aa888da584e41d8164f86387d325fd37?Expires=1703462400&Signature=Qj7KDVVA4R~MbpaKdyheVwILPEmqhpjCB0NxMUkMKOU5DLma5XBKjeujAg7CwT0iyzdI4vvvuhpLpMWCmmTKyKa5zSoTiiFVd1zt1~fhJRJcZB4AVD90~9FiUjOSLyx03JtxN7i3t1hRfhFjOSblaCqmIg2vCN2Nb2H64PEJ6I3pfNrV6uYXXql~hbfqHr7Uhi4sRuZVS9beYfBCzbGqjmd27fTGsc8owXiWCRv9w87jkiUIY9QtzW8fAVao0IquWW9zXRXOAazDxaIdodZKiHrUbSUJTzOl5bkYbRJUXkLFxdQ-X0be2G~aUpDFH5~NQaFNpPjG2talgrPqZGfKjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="GREEN">
+      <span>Item 01</span>
+    </div> 
+  </div>
+  <div class="items">
+    <div class="item">
+      <img src="https://s3-alpha-sig.figma.com/img/0ac3/4edf/aa888da584e41d8164f86387d325fd37?Expires=1703462400&Signature=Qj7KDVVA4R~MbpaKdyheVwILPEmqhpjCB0NxMUkMKOU5DLma5XBKjeujAg7CwT0iyzdI4vvvuhpLpMWCmmTKyKa5zSoTiiFVd1zt1~fhJRJcZB4AVD90~9FiUjOSLyx03JtxN7i3t1hRfhFjOSblaCqmIg2vCN2Nb2H64PEJ6I3pfNrV6uYXXql~hbfqHr7Uhi4sRuZVS9beYfBCzbGqjmd27fTGsc8owXiWCRv9w87jkiUIY9QtzW8fAVao0IquWW9zXRXOAazDxaIdodZKiHrUbSUJTzOl5bkYbRJUXkLFxdQ-X0be2G~aUpDFH5~NQaFNpPjG2talgrPqZGfKjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="GREEN">
+      <span>Item 02</span>
+    </div> 
+  </div>
+  <div class="items">
+    <div class="item">
+    <img src="https://s3-alpha-sig.figma.com/img/0ac3/4edf/aa888da584e41d8164f86387d325fd37?Expires=1703462400&Signature=Qj7KDVVA4R~MbpaKdyheVwILPEmqhpjCB0NxMUkMKOU5DLma5XBKjeujAg7CwT0iyzdI4vvvuhpLpMWCmmTKyKa5zSoTiiFVd1zt1~fhJRJcZB4AVD90~9FiUjOSLyx03JtxN7i3t1hRfhFjOSblaCqmIg2vCN2Nb2H64PEJ6I3pfNrV6uYXXql~hbfqHr7Uhi4sRuZVS9beYfBCzbGqjmd27fTGsc8owXiWCRv9w87jkiUIY9QtzW8fAVao0IquWW9zXRXOAazDxaIdodZKiHrUbSUJTzOl5bkYbRJUXkLFxdQ-X0be2G~aUpDFH5~NQaFNpPjG2talgrPqZGfKjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="GREEN">
+      <span>Item 03</span>
+    </div> 
   </div>
 </div>
+                            <div class="helpLink flex flexRow">
+                        
+                        <div class="linkContent flex">
+                            <div class="linkText flex flexCol">
+                                <h1>bibunsoicmi</h1>
+                                <h2>Heading</h2>
+                            </div>
+                            
+                            <a href="">
+                                <i class="fa-solid fa-square-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
 
                     <div class="helpLink flex flexRow">
                         
