@@ -38,49 +38,66 @@
         </header>
         <!--============================================================== HEADER END -->
          
-        
-        <div class="propiccard">
-            
-        </div>
+      
         
           <div class="containerBlock flex">
             <div class="container">
                 
                 <div class="helpCardsContainer flex flexCol">
                    
-           
-                     <div class="acccard">
-                    <div class="helpLink flex flexRow">
-                       
-                         <div class="acccardlinkContent flex">
-                            <div class="acccardlinkText flex flexCol">
+                    <div class="flex flexRow" style="width: 100%; height: auto; justify-content: space-between;">
+                        <div class="flex" style="background: #FFFFFF; height: 300px; width: 300px; border-radius: 10px;">
+                             <div class="propiccard i">
+                            <center>
+                                
+                            </center>
+                        </div>
+                            <div class="helpLink flex flexRow">
+                        <div class="propiccardlinkContent flex">
+                            <div class="propiccardlinkText flex flexCol">
+                                <h2>Update Profile Picture</h2>
+                            </div>
+                            <a href="">
+                               <i class="fa-solid fa-arrow-up"></i>
+                            </a>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="flex flexCol" style="height: 300px; width: calc(100% - 330px); justify-content: space-between; align-items: center;">
+                            <div style="background: #FFFFFF; height: 45%; width: 100%; border-radius: 10px;">
+                                <div class="helpLink flex flexRow">
+                                 <div class="acccardlinkContent flex">
+                                 <div class="acccardlinkText flex flexCol">
                                 <h3>Full Name</h3>
                                 <h2>John Doe</h2>
                             </div>
-                            
+                                     
                             <a href="">
                                  <i class="fa-solid fa-angle-right"></i>
                             </a>
-                        </div>
-                    </div>
-                   </div>
-                                
-                                <div class="acccard">
-                    <div class="helpLink flex flexRow">
-                        
-                        <div class="acccardlinkContent flex">
-                            <div class="acccardlinkText flex flexCol">
+                            </div>
+                            </div>
+                            </div>
+                            <div style="background: #FFFFFF; height: 45%; width: 100%; border-radius: 10px;">
+                               <div class="helpLink flex flexRow">
+                                 <div class="acccardlinkContent flex">
+                                 <div class="acccardlinkText flex flexCol">
                                 <h3>Email Address</h3>
                                 <h2>johndoe@mail.com</h2>
                             </div>
-                            
+                                     
                             <a href="">
                                  <i class="fa-solid fa-angle-right"></i>
                             </a>
+                            </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
-                   </div>
-                                
+                    
+             
+            
+                    
                                 
                  
                     <div class="helpLink flex flexRow">
