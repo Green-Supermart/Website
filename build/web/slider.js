@@ -4,6 +4,7 @@
  */
 
 
+const homeSlider = document.getElementById("homeSlider");
 const prevSlide = document.getElementById("prevSlide");
 const currentSlide = document.getElementById("currentSlide");
 const currentSlideImg = document.getElementById("currentSlideImg");

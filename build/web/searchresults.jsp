@@ -1,5 +1,5 @@
 <%-- 
-    Document   : searchresults
+    Document   : searchResults
     Created on : Dec 7, 2023, 11:44:44 AM
     Author     : DELL
 --%>
