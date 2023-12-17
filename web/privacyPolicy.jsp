@@ -21,7 +21,10 @@
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
+        <link rel="preload" href="style.css" as="style" type="text/css">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
+        <link rel="preload" href="https://i.postimg.cc/MKJm2kGp/favicon.png" as="image" type="image/png">
+        <link rel="preload" href="https://i.postimg.cc/G9nCKgLp/green-Logo.png" as="image" type="image/png">
         
         <script src="script.js" defer></script>
     </head>
@@ -110,7 +113,7 @@
                 <section class="flex flexCol">
                     <h1 class="sectionHeading">Contact Us</h1>
                     
-                    <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:greensupermart@gmail.com" style="color: #1DA31A;">greensupermart@gmail.com</a></p>
+                    <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:greensupermartlk@gmail.com" style="color: #1DA31A;">greensupermartlk@gmail.com</a></p>
                 </section>
                 
             </div>

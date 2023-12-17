@@ -12,14 +12,14 @@ function footerHTML() {
     html += '<img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png" alt="Logo">';
     html += '</div>';
     
-    html += '<div class="flex flexCol">';
-    html += 'Copyright © GREEN Supermarket Services<br>';
+    html += '<div class="flex flexCol" id="copyright">';
+    html += 'Copyright © ' + new Date().getFullYear() + ' GREEN Supermart Services<br>';
     html += 'All Rights Reserved';
     html += '</div>';
     
     html += '<div>';
     html += '<i class="fa-solid fa-envelope"></i> ';
-    html += '<a href="mailto:greensupermart@gmail.com">greensupermart@gmail.com</a>';
+    html += '<a href="mailto:greensupermartlk@gmail.com">greensupermartlk@gmail.com</a>';
     html += '</div>';
     
     html += '</div>';
