@@ -165,6 +165,10 @@ nav{
     transition: 0.3s;
 }
 
+#catDropdownSpan i {
+    font-size: 12px;
+    margin-top: 2px;
+}
 
 .searchBox{
     height: 100%;

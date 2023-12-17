@@ -475,6 +475,32 @@
                     link.innerHTML = link.innerHTML.replace(' <i class="fa-solid fa-chevron-right"></i>', '');
                 });
             });
+            
+            
+            
+            // SEARCH BOX
+            var searchBox = document.getElementById('searchBox');
+            var searchField = document.getElementById('searchField');
+            var searchBtn = document.getElementById('searchBtn');
+            
+            // When Search Field is Focused
+            searchField.addEventListener('focus', function() {
+                // Search Box
+                searchBox.style.border = '1px solid #1DA31A';
+                searchBox.style.transition = '0.3s';
+                // Search Button
+                searchBtn.style.color = '#1DA31A';
+                searchBtn.style.transition = '0.3s';
+            });
+            // When Search Field is Not Focused
+            searchField.addEventListener('blur', function() {
+                // Search Box
+                searchBox.style.border = '1px solid transparent';
+                searchBox.style.transition = '0.3s';
+                // Search Button
+                searchBtn.style.color = '#808080';
+                searchBtn.style.transition = '0.3s';
+            });
         </script>
         <!--============================================================== NAVBAR END -->
         

@@ -11,7 +11,7 @@ function navbarHTML() {
     html += '</a>';
     
     html += '<div class="catDropdown">';
-    html += '<span style="display: flex; flex-direction: row; gap: 5px; align-items: center; cursor: pointer;">All Categories';
+    html += '<span id="catDropdownSpan" style="display: flex; flex-direction: row; gap: 10px; align-items: center; cursor: pointer;">All Categories';
     html += '<i class="fa-solid fa-angle-down"></i></span>';
     
     html += '<div class="catDropdownContent">';
@@ -39,7 +39,7 @@ function navbarHTML() {
     html += '<td><a href="categories/snacks.jsp">Snacks</a></td>';
     html += '<td><a href="categories/soapsLiquids.jsp">Soaps & Cleaning</a></td>';
     html += '</tr>';
-
+    
     html += '<tr>';
     html += '<td><a href="categories/spreads.jsp">Spreads</a></td>';
     html += '<td><a href="categories/stationary.jsp">Stationary</a></td>';
@@ -98,4 +98,30 @@ catDropdownContentLinks.forEach(function(link) {
     link.addEventListener('mouseout', function() {
         link.innerHTML = link.innerHTML.replace(' <i class="fa-solid fa-chevron-right"></i>', '');
     });
+});
+
+
+
+// SEARCH BOX
+var searchBox = document.getElementById('searchBox');
+var searchField = document.getElementById('searchField');
+var searchBtn = document.getElementById('searchBtn');
+
+// When Search Field is Focused
+searchField.addEventListener('focus', function() {
+    // Search Box
+    searchBox.style.border = '1px solid #1DA31A';
+    searchBox.style.transition = '0.5s';
+    // Search Button
+    searchBtn.style.color = '#1DA31A';
+    searchBtn.style.transition = '0.5s';
+});
+// When Search Field is Not Focused
+searchField.addEventListener('blur', function() {
+    // Search Box
+    searchBox.style.border = '1px solid transparent';
+    searchBox.style.transition = '0.5s';
+    // Search Button
+    searchBtn.style.color = '#808080';
+    searchBtn.style.transition = '0.5s';
 });
