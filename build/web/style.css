@@ -92,19 +92,84 @@ nav{
     height: 100%;
 }
 
+
 .catDropdown{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    cursor: pointer;
 }
+
+.catDropdownContent{
+    display: none;
+    width: auto;
+    height: auto;
+    color: #242424;
+    background: #FFFFFF;
+    padding: 15px 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 65px;
+    left: 5px;
+    filter: drop-shadow(0 0 15px #0002);
+    z-index: 10;
+    transition: 0.3s;
+}
+.catDropdownContent table{
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+.catDropdownContent table tr td{
+    font-size: 14px;
+    font-weight: 400;
+    color: #242424;
+    width: 250px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1.5px solid #1DA31A1A;
+    border-right: 1.5px solid #1DA31A1A;
+}
+.catDropdownContent table tr td:last-child{
+    border-right: none;
+}
+.catDropdownContent table tr:last-child td{
+    border-bottom: none;
+}
+.catDropdownContent table a{
+    text-decoration: none;
+    color: #242424;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    gap: 5px;
+    transition: 0.2s;
+}
+.catDropdownContent table a:hover{
+    color: #1DA31A;
+    transition: 0.2s;
+}
+.catDropdownContent table a i{
+    color: #1DA31A;
+    font-size: 10px;
+}
+
+.catDropdownShow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
 
 .searchBox{
     height: 100%;
     display: flex;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .searchBox .searchField{

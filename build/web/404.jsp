@@ -101,13 +101,77 @@
                 align-items: center;
                 justify-content: center;
                 gap: 10px;
-                cursor: pointer;
             }
+            
+            .catDropdownContent{
+                display: none;
+                width: auto;
+                height: auto;
+                color: #242424;
+                background: #FFFFFF;
+                padding: 15px 15px;
+                border-radius: 10px;
+                position: absolute;
+                top: 65px;
+                left: 5px;
+                filter: drop-shadow(0 0 15px #0002);
+                z-index: 10;
+                transition: 0.3s;
+            }
+            .catDropdownContent table{
+                width: 100%;
+                height: auto;
+                border-collapse: collapse;
+            }
+            .catDropdownContent table tr td{
+                font-size: 14px;
+                font-weight: 400;
+                color: #242424;
+                width: 250px;
+                height: 50px;
+                display: inline-flex;
+                justify-content: start;
+                align-items: center;
+                border-bottom: 1.5px solid #1DA31A1A;
+                border-right: 1.5px solid #1DA31A1A;
+            }
+            .catDropdownContent table tr td:last-child{
+                border-right: none;
+            }
+            .catDropdownContent table tr:last-child td{
+                border-bottom: none;
+            }
+            .catDropdownContent table a{
+                text-decoration: none;
+                color: #242424;
+                display: flex;
+                align-items: center;
+                padding-left: 15px;
+                gap: 5px;
+                transition: 0.2s;
+            }
+            .catDropdownContent table a:hover{
+                color: #1DA31A;
+                transition: 0.2s;
+            }
+            .catDropdownContent table a i{
+                color: #1DA31A;
+                font-size: 10px;
+            }
+            
+            .catDropdownShow{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s;
+            }
+            
             
             .searchBox{
                 height: 100%;
                 display: flex;
-                border-radius: 15px;
+                border-radius: 10px;
             }
             
             .searchBox .searchField{
@@ -323,13 +387,47 @@
                 html += '</a>';
                 
                 html += '<div class="catDropdown">';
-                html += 'All Categories';
-                html += '<i class="fa-solid fa-angle-down"></i>';
+                html += '<span style="display: flex; flex-direction: row; gap: 5px; align-items: center; cursor: pointer;">All Categories';
+                html += '<i class="fa-solid fa-angle-down"></i></span>';
+                
+                html += '<div class="catDropdownContent">';
+                html += '<table>';
+                html += '<tr>';
+                html += '<td><a href="../categories/beverages.jsp">Beverages</a></td>';
+                html += '<td><a href="../categories/biscuits.jsp">Biscuits</a></td>';
+                html += '<td><a href="../categories/cereals.jsp">Cereals</a></td>';
+                html += '</tr>';
+                
+                html += '<tr>';
+                html += '<td><a href="../categories/cosmetics.jsp">Cosmetics</a></td>';
+                html += '<td><a href="../categories/desserts.jsp">Desserts</a></td>';
+                html += '<td><a href="../categories/flours.jsp">Flours</a></td>';
+                html += '</tr>';
+                
+                html += '<tr>';
+                html += '<td><a href="../categories/fruits.jsp">Fruits</a></td>';
+                html += '<td><a href="../categories/medicine.jsp">Medicine</a></td>';
+                html += '<td><a href="../categories/pastaNoodles.jsp">Pasta & Noodles</a></td>';
+                html += '</tr>';
+                
+                html += '<tr>';
+                html += '<td><a href="../categories/sauces.jsp">Sauces</a></td>';
+                html += '<td><a href="../categories/snacks.jsp">Snacks</a></td>';
+                html += '<td><a href="../categories/soapsLiquids.jsp">Soaps & Cleaning</a></td>';
+                html += '</tr>';
+                
+                html += '<tr>';
+                html += '<td><a href="../categories/spreads.jsp">Spreads</a></td>';
+                html += '<td><a href="../categories/stationary.jsp">Stationary</a></td>';
+                html += '<td><a href="../categories/vegetables.jsp">Vegetables</a></td>';
+                html += '</tr>';
+                html += '</table>';
+                html += '</div>';
                 html += '</div>';
                 
-                html += '<form class="searchBox">';
-                html += '<input type="search" class="searchField" placeholder="Search" title="Search" required>';
-                html += '<button type="submit" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>';
+                html += '<form class="searchBox" id="searchBox">';
+                html += '<input type="search" id="searchField" class="searchField" placeholder="Search" title="Search" required>';
+                html += '<button type="submit" id="searchBtn" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>';
                 html += '</form>';
                 
                 html += '<div class="actionIcons flex flexRow">';
@@ -350,6 +448,33 @@
             
             var container = document.getElementById('navbar');
             container.innerHTML = navbarHTML();
+            
+            // DROPDOWN MENU
+            var catDropdown = document.querySelector('.catDropdown');
+            var catDropdownContent = document.querySelector('.catDropdownContent');
+            
+            catDropdown.addEventListener('click', function() {
+                catDropdownContent.classList.toggle('catDropdownShow');
+            });
+            document.addEventListener('click', function(event) {
+                if (!catDropdown.contains(event.target)) {
+                    catDropdownContent.classList.remove('catDropdownShow');
+                }
+            });
+            catDropdownContent.addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+            
+            // Add right arrow to category links when hovered
+            var catDropdownContentLinks = document.querySelectorAll('.catDropdownContent a');
+            catDropdownContentLinks.forEach(function(link) {
+                link.addEventListener('mouseover', function() {
+                    link.innerHTML += ' <i class="fa-solid fa-chevron-right"></i>';
+                });
+                link.addEventListener('mouseout', function() {
+                    link.innerHTML = link.innerHTML.replace(' <i class="fa-solid fa-chevron-right"></i>', '');
+                });
+            });
         </script>
         <!--============================================================== NAVBAR END -->
         
