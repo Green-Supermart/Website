@@ -21,28 +21,35 @@
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
+        <link rel="preload" href="../style.css" as="style" type="text/css">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
+        <link rel="preload" href="https://i.postimg.cc/MKJm2kGp/favicon.png" as="image" type="image/png">
+        <link rel="preload" href="https://i.postimg.cc/G9nCKgLp/green-Logo.png" as="image" type="image/png">
         
         <script src="../script.js" defer></script>
     </head>
     
     <body>
         
-        <div class="containerBlock flex">
+        <div class="containerBlock flex" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
             
-            <form action="" method="">
+            <form id="resetPasswordForm" class="loginRegisterForm flex" action="" method="">
                 
-                <div class="formLogo">
-                    <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
+                <div class="formContainer flex flexCol">
+                    
+                    <div class="formLogo" onclick="window.location.href='/Website'">
+                        <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
+                    </div>
+                    
+                    <p>Enter your new password:</p>
+                    
+                    <input type="password" placeholder="New Password" title="New Password" required>
+                    
+                    <input type="password" placeholder="Confirm Password" title="Confirm Password" required>
+                    
+                    <button type="submit">Confirm</button>
+                    
                 </div>
-                
-                <p>Enter your new password:</p>
-                
-                <input type="password" placeholder="New Password" required>
-                
-                <input type="password" placeholder="Confirm Password" required>
-                
-                <input type="submit" value="Confirm">
                 
             </form>
             

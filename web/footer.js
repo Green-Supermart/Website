@@ -12,8 +12,8 @@ function footerHTML() {
     html += '<img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png" alt="Logo">';
     html += '</div>';
     
-    html += '<div class="flex flexCol">';
-    html += 'Copyright © GREEN Supermarket Services<br>';
+    html += '<div class="flex flexCol" id="copyright">';
+    html += 'Copyright © ' + new Date().getFullYear() + ' GREEN Supermart Services<br>';
     html += 'All Rights Reserved';
     html += '</div>';
     
