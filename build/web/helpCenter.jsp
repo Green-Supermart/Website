@@ -12,8 +12,6 @@
         
         <link rel="stylesheet" href="style.css">
         
-         <link rel="stylesheet" href="emailform.css">
-        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -23,7 +21,10 @@
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
+        <link rel="preload" href="style.css" as="style" type="text/css">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
+        <link rel="preload" href="https://i.postimg.cc/MKJm2kGp/favicon.png" as="image" type="image/png">
+        <link rel="preload" href="https://i.postimg.cc/G9nCKgLp/green-Logo.png" as="image" type="image/png">
         
         <script src="script.js" defer></script>
     </head>
@@ -118,33 +119,14 @@
                         </div>
                     </div>
                     
-                </div>     
+                </div>
                 
                     
             </div>
         </div>
         
-        <!--Text heading start-->
-        <section class="flex flexCol">
-            <center>
-                    <h1 class="sectionHeading">Issue Not Listed? Send a Message</h1>
-                    </section>
-</center>
-        <!--Text heading end-->
-        <center>
-        <form class="hcform" action="#" method="post">
-    <label class="hcform label" for="subject">Subject</label>
-    <input type="text" id="subject" name="subject" required>
-
-    <label class="hcform label" for="message">Message</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
- 
-      <div class="hcform button">
-   <button type="submit">Submit</button>
-      </div>
-  </form>
-  </center>
-      
+        
+        
         <!--======================================================== PAGE-CONTENT END -->
         
         
