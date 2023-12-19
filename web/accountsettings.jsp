@@ -46,22 +46,18 @@
                 <div class="helpCardsContainer flex flexCol">
                    
                     <div class="flex flexRow" style="width: 100%; height: auto; justify-content: space-between;">
-                        <div class="flex" style="background: #FFFFFF; height: 300px; width: 300px; border-radius: 10px;">
-                             <div class="propiccard i">
-                            <center>
-                                
-                            </center>
-                        </div>
-                            <div class="helpLink flex flexRow">
-                        <div class="propiccardlinkContent flex">
-                            <div class="propiccardlinkText flex flexCol">
-                                <h2>Update Profile Picture</h2>
+                        <div class="flex" style="background: #FFFFFF; height: 300px; width: 300px; border-radius: 10px; align-items: center; justify-content: center;">
+                             
+                            <div class="flex flexCol" style="width: 80%; height: 80%; justify-content: space-between; align-items: center;">
+                                <div style="width: 170px; height: 170px;">
+                                    <img style="width: 100%; height: 100%; object-fit: cover; object-position: center;" src="https://i.postimg.cc/FzDgHnTB/userPic.png" alt="Profile Picture">
+                                </div>
+                                <span class="flex flexRow" style="gap: 10px; align-items: center;">
+                                    Update Profile Picture
+                                    <i class="fa-solid fa-square-up-right" style="color: #1DA31A;"></i>
+                                </span>
                             </div>
-                            <a href="">
-                               <i class="fa-solid fa-arrow-up"></i>
-                            </a>
-                        </div>
-                        </div>
+                           
                         </div>
                         <div class="flex flexCol" style="height: 300px; width: calc(100% - 330px); justify-content: space-between; align-items: center;">
                             <div style="background: #FFFFFF; height: 45%; width: 100%; border-radius: 10px;">

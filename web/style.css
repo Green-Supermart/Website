@@ -499,8 +499,8 @@ section ul li::before{
     font-weight: 400;
 }
 .linkContent h2{
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
 }
 .linkContent h3{
     color: #1DA31A;
@@ -661,7 +661,7 @@ section ul li::before{
   border-radius: 8px; 
 }
 .acccardlinkContent{
-    width: 85%; /*change card content inside*/ 
+    width: 87%; /*change card content inside*/ 
     margin-top: -20px;
     margin: 0 auto;
     align-items: center;
@@ -676,8 +676,8 @@ section ul li::before{
     font-weight: 400;
 }
 .acccardlinkContent h2{
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
 }
 .acccardlinkContent h3{
     color: #1DA31A;
@@ -687,50 +687,4 @@ section ul li::before{
 .acccardlinkContent i{
     color: #1DA31A;
     font-size: 24px;
-}
-.propiccard{
-     width: 340px;
-     height: 290px;
-     background-color: white;
-     margin: 0px;
-     margin-bottom: -320px; /*chane card position top and bottom*/
-     border-radius: 8px;
-}
-.propiccard i{
-  width: 150px;
-  height: 150px;
-  flex-shrink: 0;
-  border-radius: 10px;
-}
-.propiccardlinkContent{
-    width: 60%; /*change card content inside*/
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 200px;
-}
-.propiccardlinkText{
-    gap: 0px;
-}
-.propiccardlinkContent h1{
-    color: #1DA31A;
-    font-size: 16px;
-    font-weight: 400;
-}
-.propiccardlinkContent h2{
-    font-size: 17px;
-    font-weight: 500;
-}
-.propiccardlinkContent h3{
-    color: #1DA31A;
-    font-size: 14px;
-    font-weight: 400;
-}
-.propiccardlinkContent i{
-    color: #1DA31A;
-    font-size: 18px;
-    width: 8px;
-    height: 8px;
-    transform: rotate(45deg);
-    flex-shrink: 0;
 }
