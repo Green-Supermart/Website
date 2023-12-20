@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-        <link rel="stylesheet" href="admin.css">
+        <link rel="stylesheet" href="/Website/admin/admin.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,12 +21,12 @@
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
-        <link rel="preload" href="admin.css" as="style" type="text/css">
+        <link rel="preload" href="/Website/admin/admin.css" as="style" type="text/css">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
         <link rel="preload" href="https://i.postimg.cc/MKJm2kGp/favicon.png" as="image" type="image/png">
         <link rel="preload" href="https://i.postimg.cc/TwdpWvhk/admin-Logo.png" as="image" type="image/png">
         
-        <script src="admin.js" defer></script>
+        <script src="/Website/admin/admin.js" defer></script>
     </head>
     
     <body>
@@ -36,26 +36,19 @@
             <div class="navigation flex flexCol">
                 
                 <div class="navContainer flex flexCol">
-                    <div class="navLogo flex" onclick="window.location.href='dashboard.jsp'">
+                    <div class="navLogo flex" onclick="window.location.href='/Website/admin/dashboard.jsp'">
                         <img src="https://i.postimg.cc/TwdpWvhk/admin-Logo.png">
                     </div>
                     
                     <nav class="flex flexCol">
-                        <span class="navLink flex flexRow" onclick="window.location.href='dashboard.jsp'">
+                        <span class="navLink flex flexRow" onclick="window.location.href='/Website/admin/dashboard.jsp'">
                             <span class="navLinkIcon flex">
                                 <i class="fa-solid fa-gauge"></i>
                             </span>
                             Dashboard
                         </span>
                         
-                        <span class="navLink flex flexRow" onclick="window.location.href='categories.jsp'">
-                            <span class="navLinkIcon flex">
-                                <i class="fa-solid fa-list"></i>
-                            </span>
-                            Categories
-                        </span>
-                        
-                        <span class="navLink flex flexRow" onclick="window.location.href='products.jsp'">
+                        <span class="navLink flex flexRow" onclick="window.location.href='/Website/admin/products.jsp'">
                             <span class="navLinkIcon flex">
                                 <i class="fa-solid fa-box"></i>
                             </span>
@@ -69,7 +62,7 @@
                             Orders
                         </span>
                         
-                        <span class="navLink flex flexRow" onclick="window.location.href='transactions.jsp'">
+                        <span class="navLink flex flexRow" onclick="window.location.href='/Website/admin/transactions.jsp'">
                             <span class="navLinkIcon flex">
                                 <i class="fa-solid fa-dollar-sign"></i>
                             </span>
@@ -84,7 +77,7 @@
                 
                 <!-- TOPBAR START ============================================================-->
                 <div class="topBar flex" id="topBar"></div>
-                <script src="topBar.js"></script>
+                <script src="/Website/admin/topBar.js"></script>
                 <!--============================================================== TOPBAR END -->
                 
                 <div class="dashboardContent flex">

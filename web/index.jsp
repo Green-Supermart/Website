@@ -10,8 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="slider.css">
+        <link rel="stylesheet" href="/Website/style.css">
+        <link rel="stylesheet" href="/Website/slider.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,22 +22,22 @@
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
-        <link rel="preload" href="style.css" as="style" type="text/css">
-        <link rel="preload" href="slider.css" as="style" type="text/css">
+        <link rel="preload" href="/Website/style.css" as="style" type="text/css">
+        <link rel="preload" href="/Website/slider.css" as="style" type="text/css">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
         <link rel="preload" href="https://i.postimg.cc/MKJm2kGp/favicon.png" as="image" type="image/png">
         <link rel="preload" href="https://i.postimg.cc/G9nCKgLp/green-Logo.png" as="image" type="image/png">
         <link rel="preload" href="https://i.postimg.cc/brf9L1tT/placeholder.png" as="image" type="image/png">
         
-        <script src="script.js" defer></script>
-        <script src="slider.js" defer></script>
+        <script src="/Website/script.js" defer></script>
+        <script src="/Website/slider.js" defer></script>
     </head>
     
     <body>
         
         <!-- NAVBAR START ============================================================-->
         <nav id="navbar"></nav>
-        <script src="navbar.js"></script>
+        <script src="/Website/navbar.js"></script>
         <!--============================================================== NAVBAR END -->
         
         
@@ -186,7 +186,7 @@
                     </div>
                     
                     <span class="moreDealsLink flex flexRow">
-                        <a href="deals.jsp">View More Deals</a>
+                        <a href="/Website/deals.jsp">View More Deals</a>
                         <i class="fa-solid fa-square-arrow-up-right"></i>
                     </span>
                     
@@ -198,7 +198,7 @@
                     <h1 class="sectionHeading" style="text-align: center; margin-bottom: 40px; font-size: 26px;">Top Categories</h1>
                     
                     <div class="cardsContainer flex flexRow">
-                        <a style="height: auto; width: 20%; text-decoration: none;" href="categories/beverages.jsp">
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="/Website/categories/beverages.jsp">
                             <div class="catCard flex flexCol">
                                 <div class="catCardImg flex">
                                     <img src="https://i.postimg.cc/fbcBzhc4/beverages.png">
@@ -210,7 +210,7 @@
                             </div>
                         </a>
                         
-                        <a style="height: auto; width: 20%; text-decoration: none;" href="categories/snacks.jsp">
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="/Website/categories/snacks.jsp">
                             <div class="catCard flex flexCol">
                                 <div class="catCardImg flex">
                                     <img src="https://i.postimg.cc/Z53LHhD9/snacks.png">
@@ -222,7 +222,7 @@
                             </div>
                         </a>
                         
-                        <a style="height: auto; width: 20%; text-decoration: none;" href="categories/fruits.jsp">
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="/Website/categories/fruits.jsp">
                             <div class="catCard flex flexCol">
                                 <div class="catCardImg flex">
                                     <img src="https://i.postimg.cc/k47wDhs2/fruits.png">
@@ -234,7 +234,7 @@
                             </div>
                         </a>
                         
-                        <a style="height: auto; width: 20%; text-decoration: none;" href="categories/medicine.jsp">
+                        <a style="height: auto; width: 20%; text-decoration: none;" href="/Website/categories/medicine.jsp">
                             <div class="catCard flex flexCol">
                                 <div class="catCardImg flex">
                                     <img src="https://i.postimg.cc/8PxHLCwQ/medicine.png">
@@ -255,7 +255,7 @@
         
         <!-- FOOTER START ============================================================-->
         <footer class="flex" id="footer"></footer>
-        <script src="footer.js"></script>
+        <script src="/Website/footer.js"></script>
         <!--============================================================== FOOTER END -->
         
         
@@ -263,7 +263,7 @@
         <button id="toTopBtn" class="flex greenBtn" title="Scroll to Top">
             <i class="fa-solid fa-chevron-up"></i>
         </button>
-	<!--======================================================= SCROLL-TO-TOP END -->
+        <!--======================================================= SCROLL-TO-TOP END -->
         
     </body>
 </html>

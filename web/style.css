@@ -684,3 +684,131 @@ section ul li::before{
 .loginRegisterForm p{
     width: 100%;
 }
+/*===================Ishara====================*/
+
+.linkImage {
+    max-width: 130px; 
+    width: 100%; 
+    height: auto; 
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+
+.textSReasultSR {
+   flex-grow: 1;   
+    display: flex; 
+    padding-left:10px;
+  
+}
+
+.priceInSR{
+    display:flex;
+    flex-direction: row;
+    font-size:12px;
+    font-weight: 400;
+    
+}
+
+.priceInSR {
+    font-size:12px;
+    padding-right:10px;
+    
+}
+
+.discPriceSR{
+  color: #808080;
+  text-decoration-color: #808080;
+  text-decoration-line: line-through;
+  text-decoration-thickness: 1.5px;
+  font-size:12px;
+ 
+}
+.SRicons a {
+    margin-right: 30px; 
+}
+
+
+.SRicons a:last-child {
+    margin-right: 0;
+}
+
+/*===========card=================*/
+.containerCO {
+    width: 100%;
+    padding: 50px 0;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 0 15px transparent);
+    transition: 0.3s;
+}
+.containerCO:hover {
+    filter: drop-shadow(0 0 15px #0001);
+    transition: 0.3s;
+}
+        
+.COcard {
+    width: 90%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+.newdate {
+     font-size:12px;
+    color: #1DA31A;
+}
+.COorderNumber{
+    font-size: 18px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.COcard table{
+    width: 100%;
+}
+
+.COImage{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left:20px;
+    padding-right: 30px;
+    display: block; 
+    margin: 0 auto; 
+    object-fit: cover;
+    width: 60px; height: 60px; border-radius: 5px;
+}
+.COItem{
+    font-size: 18px;
+    font-weight: 400;
+    word-wrap: break-word;
+    
+} 
+.COItem:hover{
+    color:green;
+}
+
+/*===================button=====================*/
+.CObuttoncon{
+    width: 100%;
+  align-items: center;
+  justify-content: end;
+}
+
+.CObutton {
+    padding: 8px 16px;
+  color: #ECECEC;
+  background: #1DA31A;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.CObutton:hover{
+    background: #168C13;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*=============================================*/
