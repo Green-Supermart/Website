@@ -17,33 +17,33 @@ function navbarHTML() {
     html += '<div class="catDropdownContent">';
     html += '<table>';
     html += '<tr>';
-    html += '<td><a href="categories/beverages.jsp">Beverages</a></td>';
-    html += '<td><a href="categories/biscuits.jsp">Biscuits</a></td>';
-    html += '<td><a href="categories/cereals.jsp">Cereals</a></td>';
+    html += '<td><a href="/Website/categories/beverages.jsp">Beverages</a></td>';
+    html += '<td><a href="/Website/categories/biscuits.jsp">Biscuits</a></td>';
+    html += '<td><a href="/Website/categories/cereals.jsp">Cereals</a></td>';
     html += '</tr>';
     
     html += '<tr>';
-    html += '<td><a href="categories/cosmetics.jsp">Cosmetics</a></td>';
-    html += '<td><a href="categories/desserts.jsp">Desserts</a></td>';
-    html += '<td><a href="categories/flours.jsp">Flours</a></td>';
+    html += '<td><a href="/Website/categories/cosmetics.jsp">Cosmetics</a></td>';
+    html += '<td><a href="/Website/categories/desserts.jsp">Desserts</a></td>';
+    html += '<td><a href="/Website/categories/flours.jsp">Flours</a></td>';
     html += '</tr>';
     
     html += '<tr>';
-    html += '<td><a href="categories/fruits.jsp">Fruits</a></td>';
-    html += '<td><a href="categories/medicine.jsp">Medicine</a></td>';
-    html += '<td><a href="categories/pastaNoodles.jsp">Pasta & Noodles</a></td>';
+    html += '<td><a href="/Website/categories/fruits.jsp">Fruits</a></td>';
+    html += '<td><a href="/Website/categories/medicine.jsp">Medicine</a></td>';
+    html += '<td><a href="/Website/categories/pastaNoodles.jsp">Pasta & Noodles</a></td>';
     html += '</tr>';
     
     html += '<tr>';
-    html += '<td><a href="categories/sauces.jsp">Sauces</a></td>';
-    html += '<td><a href="categories/snacks.jsp">Snacks</a></td>';
-    html += '<td><a href="categories/soapsLiquids.jsp">Soaps & Cleaning</a></td>';
+    html += '<td><a href="/Website/categories/sauces.jsp">Sauces</a></td>';
+    html += '<td><a href="/Website/categories/snacks.jsp">Snacks</a></td>';
+    html += '<td><a href="/Website/categories/soapsLiquids.jsp">Soaps & Cleaning</a></td>';
     html += '</tr>';
     
     html += '<tr>';
-    html += '<td><a href="categories/spreads.jsp">Spreads</a></td>';
-    html += '<td><a href="categories/stationary.jsp">Stationary</a></td>';
-    html += '<td><a href="categories/vegetables.jsp">Vegetables</a></td>';
+    html += '<td><a href="/Website/categories/spreads.jsp">Spreads</a></td>';
+    html += '<td><a href="/Website/categories/stationary.jsp">Stationary</a></td>';
+    html += '<td><a href="/Website/categories/vegetables.jsp">Vegetables</a></td>';
     html += '</tr>';
     html += '</table>';
     html += '</div>';
@@ -55,7 +55,7 @@ function navbarHTML() {
     html += '</form>';
     
     html += '<div class="actionIcons flex flexRow">';
-    html += '<a href="../wishlist.jsp" title="Wishlist">';
+    html += '<a href="/Website/wishlist.jsp" title="Wishlist">';
     html += '<i class="fa-solid fa-heart"></i>';
     html += '</a>';
     html += '<div title="Cart">';

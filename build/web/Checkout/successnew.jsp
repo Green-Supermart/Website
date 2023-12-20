@@ -9,7 +9,7 @@
     <head>
        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="/Website/style.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
     <body>
          <!-- NAVBAR START ============================================================-->
         <nav id="navbar"></nav>
-        <script src="../navbar.js"></script>
+        <script src="/Website/navbar.js"></script>
         <!--============================================================== NAVBAR END -->
         
         
@@ -60,7 +60,7 @@
         
          <!-- FOOTER START ============================================================-->
         <footer class="flex" id="footer"></footer>
-        <script src="../footer.js"></script>
+        <script src="/Website/footer.js"></script>
         <!--============================================================== FOOTER END -->
         
         

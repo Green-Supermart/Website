@@ -10,8 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="searchCards.css">
+        <link rel="stylesheet" href="/Website/style.css">
+        <link rel="stylesheet" href="/Website/searchCards.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,22 +22,22 @@
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
-        <link rel="preload" href="style.css" as="style" type="text/css">
-        <link rel="preload" href="searchCards.css" as="style" type="text/css">
+        <link rel="preload" href="/Website/style.css" as="style" type="text/css">
+        <link rel="preload" href="/Website/searchCards.css" as="style" type="text/css">
         
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
         <link rel="preload" href="https://i.postimg.cc/MKJm2kGp/favicon.png" as="image" type="image/png">
         <link rel="preload" href="https://i.postimg.cc/G9nCKgLp/green-Logo.png" as="image" type="image/png">
         <link rel="preload" href="https://i.postimg.cc/brf9L1tT/placeholder.png" as="image" type="image/png">
         
-        <script src="script.js" defer></script>
+        <script src="/Website/script.js" defer></script>
     </head>
     
     <body>
         
         <!-- NAVBAR START ============================================================-->
         <nav id="navbar"></nav>
-        <script src="navbar.js"></script>
+        <script src="/Website/navbar.js"></script>
         <!--============================================================== NAVBAR END -->
         
         
@@ -61,7 +61,7 @@
                             </div>
                             
                             <div class="searchCardInfo flex flexCol">
-                                <a href="singleCategory.jsp" class="flex flexRow">
+                                <a href="/Website/singleCategory.jsp" class="flex flexRow">
                                     In Soaps <i class="fa-solid fa-chevron-right"></i>
                                 </a>
                                 
@@ -86,7 +86,7 @@
                             </span>
                             
                             <span class="searchCardIcon flex" title="View Product">
-                                <a href="singleProduct.jsp">
+                                <a href="/Website/singleProduct.jsp">
                                     <i class="fa-solid fa-square-arrow-up-right"></i>
                                 </a>
                             </span>
@@ -103,7 +103,7 @@
         
         <!-- FOOTER START ============================================================-->
         <footer class="flex" id="footer"></footer>
-        <script src="footer.js"></script>
+        <script src="/Website/footer.js"></script>
         <!--============================================================== FOOTER END -->
         
         
