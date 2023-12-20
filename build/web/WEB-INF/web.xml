@@ -4,7 +4,15 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <!-- Other configurations -->
+    <!-- Servlet mapping for searchResults.jsp -->
+    <servlet>
+        <servlet-name>SearchResultsServlet</servlet-name>
+        <jsp-file>/searchResults.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchResultsServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
 
     <error-page>
         <error-code>404</error-code>

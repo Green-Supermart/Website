@@ -31,6 +31,7 @@
         <link rel="preload" href="https://i.postimg.cc/brf9L1tT/placeholder.png" as="image" type="image/png">
         
         <script src="/Website/script.js" defer></script>
+        <script src="/Website/search.js" defer></script>
     </head>
     
     <body>
@@ -43,7 +44,7 @@
         
         <!-- HEADER START ============================================================-->
         <header class="flex">
-            <h1>Search Results for "<span id="resultKeyword">baby soap</span>"</h1>
+            <h1>Search Results for "<span id="resultKeyword"></span>"</h1>
         </header>
         <!--============================================================== HEADER END -->
         

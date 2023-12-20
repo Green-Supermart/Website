@@ -125,3 +125,13 @@ searchField.addEventListener('blur', function() {
     searchBtn.style.color = '#808080';
     searchBtn.style.transition = '0.5s';
 });
+
+
+searchBox.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var searchQuery = searchField.value;
+    if (searchQuery !== '') {
+        window.location.href = '/Website/search?q=' + searchQuery;
+    }
+});
