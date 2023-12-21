@@ -58,7 +58,7 @@ function navbarHTML() {
     html += '<a href="/Website/wishlist.jsp" title="Wishlist">';
     html += '<i class="fa-solid fa-heart"></i>';
     html += '</a>';
-    html += '<div title="Cart">';
+    html += '<div id="cartIcon" title="Show Cart (Alt + C)">';
     html += '<i class="fa-solid fa-cart-shopping"></i>';
     html += '</div>';
     html += '</div>';
@@ -66,6 +66,45 @@ function navbarHTML() {
     html += '<div class="userPic">';
     html += '<img src="https://i.postimg.cc/rF84Pdw2/default-Avatar.png">';
     html += '</div>';
+    html += '</div>';
+    
+    // 1 start
+    html += '<div id="cartBackdrop" style="display: none; height: 100vh; width: 100%; background: #24242470; position: fixed; top: 0; left: 0; z-index: 20;">';
+    // cartBox start
+    html += '<div id="cartBox" style="display: flex; position: fixed; top: 5px; right: 5px; height: calc(100vh - 10px); width: 400px; background: #ffffff; align-items: center; justify-content: center; z-index: 10; filter: drop-shadow(#00000011 0px 0px 15px); border-radius: 10px;">';
+    
+    // cartBox content start
+    html += '<div style="display: flex; flex-direction: column; justify-content: space-between; height: calc(100% - 40px); width: calc(100% - 40px);">';
+    html += '<span style="display: flex; flex-direction: row; align-items: center; justify-content: start; gap: 15px; height: auto;">';
+    html += '<i class="fa-solid fa-angle-left" style="font-size: 18px; color: #1DA31A; cursor: pointer;" id="cartBackIcon" title="Close Cart (Alt + C)"></i>';
+    html += '<h1 style="height: 35px; font-size: 22px; font-weight: 400;">Your Cart</h1>';
+    html += '</span>';
+    
+    html += '<p id="cartEmptyMsg" style="display: flex; height: calc(100% - 200px); width: 90%; color: #808080; background: #ffffff; justify-content: center; align-items: center; font-size: 14px; font-weight: 300; position: absolute; top: 70px;">Your cart is empty</p>';
+    
+    html += '<div id="cartListContainer" style="height: calc(100% - 160px); width: 100%; overflow: auto; overflow-x: auto;">';
+    html += '<div id="cartList" style="height: auto; width: 100%; display: flex; flex-direction: column; justify-content: start; gap: 8px;">';
+    
+    // cards are here
+    
+    html += '</div>';
+    html += '</div>';
+
+    html += '<div style="height: 40px; width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">';
+    html += '<h1 style="font-size: 16px; font-weight: 400; margin-left: 15px;">Total</h1>';
+    html += '<h1 id="cartTotalPrice" style="font-size: 16px; font-weight: 400; margin-right: 15px;">Rs. 0.00</h1>';
+    html += '</div>';
+
+    html += '<div style="height: 40px; width: 100%; display: flex; flex-direction: row; justify-content: end; align-items: center; gap: 15px;">';
+    html += '<button id="cartCancelBtn" style="height: 100%; padding: 0 15px; color: #242424; background: #ECECEC; border: none; border-radius: 5px; outline: none; cursor: pointer;">Cancel</button>';
+    html += '<button id="cartAddBtn" style="height: 100%; padding: 0 15px; color: #ECECEC; background: #1DA31A; border: none; border-radius: 5px; outline: none; cursor: pointer;">Checkout</button>';
+    html += '</div>';
+
+    html += '</div>';
+    // cartBox end
+    html += '</div>';
+    // 1 end
+
     html += '</div>';
     return html;
 }
