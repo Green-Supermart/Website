@@ -64,7 +64,17 @@ function navbarHTML() {
     html += '</div>';
     
     html += '<div class="userPic">';
-    html += '<img src="https://i.postimg.cc/rF84Pdw2/default-Avatar.png">';
+    html += '<img id="proPic" title="Account Management" src="https://i.postimg.cc/rF84Pdw2/default-Avatar.png">';
+    
+    html += '<div id="userDropdown" class="userDropdown">';
+    html += '<a id="accountSettingsLink" href="/Website/account.jsp">Account Settings</a>';
+    html += '<a id="ordersLink" href="/Website/orders.jsp">Orders</a>';
+    html += '<a id="helpCenterLink" href="/Website/helpCenter.jsp">Help Center</a>';
+    html += '<a id="registerLink" href="/Website/register.jsp">Register</a>';
+    html += '<a id="loginLink" href="/Website/login.jsp">Login</a>';
+    html += '<span id="logoutLink">Logout</span>';
+    html += '</div>';
+    
     html += '</div>';
     html += '</div>';
     
@@ -89,22 +99,22 @@ function navbarHTML() {
     
     html += '</div>';
     html += '</div>';
-
+    
     html += '<div style="height: 40px; width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">';
     html += '<h1 style="font-size: 16px; font-weight: 400; margin-left: 15px;">Total</h1>';
     html += '<h1 id="cartTotalPrice" style="font-size: 16px; font-weight: 400; margin-right: 15px;">Rs. 0.00</h1>';
     html += '</div>';
-
+    
     html += '<div style="height: 40px; width: 100%; display: flex; flex-direction: row; justify-content: end; align-items: center; gap: 15px;">';
     html += '<button id="cartCancelBtn" style="height: 100%; padding: 0 15px; color: #242424; background: #ECECEC; border: none; border-radius: 5px; outline: none; cursor: pointer;">Cancel</button>';
     html += '<button id="cartAddBtn" style="height: 100%; padding: 0 15px; color: #ECECEC; background: #1DA31A; border: none; border-radius: 5px; outline: none; cursor: pointer;">Checkout</button>';
     html += '</div>';
-
+    
     html += '</div>';
     // cartBox end
     html += '</div>';
     // 1 end
-
+    
     html += '</div>';
     return html;
 }
@@ -138,6 +148,26 @@ catDropdownContentLinks.forEach(function(link) {
         link.innerHTML = link.innerHTML.replace(' <i class="fa-solid fa-chevron-right"></i>', '');
     });
 });
+
+// when start scrolling, hide catDropdownContent
+window.addEventListener('scroll', function() {
+    catDropdownContent.classList.remove('catDropdownShow');
+});
+
+// if catDropdownContent element contains catDropdownShow class, set background of catDropdownSpan to #ECECEC
+const catDropdownSpan = document.getElementById("catDropdownSpan");
+
+setInterval(function() {
+    if (catDropdownContent.classList.contains('catDropdownShow')) {
+        catDropdownSpan.style.background = '#ECECEC';
+        catDropdownSpan.style.padding = '5px 10px';
+        catDropdownSpan.style.borderRadius = '5px';
+    } else {
+        catDropdownSpan.style.background = 'transparent';
+        catDropdownSpan.style.padding = '5px 10px';
+        catDropdownSpan.style.borderRadius = '5px';
+    }
+}, 100);
 
 
 
@@ -173,4 +203,30 @@ searchBox.addEventListener('submit', function(event) {
     if (searchQuery !== '') {
         window.location.href = '/Website/search?q=' + searchQuery;
     }
+});
+
+
+
+const proPic = document.getElementById("proPic");
+const userDropdown = document.getElementById("userDropdown");
+
+// when clicked on proPic, toggle userDropdown
+proPic.addEventListener('click', function() {
+    userDropdown.classList.toggle('userDropdownActive');
+});
+
+// when clicked anywhere outside userDropdown, hide userDropdown
+document.addEventListener('click', function(event) {
+    if (!proPic.contains(event.target)) {
+        userDropdown.classList.remove('userDropdownActive');
+    }
+});
+
+userDropdown.addEventListener('click', function(event) {
+    event.stopPropagation();
+});
+
+// when start scrolling, hide userDropdown
+window.addEventListener('scroll', function() {
+    userDropdown.classList.remove('userDropdownActive');
 });
