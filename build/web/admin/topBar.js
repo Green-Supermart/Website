@@ -13,9 +13,6 @@ function topBarHTML() {
     html += '</form>';
     
     html += '<div class="topBarIcons flex flexRow">';
-    html += '<div class="notiIcon flex" title="Notifications">';
-    html += '<i class="fa-solid fa-bell"></i>';
-    html += '</div>';
     
     html += '<div class="proPic">';
     html += '<img src="https://i.postimg.cc/rF84Pdw2/default-Avatar.png">';

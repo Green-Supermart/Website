@@ -94,6 +94,20 @@
                             </div>
                         </div>
                         
+                        <section class="cardsContainer flex flexCol">
+                            
+                            <div class="profileCard flex flexCol" style="width: calc(100% - 40px); height: 70vh;">
+                                
+                                <div class="subCardsContainer flex flexRow" style="height: 100%; margin-top: 0; overflow: auto; align-items: start;">
+                                    
+                                    <div style="height: 2000px; width: 100%;"></div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </section>
+                        
                     </div>
                     
                 </div>
