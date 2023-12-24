@@ -30,6 +30,7 @@
         
         <script src="/Website/script.js" defer></script>
         <script src="/Website/cart.js" defer></script>
+        <script src="/Website/helpForm.js" defer></script>
     </head>
     
     <body>
@@ -52,86 +53,104 @@
             <div class="container">
                 
                 <div class="helpCardsContainer flex flexCol">
-                    <div class="helpLink flex flexRow">
-                        
+                    <a href="/Website/helpCenter/article1.jsp" class="helpLink flex flexRow" style="text-decoration: none;">
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
                                 <h1>Related Topic</h1>
-                                <h2>Heading</h2>
+                                <h2>Article 1 Heading</h2>
                             </div>
                             
-                            <a href="">
+                            <span>
                                 <i class="fa-solid fa-square-arrow-up-right"></i>
-                            </a>
+                            </span>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="helpLink flex flexRow">
-                        
+                    <a href="/Website/helpCenter/article2.jsp" class="helpLink flex flexRow" style="text-decoration: none;">
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
                                 <h1>Related Topic</h1>
-                                <h2>Heading</h2>
+                                <h2>Article 2 Heading</h2>
                             </div>
                             
-                            <a href="">
+                            <span>
                                 <i class="fa-solid fa-square-arrow-up-right"></i>
-                            </a>
+                            </span>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="helpLink flex flexRow">
-                        
+                    <a href="/Website/helpCenter/article3.jsp" class="helpLink flex flexRow" style="text-decoration: none;">
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
                                 <h1>Related Topic</h1>
-                                <h2>Heading</h2>
+                                <h2>Article 3 Heading</h2>
                             </div>
                             
-                            <a href="">
+                            <span>
                                 <i class="fa-solid fa-square-arrow-up-right"></i>
-                            </a>
+                            </span>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="helpLink flex flexRow">
-                        
+                    <a href="/Website/helpCenter/article4.jsp" class="helpLink flex flexRow" style="text-decoration: none;">
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
                                 <h1>Related Topic</h1>
-                                <h2>Heading</h2>
+                                <h2>Article 4 Heading</h2>
                             </div>
                             
-                            <a href="">
+                            <span>
                                 <i class="fa-solid fa-square-arrow-up-right"></i>
-                            </a>
+                            </span>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="helpLink flex flexRow">
-                        
+                    <a href="/Website/helpCenter/article5.jsp" class="helpLink flex flexRow" style="text-decoration: none;">
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
                                 <h1>Related Topic</h1>
-                                <h2>Heading</h2>
+                                <h2>Article 5 Heading</h2>
                             </div>
                             
-                            <a href="">
+                            <span>
                                 <i class="fa-solid fa-square-arrow-up-right"></i>
-                            </a>
+                            </span>
                         </div>
-                    </div>
-                    
+                    </a>
                 </div>
                 
+                <section style="margin-top: 60px;">
+                    <h1 class="sectionHeading" style="text-align: center; margin-bottom: 40px; font-size: 26px;">Issue Not Listed? or Have Feedback? Send Us a Message</h1>
                     
+                    <div class="helpForm flex">
+                        <div class="helpFormContainer">
+                            
+                            <form id="helpForm" class="flex flexCol" action="https://script.google.com/macros/s/AKfycbz9ljtNoxmm8HeeF7H6IRkdvYhcTDHQdpdU0SF84BkicpbAB_un1q4iJ9UEaxm9RyC4/exec" method="POST">
+                                
+                                <div class="helpFormField flex flexCol">
+                                    <label>Subject:</label>
+                                    <input class="helpFormInput" name="Subject" type="text" placeholder="Mention the Subject of the issue/feedback" title="Subject" required>
+                                </div>
+                                
+                                <div class="helpFormField flex flexCol">
+                                    <label>Message:</label>
+                                    <textarea class="helpFormInput" name="Message" style="height: 200px; resize: none;" placeholder="Describe your issue/feedback with details" title="Message" required></textarea>
+                                </div>
+                                
+                                <div class="flex flexRow" style="width: 100%; align-items: center; justify-content: space-between;">
+                                    <button id="helpFormSubmitBtn" type="submit">Submit</button>
+                                    <span id="submitStateMsg" style="color: #1DA31A;"></span>
+                                </div>
+                                
+                            </form>
+                            
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
-        
-        
-        
         <!--======================================================== PAGE-CONTENT END -->
-        
         
         
         <!-- FOOTER START ============================================================-->
@@ -144,7 +163,7 @@
         <button id="toTopBtn" class="flex greenBtn" title="Scroll to Top">
             <i class="fa-solid fa-chevron-up"></i>
         </button>
-	<!--======================================================= SCROLL-TO-TOP END -->
+        <!--======================================================= SCROLL-TO-TOP END -->
         
     </body>
 </html>
