@@ -25,7 +25,6 @@ scrollToTopBtn.addEventListener("click", function () {
 // =============================================================================== TO TOP BUTTON END //
 
 
-
 // RANDOM 404 ERROR ICON START ===================================================================== //
 const icons = [
 	'<i class="fa-solid fa-magnifying-glass"></i>',
