@@ -420,3 +420,20 @@ nav{
 }
 
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr th{
+    color: #1DA31A;
+    background: #FFFFFF;
+    font-weight: 400;
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+
+table tr td{
+    padding: 10px 15px;
+}

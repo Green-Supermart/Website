@@ -41,11 +41,9 @@
                         <img src="https://i.postimg.cc/xCD2hzVy/admin-Logo2.png">
                     </div>
                     
-                    <input type="email" placeholder="Email Address" title="Email Address" required>
+                    <input type="text" placeholder="Username" title="Username" required>
                     
-                    <input type="password" placeholder="Password" title="Password" required>
-                    
-                    <a href="/Website/admin/forgotPassword.jsp">Forgot Password?</a>
+                    <input type="password" placeholder="Password" title="Password" style="margin-bottom: 30px;" required>
                     
                     <button type="submit">Login</button>
                     

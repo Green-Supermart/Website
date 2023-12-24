@@ -114,14 +114,6 @@ a:hover{
     transition: 0.2s;
 }
 
-.loginForm a{
-    color: #1DA31A;
-    font-size: 12px;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
 .loginForm button{
     color: #ECECEC;
     background: #1DA31A;
