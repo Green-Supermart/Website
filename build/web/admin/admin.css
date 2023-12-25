@@ -437,3 +437,24 @@ table tr th{
 table tr td{
     padding: 10px 15px;
 }
+
+.entryActionIcons{
+    gap: 10px;
+}
+
+.entryActionIcons span{
+    color: #FFFFFF;
+    background: #1DA31A;
+    font-size: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.entryActionIcons span:hover{
+    background: #168C13;
+    cursor: pointer;
+    transition: 0.3s;
+}

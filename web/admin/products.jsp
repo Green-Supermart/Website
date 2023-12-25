@@ -100,6 +100,90 @@
                             </div>
                         </div>
                         
+                        <section style="width: 100%; height: 75vh;">
+                            <div class="flex flexCol" style="width: calc(100% - 40px); height: calc(100% - 40px); color: #242424; background: #FFFFFF; padding: 15px 20px; border-radius: 10px;">
+                                
+                                <div class="flex flexRow" style="height: 100%; width: 100%; margin-top: 0; overflow: auto; align-items: start;">
+                                    <div style="height: auto; width: 100%;">
+                                        
+                                        <table>
+                                            <tr>
+                                                <th style="width: 5%;">SKU</th>
+                                                <th style="width: 25%;">Name</th>
+                                                <th style="width: 25%;">Category</th>
+                                                <th style="width: 10%;">Status</th>
+                                                <th style="width: 10%;">Stock</th>
+                                                <th style="width: 15%;">Price</th>
+                                                <th style="width: 10%;">Actions</th>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Sprite 1L</td>
+                                                <td>Beverages</td>
+                                                <td>In Stock</td>
+                                                <td>134</td>
+                                                <td>Rs. 250.00</td>
+                                                <td>
+                                                    <span class="entryActionIcons flex flexRow" style="gap: 10px;">
+                                                        <span class="flex"><i class="fa-solid fa-pen"></i></span>
+                                                        <span class="flex"><i class="fa-solid fa-trash-can"></i></span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>002</td>
+                                                <td>Sprite 1L</td>
+                                                <td>Beverages</td>
+                                                <td>In Stock</td>
+                                                <td>29</td>
+                                                <td>Rs. 250.00</td>
+                                                <td>
+                                                    <span class="entryActionIcons flex flexRow" style="gap: 10px;">
+                                                        <span class="flex"><i class="fa-solid fa-pen"></i></span>
+                                                        <span class="flex"><i class="fa-solid fa-trash-can"></i></span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>003</td>
+                                                <td>Sprite 1L</td>
+                                                <td>Beverages</td>
+                                                <td>In Stock</td>
+                                                <td>51</td>
+                                                <td>Rs. 250.00</td>
+                                                <td>
+                                                    <span class="entryActionIcons flex flexRow" style="gap: 10px;">
+                                                        <span class="flex"><i class="fa-solid fa-pen"></i></span>
+                                                        <span class="flex"><i class="fa-solid fa-trash-can"></i></span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>004</td>
+                                                <td>Sprite 1L</td>
+                                                <td>Beverages</td>
+                                                <td>In Stock</td>
+                                                <td>341</td>
+                                                <td>Rs. 250.00</td>
+                                                <td>
+                                                    <span class="entryActionIcons flex flexRow" style="gap: 10px;">
+                                                        <span class="flex"><i class="fa-solid fa-pen"></i></span>
+                                                        <span class="flex"><i class="fa-solid fa-trash-can"></i></span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </section>
+                        
                     </div>
                     
                 </div>
