@@ -1,6 +1,6 @@
 <%-- 
-    Document   : transactions
-    Created on : 16 Dec 2023, 01:17:53
+    Document   : reviews
+    Created on : 24 Dec 2023, 22:27:04
     Author     : Sandun
 --%>
 
@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         
-        <title>Transactions - Admin | GREEN Supermart</title>
+        <title>Reviews - Admin | GREEN Supermart</title>
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
@@ -64,9 +64,9 @@
                         
                         <span class="activeLink flex flexRow">
                             <span class="navLinkIcon flex">
-                                <i class="fa-solid fa-dollar-sign"></i>
+                                <i class="fa-solid fa-star"></i>
                             </span>
-                            Transactions
+                            Reviews
                         </span>
                     </nav>
                 </div>
@@ -86,13 +86,69 @@
                         
                         <div class="pageTopic flex">
                             <div class="pageTopicContainer flex flexRow">
-                                <h1>Transactions</h1>
+                                <h1>Reviews</h1>
                                 
                                 <span class="reloadIcon flex" onclick="window.location.reload();" title="Refresh">
                                     <i class="fa-solid fa-arrows-rotate"></i>
                                 </span>
                             </div>
                         </div>
+                        
+                        <section style="width: 100%; height: 75vh;">
+                            <div class="flex flexCol" style="width: calc(100% - 40px); height: calc(100% - 40px); color: #242424; background: #FFFFFF; padding: 15px 20px; border-radius: 10px;">
+                                
+                                <div class="flex flexRow" style="height: 100%; width: 100%; margin-top: 0; overflow: auto; align-items: start;">
+                                    <div style="height: auto; width: 100%;">
+                                        
+                                        <table>
+                                            <tr>
+                                                <th style="width: 25%;">Customer</th>
+                                                <th style="width: 50%;">Product</th>
+                                                <th style="width: 25%;">Review</th>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>John Doe</td>
+                                                <td>Baby Soap</td>
+                                                <td style="color: #1DA31A; text-align: center;">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Jane Doe</td>
+                                                <td>Sprite 1L</td>
+                                                <td style="color: #1DA31A; text-align: center;">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>James Doe</td>
+                                                <td>Tomato Sauce</td>
+                                                <td style="color: #1DA31A; text-align: center;">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </section>
                         
                     </div>
                     

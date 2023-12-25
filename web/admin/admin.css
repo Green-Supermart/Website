@@ -193,30 +193,6 @@ nav{
     gap: 15px;
 }
 
-.notiIcon{
-    height: 35px;
-    width: 35px;
-    justify-content: center;
-    align-items: center;
-}
-.notiIcon i{
-    height: 100%;
-    width: 100%;
-    color: #242424;
-    background: #FFFFFF;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.notiIcon i:hover{
-    color: #242424;
-    background: #D9D9D9;
-    transition: 0.3s;
-}
-
 .proPic{
     height: 35px;
     width: 35px;
@@ -441,4 +417,23 @@ nav{
 .statChart img{
     width: 100%;
     height: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr th{
+    color: #1DA31A;
+    background: #FFFFFF;
+    font-weight: 400;
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+
+table tr td{
+    padding: 10px 15px;
 }

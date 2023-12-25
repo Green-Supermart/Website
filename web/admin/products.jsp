@@ -62,11 +62,11 @@
                             Orders
                         </span>
                         
-                        <span class="navLink flex flexRow" onclick="window.location.href='/Website/admin/transactions.jsp'">
+                        <span class="navLink flex flexRow" onclick="window.location.href='/Website/admin/reviews.jsp'">
                             <span class="navLinkIcon flex">
-                                <i class="fa-solid fa-dollar-sign"></i>
+                                <i class="fa-solid fa-star"></i>
                             </span>
-                            Transactions
+                            Reviews
                         </span>
                     </nav>
                 </div>

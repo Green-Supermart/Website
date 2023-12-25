@@ -62,11 +62,11 @@
                             Orders
                         </span>
                         
-                        <span class="navLink flex flexRow" onclick="window.location.href='/Website/admin/transactions.jsp'">
+                        <span class="navLink flex flexRow" onclick="window.location.href='/Website/admin/reviews.jsp'">
                             <span class="navLinkIcon flex">
-                                <i class="fa-solid fa-dollar-sign"></i>
+                                <i class="fa-solid fa-star"></i>
                             </span>
-                            Transactions
+                            Reviews
                         </span>
                     </nav>
                 </div>
@@ -93,6 +93,56 @@
                                 </span>
                             </div>
                         </div>
+                        
+                        <section style="width: 100%; height: 75vh;">
+                            <div class="flex flexCol" style="width: calc(100% - 40px); height: calc(100% - 40px); color: #242424; background: #FFFFFF; padding: 15px 20px; border-radius: 10px;">
+                                
+                                <div class="flex flexRow" style="height: 100%; width: 100%; margin-top: 0; overflow: auto; align-items: start;">
+                                    <div style="height: auto; width: 100%;">
+                                        
+                                        <table>
+                                            <tr>
+                                                <th style="width: 5%;">ID</th>
+                                                <th style="width: 15%;">Name</th>
+                                                <th style="width: 10%;">Date</th>
+                                                <th style="width: 25%;">Items</th>
+                                                <th style="width: 30%;">Address</th>
+                                                <th style="width: 10%;">Total</th>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>1</td>
+                                                <td>John Doe</td>
+                                                <td>2021-12-31</td>
+                                                <td>Baby Soap x2<br>Shampoo x1</td>
+                                                <td>123, Main Street, Colombo 01</td>
+                                                <td>Rs. 1000.00</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Jane Doe</td>
+                                                <td>2021-12-31</td>
+                                                <td>Baby Soap x2<br>Shampoo x1</td>
+                                                <td>123, Main Street, Colombo 01</td>
+                                                <td>Rs. 1000.00</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>3</td>
+                                                <td>John Doe</td>
+                                                <td>2021-12-31</td>
+                                                <td>Baby Soap x2<br>Shampoo x1</td>
+                                                <td>123, Main Street, Colombo 01</td>
+                                                <td>Rs. 1000.00</td>
+                                            </tr>
+                                        </table>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </section>
                         
                     </div>
                     

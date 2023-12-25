@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <link rel="stylesheet" href="/Website/style.css">
+        <link rel="stylesheet" href="/Website/cart.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,12 +23,14 @@
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
         <link rel="preload" href="/Website/style.css" as="style" type="text/css">
+        <link rel="preload" href="/Website/cart.css" as="style" type="text/css">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
         <link rel="preload" href="https://i.postimg.cc/MKJm2kGp/favicon.png" as="image" type="image/png">
         <link rel="preload" href="https://i.postimg.cc/G9nCKgLp/green-Logo.png" as="image" type="image/png">
         <link rel="preload" href="https://i.postimg.cc/brf9L1tT/placeholder.png" as="image" type="image/png">
         
         <script src="/Website/script.js" defer></script>
+        <script src="/Website/cart.js" defer></script>
     </head>
     
     <body>
@@ -212,7 +215,7 @@
         <button id="toTopBtn" class="flex greenBtn" title="Scroll to Top">
             <i class="fa-solid fa-chevron-up"></i>
         </button>
-	<!--======================================================= SCROLL-TO-TOP END -->
+        <!--======================================================= SCROLL-TO-TOP END -->
         
     </body>
 </html>

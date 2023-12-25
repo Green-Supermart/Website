@@ -42,6 +42,10 @@ html{
     scroll-behavior: smooth;
 }
 
+img{
+    user-select: none;
+}
+
 .flex{
     display: flex;
 }
@@ -213,18 +217,70 @@ nav{
 
 .userPic{
     height: 90%;
-    cursor: pointer;
-    opacity: 1;
-    transition: 0.3s;
-}
-.userPic:hover{
-    opacity: 0.6;
-    transition: 0.3s;
 }
 .userPic img{
     height: 100%;
     border-radius: 5px;
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.3s;
 }
+.userPic img:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+
+.userDropdown{
+    display: none;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    color: #242424;
+    background: #FFFFFF;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 15px 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 65px;
+    right: 5px;
+    filter: drop-shadow(0 0 15px #0002);
+    z-index: 10;
+}
+.userDropdownActive{
+    display: flex;
+}
+
+.userDropdown a{
+    text-decoration: none;
+    color: #242424;
+    width: auto;
+    padding: 8px 16px;
+    border-top: 1.5px solid #1DA31A1A;
+    transition: 0.3s;
+}
+.userDropdown a:first-child{
+    border-top: none;
+}
+.userDropdown a:hover{
+    color: #1DA31A;
+    transition: 0.3s;
+}
+
+#logoutLink{
+    color: #242424;
+    width: auto;
+    padding: 8px 16px;
+    border-top: 1.5px solid #1DA31A1A;
+    transition:0.3s;
+}
+#logoutLink:hover{
+    color: #1DA31A;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 
 .containerBlock{
     width: 100%;
@@ -584,6 +640,71 @@ section ul li::before{
 }
 
 
+.helpForm{
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.helpFormContainer{
+    height: auto;
+    width: 50%;
+}
+
+#helpForm{
+    height: auto;
+    width: 100%;
+    gap: 20px;
+}
+
+.helpFormField{
+    width: 100%;
+    gap: 15px;
+}
+
+.helpFormInput{
+    width: calc(100% - 30px);
+    color: #808080;
+    background: #FFFFFF;
+    font-size: 12px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    border: 1.5px solid transparent;
+    transition: 0.3s;
+}
+.helpFormInput:focus{
+    border: 1.5px solid #1DA31A;
+    transition: 0.3s;
+}
+
+#helpFormSubmitBtn{
+    width: 80px;
+    color: #ECECEC;
+    background: #1DA31A;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+}
+#helpFormSubmitBtn:hover{
+    background: #168C13;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submitStateMsg{
+    width: calc(100% - 80px);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+
+
 .loginRegisterForm{
     width: 30%;
     height: auto;
@@ -812,3 +933,50 @@ section ul li::before{
 }
 
 /*=============================================*/
+
+details{
+    filter: drop-shadow(0 0 15px transparent);
+    transition: 0.3s;
+}
+
+details:hover{
+    filter: drop-shadow(0 0 15px #0001);
+    transition: 0.3s;
+}
+
+details summary{
+    display: flex;
+    background: #FFFFFF;
+    color: #242424;
+    padding: 30px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+details[open] summary{
+    border-radius: 10px 10px 0 0;
+}
+
+details table img{
+    height: 50px;
+    width: auto;
+    border-radius: 5px;
+}
+
+details table a{
+    color: #242424;
+}
+details table a:hover{
+    color: #1DA31A;
+}
+
+.detailsIcon{
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsIcon i{
+    color: #1DA31A;
+    font-size: 22px;
+}
