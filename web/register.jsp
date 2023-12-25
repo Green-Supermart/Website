@@ -33,7 +33,7 @@
         
         <div class="containerBlock flex" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
             
-            <form id="registerForm" class="loginRegisterForm flex" action="" method="">
+            <form id="registerForm" class="loginRegisterForm flex" action="registration" method="post">
                 
                 <div class="formContainer flex flexCol">
                     
@@ -41,11 +41,11 @@
                         <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
                     </div>
                     
-                    <input type="email" placeholder="Email Address" title="Email Address" required>
+                    <input type="email" placeholder="Email Address" name="uemail" title="Email Address" required>
                     
-                    <input type="password" placeholder="Password" title="Password" required>
+                    <input type="password" placeholder="Password" name="upass" title="Password" required>
                     
-                    <input type="password" placeholder="Confirm Password" title="Confirm Password" required>
+                    <input type="password" placeholder="Confirm Password" name="conpass" title="Confirm Password" required>
                     
                     <span class="termsCheckbox flex flexRow">
                         <input type="checkbox" required>

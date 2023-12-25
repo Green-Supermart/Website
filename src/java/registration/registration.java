@@ -5,7 +5,6 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,8 +19,8 @@ public class registration extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String uemail = request.getParameter("email");
-            String upass = request.getParameter("password");
+            String uemail = request.getParameter("uemail");
+            String upass = request.getParameter("upass");
             String conpass = request.getParameter("conpass");
 
             // Check if passwords match
@@ -33,7 +32,7 @@ public class registration extends HttpServlet {
             // Register the user in the database
             if (registerUser(uemail, upass)) {
                 // Registration successful
-                response.sendRedirect("/Website/success.jsp");
+                response.sendRedirect("/Website/register/success.jsp");
             } else {
                 // Registration failed
                 out.println("Email is already registered or registration failed!");
@@ -77,7 +76,7 @@ public class registration extends HttpServlet {
         try {
             PreparedStatement pst = con.prepareStatement("SELECT COUNT(*) FROM accounts WHERE uemail = ?");
             pst.setString(1, email);
-            ResultSet rs = pst.executeQuery();
+            java.sql.ResultSet rs = pst.executeQuery();
 
             rs.next();
             int count = rs.getInt(1);
