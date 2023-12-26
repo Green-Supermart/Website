@@ -30,42 +30,39 @@
     </head>
     
     <body>
-        
+       
         <div class="containerBlock flex" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
-            
-            <form id="registerForm" class="loginRegisterForm flex" action="registration" method="post">
-                
-                <div class="formContainer flex flexCol">
-                    
-                    <div class="formLogo" onclick="window.location.href='/Website'">
-                        <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
-                    </div>
-                    
-                    <input type="email" placeholder="Email Address" name="uemail" title="Email Address" required>
-                    
-                    <input type="password" placeholder="Password" name="upass" title="Password" required>
-                    
-                    <input type="password" placeholder="Confirm Password" name="conpass" title="Confirm Password" required>
-                    
-                    <span class="termsCheckbox flex flexRow">
-                        <input type="checkbox" required>
-                        <span>
-                            I agree to the <a href="/Website/termsConditions.jsp">Terms & Conditions</a>
-                        </span>
-                    </span>
-                    
-                    <button type="submit">Register</button>
-                    
-                    <span class="formRedirector">
-                        Existing User?
-                        <a href="/Website/login.jsp">Login</a>
-                    </span>
-                    
+        <form id="registerForm" class="loginRegisterForm flex" action="registration" method="post">
+            <div class="formContainer flex flexCol">
+                <div class="formLogo" onclick="window.location.href='/Website'">
+                    <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
                 </div>
+                <%-- Display error message if any --%>
+                <% if (request.getAttribute("errorMessage") != null) { %>
+                    <div class="errorMessage">
+                        <%= request.getAttribute("errorMessage") %>
+                    </div>
+                <% } %>
+                <input type="email" placeholder="Email Address" name="uemail" title="Email Address" required>
+                <input type="password" placeholder="Password" name="upass" title="Password" required>
+                <input type="password" placeholder="Confirm Password" name="conpass" title="Confirm Password" required>
+                <span class="termsCheckbox flex flexRow">
+                    <input type="checkbox" required>
+                    <span>
+                        I agree to the <a href="/Website/termsConditions.jsp">Terms & Conditions</a>
+                    </span>
+                </span>
+                <button type="submit">Register</button>
+                <span class="formRedirector">
+                    Existing User?
+                    <a href="/Website/login.jsp">Login</a>
+                </span>
+            </div>
+        </form>
+    </div>
+        
                 
-            </form>
-            
-        </div>
+
         
     </body>
     

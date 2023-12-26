@@ -33,7 +33,7 @@
         
         <div class="containerBlock flex" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
             
-            <form id="loginForm" class="loginRegisterForm flex" action="" method="">
+            <form id="loginForm" class="loginRegisterForm flex" action="login" method="post">
                 
                 <div class="formContainer flex flexCol">
                     
@@ -41,9 +41,9 @@
                         <img src="https://i.postimg.cc/G9nCKgLp/green-Logo.png">
                     </div>
                     
-                    <input type="email" placeholder="Email Address" title="Email Address" required>
+                    <input type="email" placeholder="Email Address" title="Email Address" name="uemail" required>
                     
-                    <input type="password" placeholder="Password" title="Password" required>
+                    <input type="password" placeholder="Password" title="Password" name="upass" required>
                     
                     <a href="/Website/login/forgotPassword.jsp">Forgot Password?</a>
                     

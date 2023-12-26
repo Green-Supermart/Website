@@ -25,7 +25,8 @@ public class registration extends HttpServlet {
 
             // Check if passwords match
             if (!upass.equals(conpass)) {
-                out.println("Passwords do not match!");
+                request.setAttribute("errorMessage", "Passwords do not match!");
+                request.getRequestDispatcher("/register.jsp").forward(request, response);
                 return;
             }
 
@@ -35,7 +36,8 @@ public class registration extends HttpServlet {
                 response.sendRedirect("/Website/register/success.jsp");
             } else {
                 // Registration failed
-                out.println("Email is already registered or registration failed!");
+                request.setAttribute("errorMessage", "Email is already registered or registration failed!");
+                request.getRequestDispatcher("/register.jsp").forward(request, response);
             }
         } catch (Exception e) {
             e.printStackTrace();
