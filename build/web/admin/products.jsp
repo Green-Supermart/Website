@@ -62,11 +62,11 @@
                             Orders
                         </span>
                         
-                        <span class="navLink flex flexRow" onclick="window.location.href='/Website/admin/reviews.jsp'">
+                        <span class="navLink flex flexRow" onclick="window.location.href='/Website/admin/feedback.jsp'">
                             <span class="navLinkIcon flex">
-                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-comments"></i>
                             </span>
-                            Reviews
+                            Feedback
                         </span>
                     </nav>
                 </div>

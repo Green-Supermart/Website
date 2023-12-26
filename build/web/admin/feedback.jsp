@@ -1,5 +1,5 @@
 <%-- 
-    Document   : reviews
+    Document   : feedback
     Created on : 24 Dec 2023, 22:27:04
     Author     : Sandun
 --%>
@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         
-        <title>Reviews - Admin | GREEN Supermart</title>
+        <title>Feedback - Admin | GREEN Supermart</title>
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
@@ -64,9 +64,9 @@
                         
                         <span class="activeLink flex flexRow">
                             <span class="navLinkIcon flex">
-                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-comments"></i>
                             </span>
-                            Reviews
+                            Feedback
                         </span>
                     </nav>
                 </div>
@@ -86,7 +86,7 @@
                         
                         <div class="pageTopic flex">
                             <div class="pageTopicContainer flex flexRow">
-                                <h1>Reviews</h1>
+                                <h1>Feedback</h1>
                                 
                                 <span class="reloadIcon flex" onclick="window.location.reload();" title="Refresh">
                                     <i class="fa-solid fa-arrows-rotate"></i>
