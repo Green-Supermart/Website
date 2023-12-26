@@ -102,46 +102,26 @@
                                         
                                         <table>
                                             <tr>
-                                                <th style="width: 25%;">Customer</th>
-                                                <th style="width: 50%;">Product</th>
-                                                <th style="width: 25%;">Review</th>
+                                                <th>Email</th>
+                                                <th>Subject</th>
+                                                <th>Message</th>
                                             </tr>
                                             
                                             <tr>
-                                                <td>John Doe</td>
-                                                <td>Baby Soap</td>
-                                                <td style="color: #1DA31A; text-align: center;">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                </td>
+                                                <td>johndoe@mail.com</td>
+                                                <td>Testing</td>
+                                                <td>This is a test message</td>
+                                                
                                             </tr>
                                             
                                             <tr>
-                                                <td>Jane Doe</td>
-                                                <td>Sprite 1L</td>
-                                                <td style="color: #1DA31A; text-align: center;">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </td>
+                                                <td>johndoe@mail.com</td>
+                                                <td>test</td>
+                                                <td>jjhdjdhfjhjhsdfjhsdfjh</td>
+                                                
                                             </tr>
                                             
-                                            <tr>
-                                                <td>James Doe</td>
-                                                <td>Tomato Sauce</td>
-                                                <td style="color: #1DA31A; text-align: center;">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                </td>
-                                            </tr>
+                                           
                                         </table>
                                         
                                     </div>
