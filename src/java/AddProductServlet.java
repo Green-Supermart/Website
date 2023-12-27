@@ -47,9 +47,9 @@ public class AddProductServlet extends HttpServlet {
             int result = pstmt.executeUpdate();
 
             if (result > 0) {
-                response.sendRedirect("success.jsp");
+                response.sendRedirect("admin/products.jsp");
             } else {
-                response.sendRedirect("error.jsp");
+                response.sendRedirect("admin/products/new.jsp");
             }
         } catch (Exception e) {
             // Handle exceptions appropriately
