@@ -4,6 +4,8 @@
     Author     : Sandun
 --%>
 
+<%@ page import="java.sql.*" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -110,32 +112,40 @@
                                                 <th style="width: 10%;">Total</th>
                                             </tr>
                                             
-                                            <tr>
-                                                <td>1</td>
-                                                <td>John Doe</td>
-                                                <td>2021-12-31</td>
-                                                <td>Baby Soap x2<br>Shampoo x1</td>
-                                                <td>123, Main Street, Colombo 01</td>
-                                                <td>Rs. 1000.00</td>
-                                            </tr>
+                                            <%
+                                                try {
+                                                    Class.forName("com.mysql.jdbc.Driver");
+                                                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/greendb", "admin", "Admin123$");
+                                                    Statement stmt = con.createStatement();
+                                                    ResultSet rs = stmt.executeQuery("SELECT * FROM orders");
+
+                                                    while(rs.next()) {
+                                                        int id = rs.getInt("id");
+                                                        String name = rs.getString("name");
+                                                        String date = rs.getString("date");
+                                                        String items = rs.getString("items");
+                                                        String address = rs.getString("address");
+                                                        double total = rs.getDouble("total");
+
+                                            %>
                                             
                                             <tr>
-                                                <td>2</td>
-                                                <td>Jane Doe</td>
-                                                <td>2021-12-31</td>
-                                                <td>Baby Soap x2<br>Shampoo x1</td>
-                                                <td>123, Main Street, Colombo 01</td>
-                                                <td>Rs. 1000.00</td>
+                                                <td><%= id %></td>
+                                                <td><%= name %></td>
+                                                <td><%= date %></td>
+                                                <td><%= items %></td>
+                                                <td><%= address %></td>
+                                                <td><%= total %></td>
                                             </tr>
                                             
-                                            <tr>
-                                                <td>3</td>
-                                                <td>John Doe</td>
-                                                <td>2021-12-31</td>
-                                                <td>Baby Soap x2<br>Shampoo x1</td>
-                                                <td>123, Main Street, Colombo 01</td>
-                                                <td>Rs. 1000.00</td>
-                                            </tr>
+                                            <%
+                                                    }
+
+                                                    con.close();
+                                                } catch(Exception e) {
+                                                    out.println(e);
+                                                }
+                                            %>
                                         </table>
                                         
                                     </div>

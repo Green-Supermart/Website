@@ -4,6 +4,8 @@
     Author     : Sandun
 --%>
 
+<%@ page import="java.sql.*" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -116,14 +118,33 @@
                                                 <th style="width: 15%;">Price</th>
                                                 <th style="width: 10%;">Actions</th>
                                             </tr>
+
+                                            <%
+                                                try {
+                                                    Class.forName("com.mysql.jdbc.Driver");
+                                                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/greendb", "admin", "Admin123$");
+                                                    Statement stmt = con.createStatement();
+                                                    ResultSet rs = stmt.executeQuery("SELECT * FROM products");
+
+                                                    while(rs.next()) {
+                                                        String productName = rs.getString("productName");
+                                                        String productDesc = rs.getString("productDesc");
+                                                        String category = rs.getString("category");
+                                                        double originalPrice = rs.getDouble("originalPrice");
+                                                        double discountPrice = rs.getDouble("discountPrice");
+                                                        String stockStatus = rs.getString("stockStatus");
+                                                        int quantity = rs.getInt("quantity");
+                                                        int sku = rs.getInt("sku");
+
+                                            %>
                                             
                                             <tr>
-                                                <td>001</td>
-                                                <td>Sprite 1L</td>
-                                                <td>Beverages</td>
-                                                <td>In Stock</td>
-                                                <td>134</td>
-                                                <td>Rs. 250.00</td>
+                                                <td><%= sku %></td>
+                                                <td><%= productName %></td>
+                                                <td><%= category %></td>
+                                                <td><%= stockStatus %></td>
+                                                <td><%= quantity %></td>
+                                                <td>Rs. <%= originalPrice %></td>
                                                 <td>
                                                     <span class="entryActionIcons flex flexRow" style="gap: 10px;">
                                                         <span class="flex"><i class="fa-solid fa-pen"></i></span>
@@ -132,50 +153,14 @@
                                                 </td>
                                             </tr>
                                             
-                                            <tr>
-                                                <td>002</td>
-                                                <td>Sprite 1L</td>
-                                                <td>Beverages</td>
-                                                <td>In Stock</td>
-                                                <td>29</td>
-                                                <td>Rs. 250.00</td>
-                                                <td>
-                                                    <span class="entryActionIcons flex flexRow" style="gap: 10px;">
-                                                        <span class="flex"><i class="fa-solid fa-pen"></i></span>
-                                                        <span class="flex"><i class="fa-solid fa-trash-can"></i></span>
-                                                    </span>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr>
-                                                <td>003</td>
-                                                <td>Sprite 1L</td>
-                                                <td>Beverages</td>
-                                                <td>In Stock</td>
-                                                <td>51</td>
-                                                <td>Rs. 250.00</td>
-                                                <td>
-                                                    <span class="entryActionIcons flex flexRow" style="gap: 10px;">
-                                                        <span class="flex"><i class="fa-solid fa-pen"></i></span>
-                                                        <span class="flex"><i class="fa-solid fa-trash-can"></i></span>
-                                                    </span>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr>
-                                                <td>004</td>
-                                                <td>Sprite 1L</td>
-                                                <td>Beverages</td>
-                                                <td>In Stock</td>
-                                                <td>341</td>
-                                                <td>Rs. 250.00</td>
-                                                <td>
-                                                    <span class="entryActionIcons flex flexRow" style="gap: 10px;">
-                                                        <span class="flex"><i class="fa-solid fa-pen"></i></span>
-                                                        <span class="flex"><i class="fa-solid fa-trash-can"></i></span>
-                                                    </span>
-                                                </td>
-                                            </tr>
+                                            <%
+                                                    }
+
+                                                    con.close();
+                                                } catch(Exception e) {
+                                                    out.println(e);
+                                                }
+                                            %>
                                         </table>
                                         
                                     </div>
