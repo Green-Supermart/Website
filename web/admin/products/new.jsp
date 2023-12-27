@@ -122,7 +122,8 @@
                                                                 </span>
                                                             </div>
                                                             
-                                                            <!-- <input type="file" id="productImage" style="display: none;" name="productImage" accept="image/*" required> -->
+                                                            <!-- <input type="file" id="productImage" style="display: none;" name="productImage" accept="image/*"> -->
+                                                            <input type="hidden" name="imgLink" value="https://i.postimg.cc/brf9L1tT/placeholder.png">
                                                         </div>
                                                         
                                                         <div class="flex flexCol" style="width: 100%; gap: 8px;">
@@ -144,21 +145,21 @@
                                                         <div class="flex flexCol" style="width: 45%; gap: 8px;">
                                                             <label>Category</label>
                                                             <select id="category" name="category" style="width: 100%; font-weight: 300; color: #242424; background: #ECECEC; padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; outline: none;" required>
-                                                                <option value="beverages">Beverages</option>
-                                                                <option value="biscuits">Biscuits</option>
-                                                                <option value="cereals">Cereals</option>
-                                                                <option value="cosmetics">Cosmetics</option>
-                                                                <option value="desserts">Desserts</option>
-                                                                <option value="flours">Flours</option>
-                                                                <option value="fruits">Fruits</option>
-                                                                <option value="medicine">Medicine</option>
-                                                                <option value="pastaNoodles">Pasta and Noodles</option>
-                                                                <option value="sauces">Sauces</option>
-                                                                <option value="snacks">Snacks</option>
-                                                                <option value="soapsLiquids">Soaps and Liquids</option>
-                                                                <option value="spreads">Spreads</option>
-                                                                <option value="stationary">Stationary</option>
-                                                                <option value="vegetables">Vegetables</option>
+                                                                <option value="Beverages">Beverages</option>
+                                                                <option value="Biscuits">Biscuits</option>
+                                                                <option value="Cereals">Cereals</option>
+                                                                <option value="Cosmetics">Cosmetics</option>
+                                                                <option value="Desserts">Desserts</option>
+                                                                <option value="Flours">Flours</option>
+                                                                <option value="Fruits">Fruits</option>
+                                                                <option value="Medicine">Medicine</option>
+                                                                <option value="Pasta and Noodles">Pasta and Noodles</option>
+                                                                <option value="Sauces">Sauces</option>
+                                                                <option value="Snacks">Snacks</option>
+                                                                <option value="Soaps and Liquids">Soaps and Liquids</option>
+                                                                <option value="Spreads">Spreads</option>
+                                                                <option value="Stationary">Stationary</option>
+                                                                <option value="Vegetables">Vegetables</option>
                                                             </select>
                                                         </div>
                                                         
@@ -178,8 +179,8 @@
                                                         <div class="flex flexCol" style="width: 45%; gap: 8px;">
                                                             <label>Stock Status</label>
                                                             <select id="stockStatus" name="stockStatus" style="width: 100%; font-weight: 300; color: #242424; background: #ECECEC; padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; outline: none;" required>
-                                                                <option value="inStock">In Stock</option>
-                                                                <option value="outOfStock">Out of Stock</option>
+                                                                <option value="In Stock">In Stock</option>
+                                                                <option value="Out Of Stock">Out of Stock</option>
                                                             </select>
                                                         </div>
                                                         

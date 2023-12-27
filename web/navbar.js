@@ -50,7 +50,7 @@ function navbarHTML() {
     html += '</div>';
     
     html += '<form class="searchBox" id="searchBox">';
-    html += '<input type="search" id="searchField" class="searchField" placeholder="Search" title="Search" required>';
+    html += '<input type="search" id="searchField" name="searchQuery" class="searchField" placeholder="Search" title="Search" required>';
     html += '<button type="submit" id="searchBtn" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>';
     html += '</form>';
     

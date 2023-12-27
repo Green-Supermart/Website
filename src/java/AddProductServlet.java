@@ -27,13 +27,14 @@ public class AddProductServlet extends HttpServlet {
         String stockStatus = request.getParameter("stockStatus");
         double quantity = Double.parseDouble(request.getParameter("quantity"));
         double sku = Double.parseDouble(request.getParameter("sku"));
+        String imgLink = request.getParameter("imgLink");
 
         // Connect to the database and add the product
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/greendb", "admin", "Admin123$");
 
-            String query = "INSERT INTO products (productName, productDesc, category, originalPrice, discountPrice, stockStatus, quantity, sku) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            String query = "INSERT INTO products (productName, productDesc, category, originalPrice, discountPrice, stockStatus, quantity, sku, imgLink) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement pstmt = con.prepareStatement(query);
             pstmt.setString(1, productName);
             pstmt.setString(2, productDesc);
@@ -43,6 +44,7 @@ public class AddProductServlet extends HttpServlet {
             pstmt.setString(6, stockStatus);
             pstmt.setDouble(7, quantity);
             pstmt.setDouble(8, sku);
+            pstmt.setString(9, imgLink);
 
             int result = pstmt.executeUpdate();
 
