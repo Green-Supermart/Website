@@ -57,7 +57,7 @@
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
                                 <h1>Related Topic</h1>
-                                <h2>Article 1 Heading</h2>
+                                <h2>Account Management: Logging In and Password Recovery</h2>
                             </div>
                             
                             <span>
@@ -70,7 +70,7 @@
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
                                 <h1>Related Topic</h1>
-                                <h2>Article 2 Heading</h2>
+                                <h2>Updating Account Information</h2>
                             </div>
                             
                             <span>
@@ -83,7 +83,7 @@
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
                                 <h1>Related Topic</h1>
-                                <h2>Article 3 Heading</h2>
+                                <h2>What payment methods are accepted? How to complete your payment</h2>
                             </div>
                             
                             <span>
@@ -96,7 +96,7 @@
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
                                 <h1>Related Topic</h1>
-                                <h2>Article 4 Heading</h2>
+                                <h2>Return and refund policy for the food items</h2>
                             </div>
                             
                             <span>
@@ -109,7 +109,7 @@
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
                                 <h1>Related Topic</h1>
-                                <h2>Article 5 Heading</h2>
+                                <h2>Technical Issues with the Website</h2>
                             </div>
                             
                             <span>

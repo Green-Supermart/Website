@@ -55,38 +55,84 @@
                         <span class="currentLink">Article 4 Heading</span>
                     </div>
                     
-                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">Article 4 Heading</h1>
-                    
+                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">4.	Return and refund policy for the food items</h1>
+                    <p>Here's a structured guide to initiate and navigate the return process for any issues with your received food item:</p>
                     <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
                         
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
+                        
+                        
                         
                         <ul>
-                            <li>List Item 1</li>
-                            <li>List Item 2</li>
-                            <li>List Item 3</li>
-                            <li>List Item 4</li>
+                            <li>Initiating a Return
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">If you encounter any issues with the received food item, initiate a return by contacting our customer support team within a specified timeframe.</li>
+                                      
+                                </ol>
+                            </li>
+                            <li>Contacting Customer Support
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Choose your preferred method:
+                                         <ol>
+                                             <li padding-left="20px" style="padding-left: 20px;">Messaging Box: Conveniently send us a message directly from the given message box below.</li>
+                                             <li padding-left="20px" style="padding-left: 20px;">Email: Alternatively, reach us by sending an email to greensupermartlk@gmail.com.</li>
+                                         </ol>
+                                     </li>
+                                      
+                                </ol>
+                            </li>
+                            <li>Providing Details
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Clearly communicate the issue, providing necessary details such as the order number, item description, and a brief explanation of the problem.</li>
+                                      
+                                </ol>
+                            </li>
+                            <li>Ensuring Eligibility
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Ensure that your request meets the eligibility criteria outlined in our return policy. This may include reporting the issue within a specific timeframe or providing photographic evidence of the concern.</li>
+                                      
+                                </ol>
+                                
+                            </li>
+                            <li> Return Authorization
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Upon verifying your request, our customer support will guide you through the return authorization process.</li>
+                                      
+                                </ol>
+                                
+                            </li>
+                            <li> Returning the Item
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Follow the instructions provided for returning the item. This may involve shipping the product back to us using a pre-paid label or a designated return method.</li>
+                                      
+                                </ol>
+                                
+                            </li>
+                            <li> Refund or Replacement
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Once the returned item is received and inspected, you'll be eligible for a refund or a replacement, depending on your preference</li>
+                                      
+                                </ol>
+                                
+                            </li>
+                            <li> Timely Resolution
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">We strive to expedite the resolution process, and you can expect timely communication regarding the status of your refund or replacement</li>
+                                      
+                                </ol>
+                                
+                            </li>
                         </ul>
                     </section>
                     
-                    <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
+                    
                         
-                        <ul>
-                            <li>List Item 1</li>
-                            <li>List Item 2</li>
-                            <li>List Item 3</li>
-                            <li>List Item 4</li>
-                        </ul>
                         
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
                     </section>
                     
                     <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
                         
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
+                        
+                        <p>By following these structured steps and utilizing the convenient messaging box or email, we ensure a fair and efficient process for addressing any concerns you may have with the quality or condition of our food items. Our commitment is to provide you with a satisfactory solution and maintain your trust in Green Supermart.</p>
                     </section>
                     
                 </div>

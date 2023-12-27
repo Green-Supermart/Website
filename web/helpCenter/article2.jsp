@@ -55,39 +55,63 @@
                         <span class="currentLink">Article 2 Heading</span>
                     </div>
                     
-                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">Article 2 Heading</h1>
+                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">Updating Account Information</h1>
                     
                     <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
                         
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
+                        
+                        <p>If you need to modify your account information, such as updating your delivery address or adjusting email preferences, follow these simple steps</p>
                         
                         <ul>
-                            <li>List Item 1</li>
-                            <li>List Item 2</li>
-                            <li>List Item 3</li>
-                            <li>List Item 4</li>
+                            <li>Access Account Settings
+                                <ol>
+                                    <li padding-left="20px" style="padding-left: 20px;">Click on the account icon located in the right upper corner of the webpage.</li>
+      
+
+                                </ol>
+
+                            </li>
+                            <li>Navigate to Account Settings
+                                <ol>
+                                    <li padding-left="20px" style="padding-left: 20px;">From the dropdown menu, select "Account Settings".</li>
+      
+
+                                </ol>
+                            </li>
+                            <li>View Account Information
+                                <ol>
+                                    <li padding-left="20px" style="padding-left: 20px;">Inside the Account Settings section, you'll find a comprehensive overview of your account details.</li>
+      
+
+                                </ol>
+                            </li>
+                            <li>Edit Account Details
+                                <ol>
+                                    <li padding-left="20px" style="padding-left: 20px;">Locate the specific information you wish to update, such as delivery address, email, or other personal details.</li>
+      
+
+                                </ol>     
+                            </li>
+                            <li>Save Changes
+                                <ol>
+                                    <li padding-left="20px" style="padding-left: 20px;">After making the desired changes, be sure to save your updates to ensure they take effect</li>
+      
+
+                                </ol>     
+                            </li>
+                            
+                           
                         </ul>
                     </section>
-                    
                     <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
                         
-                        <ul>
-                            <li>List Item 1</li>
-                            <li>List Item 2</li>
-                            <li>List Item 3</li>
-                            <li>List Item 4</li>
-                        </ul>
-                        
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
+                        <p>By following these structured steps, you can easily manage and update your account information, ensuring that it reflects the most accurate and current details for a seamless shopping experience.
+
+                           Certainly! If PayPal is the exclusive payment method, we can streamline the information accordingly:
+                        </p>
                     </section>
                     
-                    <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
-                        
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
-                    </section>
+                    
                     
                 </div>
                 

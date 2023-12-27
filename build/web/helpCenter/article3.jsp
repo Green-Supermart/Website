@@ -55,38 +55,60 @@
                         <span class="currentLink">Article 3 Heading</span>
                     </div>
                     
-                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">Article 3 Heading</h1>
+                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">What payment methods are accepted? How to complete your payment</h1>
+                    
+                    <p>When finalizing your purchase at Green Supermart, the only payment option available is PayPal. Here's how you can complete your transaction seamlessly</p>
                     
                     <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
                         
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
+                        
+                        
                         
                         <ul>
-                            <li>List Item 1</li>
-                            <li>List Item 2</li>
-                            <li>List Item 3</li>
-                            <li>List Item 4</li>
+                            <li>Checkout Process
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">After selecting your desired food items, proceed to the checkout page</li>
+                                      
+                                </ol>
+                            </li>
+                            <li>PayPal Payment
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Select PayPal as your exclusive and preferred payment method</li>
+                                     
+                                </ol>
+                            </li>
+                            <li>Redirect to PayPal
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Clicking "Checkout" will redirect you to the PayPal platform for secure transaction processing</li>
+                                    
+                                </ol>
+                            </li>
+                            <li>Login to Your PayPal Account
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">If you have an existing PayPal account, log in to authorize and complete the payment.</li>
+                                     
+                                </ol>
+                            </li>
+                            <li>Payment Confirmation
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Review the order details on PayPal and confirm the payment.</li>
+                                     
+                                </ol>
+                            </li>
+                            <li>Return to Green Supermart
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Upon successful payment, you'll be redirected back to Green Supermart for order confirmation..</li>
+                                     
+                                </ol>
+                            </li>
                         </ul>
                     </section>
                     
-                    <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
-                        
-                        <ul>
-                            <li>List Item 1</li>
-                            <li>List Item 2</li>
-                            <li>List Item 3</li>
-                            <li>List Item 4</li>
-                        </ul>
-                        
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
-                    </section>
                     
                     <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
                         
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
+                        
+                        <p>With PayPal as the sole payment option, we prioritize the security and simplicity of your transactions. Enjoy a hassle-free checkout process when finalizing your food orders with Green Supermart.</p>
                     </section>
                     
                 </div>

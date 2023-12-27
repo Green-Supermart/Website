@@ -52,41 +52,67 @@
                             <a style="color: #1DA31A;" href="/Website/helpCenter.jsp">Help Center</a>
                             <i class="fa-solid fa-chevron-right" style="color: #242424; font-size: 10px;"></i>
                         </span>
-                        <span class="currentLink">Article 1 Heading</span>
+                        <span class="currentLink"></span>
                     </div>
                     
-                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">Article 1 Heading</h1>
+                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">Account Management: Logging In and Password Recovery</h1>
                     
                     <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
+                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Creating an Account:</h1>
                         
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
+                        <p>To get started with your shopping journey on Green Supermart, follow these structured steps:</p>
                         
                         <ul>
-                            <li>List Item 1</li>
-                            <li>List Item 2</li>
-                            <li>List Item 3</li>
-                            <li>List Item 4</li>
+                            <li>Sign Up
+                                <ol>
+                                    <li padding-left="20px" style="padding-left: 20px;">Locate the "Sign Up" option on our website.</li>
+                                    <li padding-left="20px" style="padding-left: 20px;">Provide your email address and choose a secure password</li>
+                                </ol>
+
+                            </li>               
                         </ul>
                     </section>
                     
                     <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
+                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Logging In</h1>
+                        
+                        <p>Returning for more shopping? Logging in is a breeze</p>
                         
                         <ul>
-                            <li>List Item 1</li>
-                            <li>List Item 2</li>
-                            <li>List Item 3</li>
-                            <li>List Item 4</li>
+                            <li>Access Your Account
+                                <ol>
+                                    <li padding-left="20px" style="padding-left: 20px;">Click on the "Log In" option on the website.</li>
+                                    <li padding-left="20px" style="padding-left: 20px;">Enter your registered email address and password in the provided spaces.</li>
+                                </ol>
+                                
+                            </li>
+                            <li>Forgotten Password
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">If you forget your password, click on the "Forgot Password" button.</li>
+                                     <li padding-left="20px" style="padding-left: 20px;">Enter your email address, and we'll promptly send you a verification code.</li> 
+                                </ol>       
+                            </li>
+                            <li>Reset Password
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Receive the code in your email and input it on the website.</li>
+                                     <li padding-left="20px" style="padding-left: 20px;">Receive the code in your email and input it on the website.</li> 
+                                </ol>                                
+                            </li>
+                            <li>Continue Shopping
+                                <ol>
+                                     <li padding-left="20px" style="padding-left: 20px;">Once your password is updated, you can seamlessly continue your shopping experience.</li>
+                                     
+                                </ol>
+
+                            </li>
                         </ul>
                         
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
+                        
                     </section>
                     
                     <section style="margin-bottom: 0;">
-                        <h1 class="sectionHeading" style="text-align: left; font-size: 26px;">Sub Title</h1>
                         
-                        <p>Duis elit dolor fugiat culpa incididunt aliquip incididunt aute sunt. Adipisicing irure ipsum Lorem eu id dolor dolore qui anim incididunt adipisicing sit. Occaecat culpa commodo dolor cillum nostrud exercitation eiusmod.</p>
+                        <p>With these user-friendly steps, managing your Green Supermart account is a straightforward and secure process. Enjoy the convenience of a personalized shopping experience tailored just for you!</p>
                     </section>
                     
                 </div>
