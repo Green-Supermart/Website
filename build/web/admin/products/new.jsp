@@ -102,7 +102,7 @@
                                 <div class="flex flexRow" style="height: 100%; width: 100%; margin-top: 0; overflow: auto; align-items: start;">
                                     <div style="height: auto; width: 100%; padding-bottom: 20px;">
                                         
-                                        <form class="newProductForm" id="newProductForm" action="" method="">
+                                        <form class="newProductForm" id="newProductForm" action="/Website/AddProductServlet" method="POST">
                                             
                                             <div style="width: 100%; position: sticky; top: 0; background: #FFFFFF; padding-bottom: 20px;">
                                                 <h1 style="color: #1DA31A; font-size: 20px;">Product Information</h1>
@@ -122,7 +122,7 @@
                                                                 </span>
                                                             </div>
                                                             
-                                                            <input type="file" id="productImage" style="display: none;" name="productImage" accept="image/*" required>
+                                                            <!-- <input type="file" id="productImage" style="display: none;" name="productImage" accept="image/*" required> -->
                                                         </div>
                                                         
                                                         <div class="flex flexCol" style="width: 100%; gap: 8px;">
@@ -143,7 +143,7 @@
                                                         
                                                         <div class="flex flexCol" style="width: 45%; gap: 8px;">
                                                             <label>Category</label>
-                                                            <select id="category" style="width: 100%; font-weight: 300; color: #242424; background: #ECECEC; padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; outline: none;" required>
+                                                            <select id="category" name="category" style="width: 100%; font-weight: 300; color: #242424; background: #ECECEC; padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; outline: none;" required>
                                                                 <option value="beverages">Beverages</option>
                                                                 <option value="biscuits">Biscuits</option>
                                                                 <option value="cereals">Cereals</option>
@@ -177,7 +177,7 @@
                                                         
                                                         <div class="flex flexCol" style="width: 45%; gap: 8px;">
                                                             <label>Stock Status</label>
-                                                            <select id="stockStatus" style="width: 100%; font-weight: 300; color: #242424; background: #ECECEC; padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; outline: none;" required>
+                                                            <select id="stockStatus" name="stockStatus" style="width: 100%; font-weight: 300; color: #242424; background: #ECECEC; padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; outline: none;" required>
                                                                 <option value="inStock">In Stock</option>
                                                                 <option value="outOfStock">Out of Stock</option>
                                                             </select>
@@ -198,7 +198,7 @@
                                             </div>
                                             
                                             <div style="height: auto; width: calc(100% - 40px); padding: 20px 20px;">
-                                                <button type="submit" id="submitBtn">Submit</button>
+                                                <input type="submit" id="submitBtn" value="Submit">
                                             </div>
                                             
                                         </form>

@@ -53,33 +53,60 @@
             <div class="container flex flexCol" style="gap: 30px;">
                 
                 <div class="flex flexRow" style="width: 100%; gap: 30px;">
-                    <div class="flex" style="height: 290px; width: 290px; color: #242424; background: #FFFFFF; justify-content: center; align-items: center; border-radius: 10px;">
-                        <div class="flex" style="width: 80%; height: 80%;">
-                            Profile Picture
+                    <div class="proPicLink flex">
+                        <div class="flex flexCol" style="width: 80%; height: 80%; justify-content: space-between; align-items: center;">
+                            <div style="height: 75%; width: auto;">
+                                <img src="https://i.postimg.cc/brf9L1tT/placeholder.png" alt="Profile Picture" style="width: 100%; height: 100%; object-fit: cover; border-radius: 99px;">
+                            </div>
+                            
+                            <span id="proPicUpdate">
+                                Update Profile Picture <i class="fa-solid fa-square-up-right" style="color: #1DA31A;"></i>
+                            </span>
                         </div>
                     </div>
                     <div class="flex flexCol" style="width: calc(100% - 310px); gap: 30px;">
-                        <div class="flex" style="height: 130px; width: 100%; color: #242424; background: #FFFFFF; border-radius: 10px; justify-content: center; align-items: center;">
-                            <div class="flex" style="width: 90%;">
-                                <h1 style="color: #1DA31A; font-size: 16px; font-weight: 400;">Full Name</h1>
+                        <div class="accountLink flex">
+                            <div class="flex flexROw" style="width: 90%; align-items: center; justify-content: space-between;">
+                                <div class="flex flexCol" style="gap: 5px;">
+                                    <h1>Full Name</h1>
+                                    <h2>John Doe</h2>
+                                </div>
+                                
+                                <i class="fa-solid fa-angle-right" style="color: #1DA31A;"></i>
                             </div>
+                            
                         </div>
-                        <div class="flex" style="height: 130px; width: 100%; color: #242424; background: #FFFFFF; border-radius: 10px; justify-content: center; align-items: center;">
-                            <div class="flex" style="width: 90%;">
-                                <h1 style="color: #1DA31A; font-size: 16px; font-weight: 400;">Email Address</h1>
+                        <div class="accountLink flex">
+                            <div class="flex flexRow" style="width: 90%; align-items: center; justify-content: space-between;">
+                                <div class="flex flexCol" style="gap: 5px;">
+                                    <h1>Email Address</h1>
+                                    <h2>johndoe@mail.com</h2>
+                                </div>
+                                
+                                <i class="fa-solid fa-angle-right" style="color: #1DA31A;"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex" style="height: 130px; width: 100%; color: #242424; background: #FFFFFF; border-radius: 10px; justify-content: center; align-items: center;">
+                <div class="accountLink flex">
                     <div class="flex" style="width: 90%;">
-                        <h1 style="color: #242424; font-size: 16px; font-weight: 400;">Update Password</h1>
+                        <div class="flex flexRow" style="width: 100%; align-items: center; justify-content: space-between;">
+                            <h1 style="color: #242424;">Update Password</h1>
+                            <i class="fa-solid fa-angle-right" style="color: #1DA31A;"></i>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="flex" style="height: 130px; width: 100%; color: #242424; background: #FFFFFF; border-radius: 10px; justify-content: center; align-items: center;">
-                    <div class="flex" style="width: 90%;">
-                        <h1 style="color: #1DA31A; font-size: 16px; font-weight: 400;">Delivery Address</h1>
+                <div class="accountLink flex">
+                    <div class="flex flexRow" style="width: 90%; align-items: center; justify-content: space-between;">
+                        <div class="flex flexCol" style="gap: 5px;">
+                            <h1>Delivery Address</h1>
+                            <h2>123, York Street, New York, United States 10001</h2>
+                        </div>
+                        
+                        <i class="fa-solid fa-angle-right" style="color: #1DA31A;"></i>
                     </div>
+                    
                 </div>
                 
             </div>
