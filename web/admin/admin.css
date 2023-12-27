@@ -458,3 +458,17 @@ table tr td{
     cursor: pointer;
     transition: 0.3s;
 }
+
+#submitBtn{
+    width: 80px;
+    color: #ECECEC;
+    background: #1DA31A;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+}
+#submitBtn:hover{
+    background: #168C13;
+    cursor: pointer;
+    transition: 0.3s;
+}
