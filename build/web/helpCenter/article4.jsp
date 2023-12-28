@@ -55,7 +55,7 @@
                         <span class="currentLink">Return and refund policy for the food items</span>
                     </div>
                     
-                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">4.	Return and refund policy for the food items</h1>
+                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">Return and refund policy for the food items</h1>
                     <p>Here's a structured guide to initiate and navigate the return process for any issues with your received food item:</p>
                     <section style="margin-bottom: 0;">
                         

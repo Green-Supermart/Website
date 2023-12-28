@@ -55,7 +55,7 @@
                         <span class="currentLink">Technical Issues with the Website</span>
                     </div>
                     
-                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">5.	Technical Issues with the Website</h1>
+                    <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">Technical Issues with the Website</h1>
                     
                     <p>"I'm experiencing technical issues while using the website, such as slow loading times or error messages. How can I troubleshoot these issues?"</p>
                     <section style="margin-bottom: 0;">
