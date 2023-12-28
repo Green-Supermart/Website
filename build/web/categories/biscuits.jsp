@@ -96,7 +96,9 @@
                             </h1>
                             <span class="productPrice flex flexRow">
                                 <h2 class="price">Rs. <%= originalPrice - (originalPrice * discountPercentage / 100) %></h2>
-                                <h2 class="discPrice">Rs. <%= originalPrice %></h2>
+                                <% if (discountPercentage > 0){ %>
+                                    <h2 class="discPrice">Rs. <%= originalPrice %></h2>
+                                <% } %>
                             </span>
                             <button class="addToCartBtn flex flexRow">
                                 <i class="fa-solid fa-cart-plus"></i>
