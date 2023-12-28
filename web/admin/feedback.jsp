@@ -27,6 +27,8 @@
         <link rel="preload" href="https://i.postimg.cc/MKJm2kGp/favicon.png" as="image" type="image/png">
         <link rel="preload" href="https://i.postimg.cc/TwdpWvhk/admin-Logo.png" as="image" type="image/png">
         
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="/Website/admin/fetchFeedback.js" defer></script>
         <script src="/Website/admin/admin.js" defer></script>
     </head>
     
@@ -101,28 +103,12 @@
                                 <div class="flex flexRow" style="height: 100%; width: 100%; margin-top: 0; overflow: auto; align-items: start;">
                                     <div style="height: auto; width: 100%;">
                                         
-                                        <table>
+                                        <table id="feedbackTable">
                                             <tr>
-                                                <th>Email</th>
-                                                <th>Subject</th>
-                                                <th>Message</th>
+                                                <th style="width: 25%;">Email</th>
+                                                <th style="width: 30%;">Subject</th>
+                                                <th style="width: 45%;">Message</th>
                                             </tr>
-                                            
-                                            <tr>
-                                                <td>johndoe@mail.com</td>
-                                                <td>Testing</td>
-                                                <td>This is a test message</td>
-                                                
-                                            </tr>
-                                            
-                                            <tr>
-                                                <td>johndoe@mail.com</td>
-                                                <td>test</td>
-                                                <td>jjhdjdhfjhjhsdfjhsdfjh</td>
-                                                
-                                            </tr>
-                                            
-                                           
                                         </table>
                                         
                                     </div>
