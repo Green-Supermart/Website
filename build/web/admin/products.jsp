@@ -135,6 +135,7 @@
                                                         String stockStatus = rs.getString("stockStatus");
                                                         int quantity = rs.getInt("quantity");
                                                         int sku = rs.getInt("sku");
+                                                        int id = rs.getInt("id");
 
                                             %>
                                             
