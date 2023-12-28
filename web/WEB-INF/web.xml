@@ -17,6 +17,10 @@
         <servlet-name>DeleteProductServlet</servlet-name>
         <servlet-class>DeleteProductServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <servlet-class>UpdateProductServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SearchResultsServlet</servlet-name>
         <url-pattern>/search</url-pattern>
@@ -32,6 +36,10 @@
     <servlet-mapping>
         <servlet-name>DeleteProductServlet</servlet-name>
         <url-pattern>/DeleteProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <url-pattern>/UpdateProductServlet</url-pattern>
     </servlet-mapping>
     <error-page>
         <error-code>404</error-code>
