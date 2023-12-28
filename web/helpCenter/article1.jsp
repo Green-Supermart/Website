@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         
-        <title>Article 1 - Help Center | GREEN Supermart</title>
+        <title>Account Management: Logging In and Password Recovery - Help Center | GREEN Supermart</title>
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
@@ -52,7 +52,7 @@
                             <a style="color: #1DA31A;" href="/Website/helpCenter.jsp">Help Center</a>
                             <i class="fa-solid fa-chevron-right" style="color: #242424; font-size: 10px;"></i>
                         </span>
-                        <span class="currentLink"></span>
+                        <span class="currentLink">Account Management: Logging In and Password Recovery</span>
                     </div>
                     
                     <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">Account Management: Logging In and Password Recovery</h1>
@@ -88,20 +88,20 @@
                             </li>
                             <li>Forgotten Password
                                 <ol>
-                                     <li padding-left="20px" style="padding-left: 20px;">If you forget your password, click on the "Forgot Password" button.</li>
-                                     <li padding-left="20px" style="padding-left: 20px;">Enter your email address, and we'll promptly send you a verification code.</li> 
-                                </ol>       
+                                    <li padding-left="20px" style="padding-left: 20px;">If you forget your password, click on the "Forgot Password" button.</li>
+                                    <li padding-left="20px" style="padding-left: 20px;">Enter your email address, and we'll promptly send you a verification code.</li> 
+                                </ol>
                             </li>
                             <li>Reset Password
                                 <ol>
-                                     <li padding-left="20px" style="padding-left: 20px;">Receive the code in your email and input it on the website.</li>
-                                     <li padding-left="20px" style="padding-left: 20px;">Receive the code in your email and input it on the website.</li> 
+                                    <li padding-left="20px" style="padding-left: 20px;">Receive the code in your email and input it on the website.</li>
+                                    <li padding-left="20px" style="padding-left: 20px;">Receive the code in your email and input it on the website.</li> 
                                 </ol>                                
                             </li>
                             <li>Continue Shopping
                                 <ol>
-                                     <li padding-left="20px" style="padding-left: 20px;">Once your password is updated, you can seamlessly continue your shopping experience.</li>
-                                     
+                                    <li padding-left="20px" style="padding-left: 20px;">Once your password is updated, you can seamlessly continue your shopping experience.</li>
+                                    
                                 </ol>
 
                             </li>

@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         
-        <title>Article 5 - Help Center | GREEN Supermart</title>
+        <title>Technical Issues with the Website - Help Center | GREEN Supermart</title>
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
@@ -52,7 +52,7 @@
                             <a style="color: #1DA31A;" href="/Website/helpCenter.jsp">Help Center</a>
                             <i class="fa-solid fa-chevron-right" style="color: #242424; font-size: 10px;"></i>
                         </span>
-                        <span class="currentLink">Article 5 Heading</span>
+                        <span class="currentLink">Technical Issues with the Website</span>
                     </div>
                     
                     <h1 style="color: #1DA31A; text-align: center; margin-bottom: 30px; font-size: 34px; font-weight: 400;">5.	Technical Issues with the Website</h1>

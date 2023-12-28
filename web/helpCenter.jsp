@@ -56,7 +56,7 @@
                     <a href="/Website/helpCenter/article1.jsp" class="helpLink flex flexRow" style="text-decoration: none;">
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
-                                <h1>Related Topic</h1>
+                                <h1>Account Management</h1>
                                 <h2>Account Management: Logging In and Password Recovery</h2>
                             </div>
                             
@@ -69,7 +69,7 @@
                     <a href="/Website/helpCenter/article2.jsp" class="helpLink flex flexRow" style="text-decoration: none;">
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
-                                <h1>Related Topic</h1>
+                                <h1>My Account</h1>
                                 <h2>Updating Account Information</h2>
                             </div>
                             
@@ -82,7 +82,7 @@
                     <a href="/Website/helpCenter/article3.jsp" class="helpLink flex flexRow" style="text-decoration: none;">
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
-                                <h1>Related Topic</h1>
+                                <h1>Payment Methods</h1>
                                 <h2>What payment methods are accepted? How to complete your payment</h2>
                             </div>
                             
@@ -95,7 +95,7 @@
                     <a href="/Website/helpCenter/article4.jsp" class="helpLink flex flexRow" style="text-decoration: none;">
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
-                                <h1>Related Topic</h1>
+                                <h1>Returns and Refunds</h1>
                                 <h2>Return and refund policy for the food items</h2>
                             </div>
                             
@@ -108,7 +108,7 @@
                     <a href="/Website/helpCenter/article5.jsp" class="helpLink flex flexRow" style="text-decoration: none;">
                         <div class="linkContent flex">
                             <div class="linkText flex flexCol">
-                                <h1>Related Topic</h1>
+                                <h1>Tech Support</h1>
                                 <h2>Technical Issues with the Website</h2>
                             </div>
                             

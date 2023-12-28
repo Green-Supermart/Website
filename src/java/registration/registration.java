@@ -47,7 +47,7 @@ public class registration extends HttpServlet {
     private boolean registerUser(String email, String password) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/greenmart", "root1", "root1");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/greendb", "admin", "Admin123$");
 
             // Check if the email is already registered before proceeding with the registration
             if (isEmailRegistered(email, con)) {
