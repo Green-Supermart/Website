@@ -131,10 +131,11 @@
                                                         String productDesc = rs.getString("productDesc");
                                                         String category = rs.getString("category");
                                                         double originalPrice = rs.getDouble("originalPrice");
-                                                        double discountPrice = rs.getDouble("discountPrice");
+                                                        int discountPercentage = rs.getInt("discountPercentage");
                                                         String stockStatus = rs.getString("stockStatus");
                                                         int quantity = rs.getInt("quantity");
                                                         int sku = rs.getInt("sku");
+                                                        int id = rs.getInt("id");
 
                                             %>
                                             
@@ -147,8 +148,8 @@
                                                 <td>Rs. <%= originalPrice %></td>
                                                 <td>
                                                     <span class="entryActionIcons flex flexRow" style="gap: 10px;">
-                                                        <span class="flex"><i class="fa-solid fa-pen"></i></span>
-                                                        <span class="flex"><i class="fa-solid fa-trash-can"></i></span>
+                                                        <a href="/Website/admin/products/update.jsp?id=<%= id %>" style="text-decoration: none;"><span class="flex"><i class="fa-solid fa-pen"></i></span></a>
+                                                        <a href="/Website/DeleteProductServlet?id=<%= id %>" style="text-decoration: none;"><span class="flex"><i class="fa-solid fa-trash-can"></i></span></a>
                                                     </span>
                                                 </td>
                                             </tr>

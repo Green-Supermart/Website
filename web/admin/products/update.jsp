@@ -1,6 +1,6 @@
 <%-- 
-    Document   : new
-    Created on : 16 Dec 2023, 03:15:09
+    Document   : update
+    Created on : 28 Dec 2023, 18:42:11
     Author     : Sandun
 --%>
 
@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         
-        <title>New Product | Products - Admin | GREEN Supermart</title>
+        <title>Update Product | Products - Admin | GREEN Supermart</title>
         
         <link rel="icon" href="https://i.postimg.cc/MKJm2kGp/favicon.png">
         
@@ -91,7 +91,7 @@
                                         <i class="fa-solid fa-chevron-left"></i>
                                     </span>
                                     
-                                    New Product
+                                    Update Product
                                 </h1>
                             </div>
                         </div>
@@ -102,7 +102,7 @@
                                 <div class="flex flexRow" style="height: 100%; width: 100%; margin-top: 0; overflow: auto; align-items: start;">
                                     <div style="height: auto; width: 100%; padding-bottom: 20px;">
                                         
-                                        <form class="newProductForm" id="newProductForm" action="/Website/AddProductServlet" method="POST">
+                                        <form class="updateProductForm" id="newProductForm" action="/Website/UpdateProductServlet" method="POST">
                                             
                                             <div style="width: 100%; position: sticky; top: 0; background: #FFFFFF; padding-bottom: 20px;">
                                                 <h1 style="color: #1DA31A; font-size: 20px;">Product Information</h1>
@@ -111,6 +111,8 @@
                                             <div class="flex flexRow" style="height: auto; width: 100%;">
                                                 <div class="flex" style="height: 100%; width: 50%; justify-content: center; align-items: center;">
                                                     <div class="flex flexCol" style="height: calc(100% - 40px); width: calc(100% - 40px); gap: 20px;">
+                                                        
+                                                        <input type="hidden" name="id" value="<%=request.getParameter("id")%>">
                                                         
                                                         <div class="flex flexCol" style="width: 100%; gap: 8px;">
                                                             <label>Product Image</label>

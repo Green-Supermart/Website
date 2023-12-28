@@ -21,7 +21,7 @@ public class login extends HttpServlet {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/greenmart", "root1", "root1");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/greendb", "admin", "Admin123$");
             PreparedStatement ps = conn.prepareStatement("SELECT * FROM accounts WHERE uemail = ?");
             ps.setString(1, email);
             ResultSet rs = ps.executeQuery();

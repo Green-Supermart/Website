@@ -4,6 +4,8 @@
     Author     : Sandun
 --%>
 
+<%@ page import="java.sql.*" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -53,27 +55,50 @@
             <div class="container">
                 
                 <div class="cardsContainer flex flexRow">
-                    <div class="productCard flex flexCol">
+                
+                    <%
+                        try {
+                            Class.forName("com.mysql.jdbc.Driver");
+                            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/greendb", "admin", "Admin123$");
+                            Statement stmt = con.createStatement();
+                            ResultSet rs = stmt.executeQuery("SELECT * FROM products WHERE discountPercentage > 0");
+
+                            while(rs.next()) {
+                                int id = rs.getInt("id");
+                                String productName = rs.getString("productName");
+                                double originalPrice = rs.getDouble("originalPrice");
+                                int discountPercentage = rs.getInt("discountPercentage");
+                                String imgLink = rs.getString("imgLink");
+
+                    %>
+
+                    <div class="productCard flex flexCol" data-product-id="<%= id %>">
                         <div class="productImg flex">
                             <div class="productIcons flex flexRow">
-                                <span class="discIndicator">
-                                    -20%
-                                </span>
+                                <% if (discountPercentage > 0){ %>
+                                    <span class="discIndicator">
+                                        -<%= discountPercentage %>%
+                                    </span>
+                                <% } %>
+                                <span style="width: 10px; visibility: hidden;"></span>
+
                                 <span class="wishlistIndicator">
                                     <i class="fa-solid fa-heart"></i>
                                 </span>
                             </div>
-                            <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                            <img src="<%= imgLink %>">
                         </div>
                         <div class="productContent flex flexCol">
                             <h1>
                                 <a href="">
-                                    Product Title
+                                    <%= productName %>
                                 </a>
                             </h1>
                             <span class="productPrice flex flexRow">
-                                <h2 class="price">Rs. 152.00</h2>
-                                <h2 class="discPrice">Rs. 190.00</h2>
+                                <h2 class="price">Rs. <%= originalPrice - (originalPrice * discountPercentage / 100) %></h2>
+                                <% if (discountPercentage > 0){ %>
+                                    <h2 class="discPrice">Rs. <%= originalPrice %></h2>
+                                <% } %>
                             </span>
                             <button class="addToCartBtn flex flexRow">
                                 <i class="fa-solid fa-cart-plus"></i>
@@ -82,123 +107,16 @@
                         </div>
                     </div>
                     
-                    <div class="productCard flex flexCol">
-                        <div class="productImg flex">
-                            <div class="productIcons flex flexRow">
-                                <span class="discIndicator">
-                                    -20%
-                                </span>
-                                <span class="wishlistIndicator">
-                                    <i class="fa-regular fa-heart"></i>
-                                </span>
-                            </div>
-                            <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
-                        </div>
-                        <div class="productContent flex flexCol">
-                            <h1>
-                                <a href="">
-                                    Product Title
-                                </a>
-                            </h1>
-                            <span class="productPrice flex flexRow">
-                                <h2 class="price">Rs. 152.00</h2>
-                                <h2 class="discPrice">Rs. 190.00</h2>
-                            </span>
-                            <button class="addToCartBtn flex flexRow">
-                                <i class="fa-solid fa-cart-plus"></i>
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="productCard flex flexCol">
-                        <div class="productImg flex">
-                            <div class="productIcons flex flexRow">
-                                <span class="discIndicator">
-                                    -20%
-                                </span>
-                                <span class="wishlistIndicator">
-                                    <i class="fa-regular fa-heart"></i>
-                                </span>
-                            </div>
-                            <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
-                        </div>
-                        <div class="productContent flex flexCol">
-                            <h1>
-                                <a href="">
-                                    Product Title
-                                </a>
-                            </h1>
-                            <span class="productPrice flex flexRow">
-                                <h2 class="price">Rs. 152.00</h2>
-                                <h2 class="discPrice">Rs. 190.00</h2>
-                            </span>
-                            <button class="addToCartBtn flex flexRow">
-                                <i class="fa-solid fa-cart-plus"></i>
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="productCard flex flexCol">
-                        <div class="productImg flex">
-                            <div class="productIcons flex flexRow">
-                                <span class="discIndicator">
-                                    -20%
-                                </span>
-                                <span class="wishlistIndicator">
-                                    <i class="fa-regular fa-heart"></i>
-                                </span>
-                            </div>
-                            <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
-                        </div>
-                        <div class="productContent flex flexCol">
-                            <h1>
-                                <a href="">
-                                    Product Title
-                                </a>
-                            </h1>
-                            <span class="productPrice flex flexRow">
-                                <h2 class="price">Rs. 152.00</h2>
-                                <h2 class="discPrice">Rs. 190.00</h2>
-                            </span>
-                            <button class="addToCartBtn flex flexRow">
-                                <i class="fa-solid fa-cart-plus"></i>
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="productCard flex flexCol">
-                        <div class="productImg flex">
-                            <div class="productIcons flex flexRow">
-                                <span class="discIndicator">
-                                    -20%
-                                </span>
-                                <span class="wishlistIndicator">
-                                    <i class="fa-regular fa-heart"></i>
-                                </span>
-                            </div>
-                            <img src="https://i.postimg.cc/brf9L1tT/placeholder.png">
-                        </div>
-                        <div class="productContent flex flexCol">
-                            <h1>
-                                <a href="">
-                                    Product Title
-                                </a>
-                            </h1>
-                            <span class="productPrice flex flexRow">
-                                <h2 class="price">Rs. 152.00</h2>
-                                <h2 class="discPrice">Rs. 190.00</h2>
-                            </span>
-                            <button class="addToCartBtn flex flexRow">
-                                <i class="fa-solid fa-cart-plus"></i>
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
+                    <%
+                        }
+
+                            con.close();
+                        } catch(Exception e) {
+                            out.println(e);
+                        }
+                    %>
+
                 </div>
-                
                 
             </div>
         </div>

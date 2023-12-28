@@ -64,18 +64,24 @@
                             ResultSet rs = stmt.executeQuery("SELECT * FROM products WHERE category = 'Beverages'");
 
                             while(rs.next()) {
+                                int id = rs.getInt("id");
                                 String productName = rs.getString("productName");
                                 double originalPrice = rs.getDouble("originalPrice");
+                                int discountPercentage = rs.getInt("discountPercentage");
                                 String imgLink = rs.getString("imgLink");
 
                     %>
 
-                    <div class="productCard flex flexCol">
+                    <div class="productCard flex flexCol" data-product-id="<%= id %>">
                         <div class="productImg flex">
                             <div class="productIcons flex flexRow">
-                                <span class="discIndicator">
-                                    -20%
-                                </span>
+                                <% if (discountPercentage > 0){ %>
+                                    <span class="discIndicator">
+                                        -<%= discountPercentage %>%
+                                    </span>
+                                <% } %>
+                                <span style="width: 10px; visibility: hidden;"></span>
+
                                 <span class="wishlistIndicator">
                                     <i class="fa-solid fa-heart"></i>
                                 </span>
@@ -89,8 +95,10 @@
                                 </a>
                             </h1>
                             <span class="productPrice flex flexRow">
-                                <h2 class="price">Rs. 152.00</h2>
-                                <h2 class="discPrice">Rs. <%= originalPrice %></h2>
+                                <h2 class="price">Rs. <%= originalPrice - (originalPrice * discountPercentage / 100) %></h2>
+                                <% if (discountPercentage > 0){ %>
+                                    <h2 class="discPrice">Rs. <%= originalPrice %></h2>
+                                <% } %>
                             </span>
                             <button class="addToCartBtn flex flexRow">
                                 <i class="fa-solid fa-cart-plus"></i>
@@ -126,6 +134,6 @@
             <i class="fa-solid fa-chevron-up"></i>
         </button>
         <!--======================================================= SCROLL-TO-TOP END -->
-        
+
     </body>
 </html>
