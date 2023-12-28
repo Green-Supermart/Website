@@ -36,7 +36,6 @@ public class UpdateProductServlet extends HttpServlet {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/greendb", "admin", "Admin123$");
-            // String query = "UPDATE products SET productName = '" + productName + "', productDesc = '" + productDesc + "', category = '" + category + "', originalPrice = '" + originalPrice + "', discountPercentage = '" + discountPercentage + "', stockStatus = '" + stockStatus + "', quantity = '" + quantity + "', sku = '" + sku + "', imgLink = '" + imgLink + "' WHERE id = " + request.getParameter("id");
             String query = "UPDATE products SET productName = ?, productDesc = ?, category = ?, originalPrice = ?, discountPercentage = ?, stockStatus = ?, quantity = ?, sku = ?, imgLink = ? WHERE id = ?";
 
             PreparedStatement pstmt = conn.prepareStatement(query);
