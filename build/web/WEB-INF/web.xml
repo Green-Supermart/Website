@@ -14,17 +14,12 @@
         <servlet-class>AddProductServlet</servlet-class>
     </servlet>
     <servlet>
-<<<<<<< HEAD
-        <servlet-name>forgetpassword</servlet-name>
-        <servlet-class>login.forgetpassword</servlet-class>
-=======
         <servlet-name>DeleteProductServlet</servlet-name>
         <servlet-class>DeleteProductServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>UpdateProductServlet</servlet-name>
         <servlet-class>UpdateProductServlet</servlet-class>
->>>>>>> e6b45cfd1c66d80c6be64cf84ea8ad8ba12f413a
     </servlet>
     <servlet-mapping>
         <servlet-name>SearchResultsServlet</servlet-name>
@@ -39,17 +34,12 @@
         <url-pattern>/AddProductServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-<<<<<<< HEAD
-        <servlet-name>forgetpassword</servlet-name>
-        <url-pattern>/forgetpassword</url-pattern>
-=======
         <servlet-name>DeleteProductServlet</servlet-name>
         <url-pattern>/DeleteProductServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>UpdateProductServlet</servlet-name>
         <url-pattern>/UpdateProductServlet</url-pattern>
->>>>>>> e6b45cfd1c66d80c6be64cf84ea8ad8ba12f413a
     </servlet-mapping>
     <error-page>
         <error-code>404</error-code>
