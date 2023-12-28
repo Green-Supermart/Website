@@ -149,7 +149,7 @@
                                                 <td>
                                                     <span class="entryActionIcons flex flexRow" style="gap: 10px;">
                                                         <span class="flex"><i class="fa-solid fa-pen"></i></span>
-                                                        <span class="flex"><i class="fa-solid fa-trash-can"></i></span>
+                                                        <a href="/Website/DeleteProductServlet?id=<%= id %>"><span class="flex"><i class="fa-solid fa-trash-can"></i></span></a>
                                                     </span>
                                                 </td>
                                             </tr>

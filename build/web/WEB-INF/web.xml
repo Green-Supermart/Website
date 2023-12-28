@@ -13,6 +13,10 @@
         <servlet-name>AddProductServlet</servlet-name>
         <servlet-class>AddProductServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <servlet-class>DeleteProductServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SearchResultsServlet</servlet-name>
         <url-pattern>/search</url-pattern>
@@ -24,6 +28,10 @@
     <servlet-mapping>
         <servlet-name>AddProductServlet</servlet-name>
         <url-pattern>/AddProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <url-pattern>/DeleteProductServlet</url-pattern>
     </servlet-mapping>
     <error-page>
         <error-code>404</error-code>
