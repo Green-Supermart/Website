@@ -66,6 +66,7 @@
                             while(rs.next()) {
                                 String productName = rs.getString("productName");
                                 double originalPrice = rs.getDouble("originalPrice");
+                                int discountPercentage = rs.getInt("discountPercentage");
                                 String imgLink = rs.getString("imgLink");
 
                     %>
@@ -74,7 +75,7 @@
                         <div class="productImg flex">
                             <div class="productIcons flex flexRow">
                                 <span class="discIndicator">
-                                    -20%
+                                    -<%= discountPercentage %>%
                                 </span>
                                 <span class="wishlistIndicator">
                                     <i class="fa-solid fa-heart"></i>
@@ -89,7 +90,7 @@
                                 </a>
                             </h1>
                             <span class="productPrice flex flexRow">
-                                <h2 class="price">Rs. 152.00</h2>
+                                <h2 class="price">Rs. <%= originalPrice - (originalPrice * discountPercentage / 100) %></h2>
                                 <h2 class="discPrice">Rs. <%= originalPrice %></h2>
                             </span>
                             <button class="addToCartBtn flex flexRow">

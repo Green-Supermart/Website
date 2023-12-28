@@ -131,7 +131,7 @@
                                                         String productDesc = rs.getString("productDesc");
                                                         String category = rs.getString("category");
                                                         double originalPrice = rs.getDouble("originalPrice");
-                                                        double discountPrice = rs.getDouble("discountPrice");
+                                                        int discountPercentage = rs.getInt("discountPercentage");
                                                         String stockStatus = rs.getString("stockStatus");
                                                         int quantity = rs.getInt("quantity");
                                                         int sku = rs.getInt("sku");

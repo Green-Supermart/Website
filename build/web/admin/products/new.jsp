@@ -164,15 +164,14 @@
                                                         </div>
                                                         
                                                         <div class="flex flexRow" style="width: 100%; justify-content: space-between;">
-                                                            
                                                             <div class="flex flexCol" style="width: 45%; gap: 8px;">
                                                                 <label>Price</label>
                                                                 <input type="number" id="originalPrice" style="width: calc(100% - 20px); font-weight: 300; color: #242424; background: #ECECEC; padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; outline: none;" name="originalPrice" min="0" required>
                                                             </div>
                                                             
                                                             <div class="flex flexCol" style="width: 45%; gap: 8px;">
-                                                                <label>Discount</label>
-                                                                <input type="number" id="discountedPrice" style="width: calc(100% - 20px); font-weight: 300; color: #242424; background: #ECECEC; padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; outline: none;" name="discountedPrice" min="0" required>
+                                                                <label>Discount Percentage</label>
+                                                                <input type="number" id="discountPercentage" style="width: calc(100% - 20px); font-weight: 300; color: #242424; background: #ECECEC; padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; outline: none;" name="discountPercentage" min="0" max="100" required>
                                                             </div>
                                                         </div>
                                                         

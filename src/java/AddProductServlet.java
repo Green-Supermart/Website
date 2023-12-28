@@ -5,6 +5,7 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import static java.lang.Integer.parseInt;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -23,7 +24,7 @@ public class AddProductServlet extends HttpServlet {
         String productDesc = request.getParameter("productDesc");
         String category = request.getParameter("category");
         double originalPrice = Double.parseDouble(request.getParameter("originalPrice"));
-        double discountPrice = Double.parseDouble(request.getParameter("discountedPrice"));
+        int discountPercentage = parseInt(request.getParameter("discountPercentage"));
         String stockStatus = request.getParameter("stockStatus");
         double quantity = Double.parseDouble(request.getParameter("quantity"));
         double sku = Double.parseDouble(request.getParameter("sku"));
@@ -34,13 +35,13 @@ public class AddProductServlet extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/greendb", "admin", "Admin123$");
 
-            String query = "INSERT INTO products (productName, productDesc, category, originalPrice, discountPrice, stockStatus, quantity, sku, imgLink) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            String query = "INSERT INTO products (productName, productDesc, category, originalPrice, discountPercentage, stockStatus, quantity, sku, imgLink) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement pstmt = con.prepareStatement(query);
             pstmt.setString(1, productName);
             pstmt.setString(2, productDesc);
             pstmt.setString(3, category);
             pstmt.setDouble(4, originalPrice);
-            pstmt.setDouble(5, discountPrice);
+            pstmt.setInt(5, discountPercentage);
             pstmt.setString(6, stockStatus);
             pstmt.setDouble(7, quantity);
             pstmt.setDouble(8, sku);
