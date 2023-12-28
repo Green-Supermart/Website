@@ -33,7 +33,7 @@
         
         <div class="containerBlock flex" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
             
-            <form id="forgotPasswordForm" class="loginRegisterForm flex" action="forgetpassword" method="POST">
+            <form id="forgotPasswordForm" class="loginRegisterForm flex" action="forgotpassword" method="POST">
                 
                 <div class="formContainer flex flexCol">
                     
@@ -43,7 +43,7 @@
                     
                     <p>Enter your email address to reset password:</p>
                     
-                    <input type="email" placeholder="Email Address" title="Email Address" required>
+                    <input type="email" placeholder="Email Address" name="uemail" title="Email Address" required>
                     
                     <button type="submit">Confirm</button>
                     
