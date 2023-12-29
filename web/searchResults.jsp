@@ -79,15 +79,7 @@
                             </div>
                         </div>
                         
-                        <div class="flex flexRow" style="width: 15%; height: 100%; gap: 18%; justify-content: start; align-items: center; color: #1DA31A; font-size: 18px;">
-                            <span class="searchCardIcon flex" title="Add to Wishlist">
-                                <i class="fa-solid fa-heart"></i>
-                            </span>
-                            
-                            <span class="searchCardIcon flex" title="Add to Cart">
-                                <i class="fa-solid fa-shopping-cart"></i>
-                            </span>
-                            
+                        <div class="flex flexRow" style="width: 15%; height: 100%; gap: 18%; justify-content: center; align-items: center; color: #1DA31A; font-size: 18px;">
                             <span class="searchCardIcon flex" title="View Product">
                                 <a href="/Website/singleProduct.jsp">
                                     <i class="fa-solid fa-square-arrow-up-right"></i>
