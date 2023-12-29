@@ -114,16 +114,7 @@
                                                         
                                                         <div class="flex flexCol" style="width: 100%; gap: 8px;">
                                                             <label>Product Image</label>
-                                                            
-                                                            <div class="flex" id="imageDropzone" style="width: calc(100% - 20px); height: 245px; font-weight: 300; color: #242424; background: #ECECEC; padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; outline: none; align-items: center; justify-content: center; cursor: pointer;">
-                                                                <span class="flex flexRow" id="imageDropzoneMsg" style="color: #808080; font-size: 14px; align-items: center; gap: 10px; user-select: none;">
-                                                                    <i class="fa-regular fa-image"></i>
-                                                                    <p id="imageIndicator">Click to Upload</p>
-                                                                </span>
-                                                            </div>
-                                                            
-                                                            <!-- <input type="file" id="productImage" style="display: none;" name="productImage" accept="image/*"> -->
-                                                            <input type="hidden" name="imgLink" value="https://i.postimg.cc/brf9L1tT/placeholder.png">
+                                                            <input type="text" id="imgLink" style="width: calc(100% - 20px); font-weight: 300; color: #242424; background: #ECECEC; padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; outline: none;" name="imgLink" value="https://i.postimg.cc/brf9L1tT/placeholder.png">
                                                         </div>
                                                         
                                                         <div class="flex flexCol" style="width: 100%; gap: 8px;">

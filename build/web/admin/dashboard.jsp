@@ -195,35 +195,19 @@
                             </div>
                             
                             <div class="salesCard flex flexCol">
-                                <h1>Sales</h1>
-                                <h2>January</h2>
+                                <h1>System Catalogue</h1>
+                                <h2>At a Glance</h2>
                                 
                                 <div class="subCardsContainer flex flexRow" style="justify-content: start;">
                                     <div class="subCard flex flexRow" style="width: 45%;">
                                         <div class="subCardIcon flex">
-                                            <i class="fa-solid fa-dollar-sign"></i>
+                                            <i class="fa-solid fa-list"></i>
                                         </div>
                                         
-                                        <%
-                                            try {
-                                                Class.forName("com.mysql.jdbc.Driver");
-                                                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/greendb", "admin", "Admin123$");
-                                                Statement stmt = con.createStatement();
-                                                ResultSet rs = stmt.executeQuery("SELECT SUM(total) AS TotalAmount FROM orders");
-                                                if(rs.next()) {
-                                                    double totalAmount = rs.getDouble("TotalAmount");
-                                        %>
-                                                <div class="subCardText flex flexCol">
-                                                    <h4>Rs. <%= totalAmount %></h4>
-                                                    <h5>Revenue</h5>
-                                                </div>
-                                        <%
-                                                }
-                                                con.close();
-                                            } catch(Exception e) {
-                                                out.println(e);
-                                            }
-                                        %>
+                                        <div class="subCardText flex flexCol">
+                                            <h4>15</h4>
+                                            <h5>Total Categories</h5>
+                                        </div>
                                         
                                     </div>
                                     
@@ -237,13 +221,13 @@
                                                 Class.forName("com.mysql.jdbc.Driver");
                                                 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/greendb", "admin", "Admin123$");
                                                 Statement stmt = con.createStatement();
-                                                ResultSet rs = stmt.executeQuery("SELECT COUNT(id) AS TotalOrders FROM orders");
+                                                ResultSet rs = stmt.executeQuery("SELECT COUNT(id) AS TotalProducts FROM products");
                                                 if(rs.next()) {
-                                                    int totalOrders = rs.getInt("TotalOrders");
+                                                    int totalProducts = rs.getInt("TotalProducts");
                                         %>
                                                 <div class="subCardText flex flexCol">
-                                                    <h4><%= totalOrders %></h4>
-                                                    <h5>Total Orders</h5>
+                                                    <h4><%= totalProducts %></h4>
+                                                    <h5>Total Products</h5>
                                                 </div>
                                         <%
                                                 }
