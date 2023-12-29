@@ -196,7 +196,7 @@
                             
                             <div class="salesCard flex flexCol">
                                 <h1>Sales</h1>
-                                <h2>November</h2>
+                                <h2>January</h2>
                                 
                                 <div class="subCardsContainer flex flexRow" style="justify-content: start;">
                                     <div class="subCard flex flexRow" style="width: 45%;">
@@ -262,7 +262,7 @@
                         <div class="dashboardChart flex">
                             <div class="chartContainer flex flexCol">
                                 
-                                <h1>Sales Statistics</h1>
+                                <h1>Order Statistics</h1>
                                 
                                 <div class="statChart">
                                     <canvas id="myChart"></canvas>
