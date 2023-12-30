@@ -69,7 +69,7 @@
                             <div class="flex flexROw" style="width: 90%; align-items: center; justify-content: space-between;">
                                 <div class="flex flexCol" style="gap: 5px;">
                                     <h1>Full Name</h1>
-                                    <h2>John Doe</h2>
+                                    <h2><%= request.getAttribute("uname") %></h2>
                                 </div>
                                 
                                 <i class="fa-solid fa-angle-right" style="color: #1DA31A;"></i>
@@ -80,7 +80,7 @@
                             <div class="flex flexRow" style="width: 90%; align-items: center; justify-content: space-between;">
                                 <div class="flex flexCol" style="gap: 5px;">
                                     <h1>Email Address</h1>
-                                    <h2>johndoe@mail.com</h2>
+                                    <h2><%= request.getAttribute("uemail") %></h2>
                                 </div>
                                 
                                 <i class="fa-solid fa-angle-right" style="color: #1DA31A;"></i>
@@ -101,7 +101,7 @@
                     <div class="flex flexRow" style="width: 90%; align-items: center; justify-content: space-between;">
                         <div class="flex flexCol" style="gap: 5px;">
                             <h1>Delivery Address</h1>
-                            <h2>123, York Street, New York, United States 10001</h2>
+                            <h2><%= request.getAttribute("address") %></h2>
                         </div>
                         
                         <i class="fa-solid fa-angle-right" style="color: #1DA31A;"></i>

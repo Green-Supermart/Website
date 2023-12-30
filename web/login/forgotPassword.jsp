@@ -33,7 +33,7 @@
         
         <div class="containerBlock flex" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
             
-            <form id="forgotPasswordForm" class="loginRegisterForm flex" action="forgotpassword" method="POST">
+            <form id="forgotPasswordForm" class="loginRegisterForm flex" action="/Website/sendOTP" method="POST">
                 
                 <div class="formContainer flex flexCol">
                     
